@@ -1,0 +1,3 @@
+Based on the provided ROS log messages, only one waypoint was received. The log mentions sending a goal to `move_base` with coordinates `x=-2.0, y=-8.0` and refers to this goal as waypoint 1. There are no additional waypoint goals mentioned in the logs.
+
+Hence, the number of waypoints received is **1**.

@@ -1,0 +1,10 @@
+No, not all received waypoints were successfully reached. 
+
+The robot successfully reached waypoint 1 and waypoint 2, as indicated by the logs:
+- "Reached waypoint 1"
+- "Reached waypoint 2"
+
+However, the robot failed to reach waypoint 3. Despite several attempts to replan the path due to detected obstacles and executing all recovery behaviors, the planning ultimately failed:
+- "Failed to get a plan."
+- "Aborting because a valid plan could not be found. Even after executing all recovery behaviors"
+- "Failed to reach waypoint 3"

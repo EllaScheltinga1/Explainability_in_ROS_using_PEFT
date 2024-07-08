@@ -1,0 +1,7 @@
+The waypoints received by the robot are as follows:
+
+1. **Waypoint 1**: Coordinates \( x = -1.0, y = 1.0 \)
+2. **Waypoint 2**: Coordinates \( x = -4.0, y = -1.0 \)
+3. **Waypoint 3**: Coordinates \( x = -2.0, y = 0.0 \)
+4. **Waypoint 4**: Coordinates \( x = 2.0, y = -2.0 \)
+5. **Waypoint 5**: Coordinates \( x = 1.0, y = -6.0 \)

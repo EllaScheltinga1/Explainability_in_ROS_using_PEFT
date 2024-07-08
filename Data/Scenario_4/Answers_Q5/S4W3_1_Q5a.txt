@@ -1,0 +1,11 @@
+The robot first reached the goal at waypoint 2, which had coordinates \( x = -4.0, y = -1.0 \). The log indicates the following sequence for this waypoint:
+
+1. **Sending goal 2 to move_base: x=-4.0, y=-1.0**
+2. **Navigating to waypoint 2...**
+3. **Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-45.060)**
+4. **GOAL Reached!**
+5. **Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-45.060)**
+6. **Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-45.060)**
+7. **Reached waypoint 2**
+
+Considering the robot failed to reach waypoint 1 and the logs confirm successful execution at waypoint 2, the first successfully reached waypoint is waypoint 2.

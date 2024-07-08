@@ -1,0 +1,1 @@
+The robot received one waypoint with the coordinates \( \text{x} = -3.0 \) and \( \text{y} = 0.0 \).

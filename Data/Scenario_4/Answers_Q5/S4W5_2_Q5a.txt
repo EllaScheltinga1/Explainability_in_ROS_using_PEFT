@@ -1,0 +1,5 @@
+The first waypoint the robot reached was at coordinates x=-4.0, y=-0.5. This is indicated by the log entry:
+
+```
+Reached waypoint 1
+```

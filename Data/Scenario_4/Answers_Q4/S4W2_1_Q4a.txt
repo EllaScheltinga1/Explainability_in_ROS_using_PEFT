@@ -1,0 +1,1 @@
+Based on the ROS log messages, not all received waypoints were successfully reached. The robot successfully reached waypoint 1, but it failed to reach waypoint 2 due to an obstacle and subsequent navigation issues.

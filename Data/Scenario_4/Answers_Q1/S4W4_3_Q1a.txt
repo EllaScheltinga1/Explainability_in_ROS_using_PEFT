@@ -1,0 +1,6 @@
+The robot received a total of four waypoints as indicated by the log entries showing goals being sent to the `move_base`:
+
+1. **Goal 1**: Sending goal 1 to move_base: x=-3.5, y=-0.5
+2. **Goal 2**: Sending goal 2 to move_base: x=1.0, y=0.0
+3. **Goal 3**: Sending goal 3 to move_base: x=3.0, y=-4.5
+4. **Goal 4**: Sending goal 4 to move_base: x=3.0, y=0.0

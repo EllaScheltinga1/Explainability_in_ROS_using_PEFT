@@ -1,0 +1,8 @@
+The last waypoint the robot reached was at coordinates \( x = 2.0 \), \( y = -0.5 \). The log confirms the successful navigation and attainment of this waypoint with the following entries:
+
+1. "Sending goal 5 to move_base: x=2.0, y=-0.5"
+2. "Navigating to waypoint 5..."
+3. "Transitioning to ACTIVE (from PENDING, goal: /tiago_autonomous_navigation-5-71.520)"
+4. "GOAL Reached!"
+5. "Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-5-71.520)"
+6. "Reached waypoint 5."

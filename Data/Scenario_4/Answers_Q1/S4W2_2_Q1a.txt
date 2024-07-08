@@ -1,0 +1,13 @@
+The log messages indicate that the robot received two waypoints. The first waypoint corresponds to the goal with coordinates \( x = 1.0 \), \( y = 0.0 \), and the second waypoint corresponds to the goal with coordinates \( x = 1.0 \), \( y = -8.5 \). 
+
+Here are the relevant parts from the logs:
+1. **Waypoint 1:**
+   - "Sending goal 1 to move_base: x=1.0, y=0.0"
+   - "GOAL Reached!"
+   - "Reached waypoint 1"
+
+2. **Waypoint 2:**
+   - "Sending goal 2 to move_base: x=1.0, y=-8.5"
+   - The navigation to this waypoint encounters issues, leading to debug messages but ultimately "Failed to reach waypoint 2".
+
+So, the total number of waypoints received is **two**.

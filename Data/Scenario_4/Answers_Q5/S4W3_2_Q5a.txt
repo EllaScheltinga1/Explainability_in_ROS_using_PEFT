@@ -1,0 +1,7 @@
+The first waypoint the robot reached was waypoint 1, with coordinates \( x = 3.5 \) and \( y = -7.0 \). 
+
+This is confirmed by the log messages:
+- "Sending goal 1 to move_base: x=3.5, y=-7.0"
+- "Navigating to waypoint 1..."
+- "GOAL Reached!"
+- "Reached waypoint 1"

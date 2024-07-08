@@ -1,0 +1,8 @@
+The robot received one waypoint with the coordinates \( x = 3.0 \) and \( y = 1.0 \).
+
+This is indicated by the log message: 
+```
+Sending goal 1 to move_base: x=3.0, y=1.0
+```
+
+No other waypoints were mentioned in the provided log messages.

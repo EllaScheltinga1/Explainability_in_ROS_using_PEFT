@@ -1,0 +1,5 @@
+The log indicates that only one waypoint was received:
+
+- **Waypoint 1**: Coordinates (x=3.0, y=1.0)
+
+This is the only waypoint mentioned in the logs, as it details sending a goal to move_base to navigate to this specific point.
