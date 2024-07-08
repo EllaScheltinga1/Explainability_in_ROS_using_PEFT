@@ -1,0 +1,26 @@
+Started controllers: hand_controller
+Started controllers: force_torque_sensor_controller
+Started controllers: imu_sensor_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Waiting for move_base action server...
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=-3.0, y=0.5"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-25.129)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-25.129)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-25.129)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=2.0, y=-13.0"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-41.331)"
+The goal sent to the global planner is off the global costmap. Planning will always fail to this goal.
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+Clearing both costmaps outside a square (1.50m) large centered on the robot.
+Rotate recovery behavior started.
+The goal sent to the global planner is off the global costmap. Planning will always fail to this goal.
+Aborting because a valid plan could not be found. Even after executing all recovery behaviors
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-41.331)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-41.331)"
+Failed to reach waypoint 2
