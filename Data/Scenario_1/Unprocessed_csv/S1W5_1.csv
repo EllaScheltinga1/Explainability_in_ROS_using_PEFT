@@ -1,0 +1,51 @@
+msg
+connecting to ella-HP-ZBook-Studio-G5 51571
+Tuck arm...
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Started controllers: force_torque_sensor_controller
+Recording to 'S1W5_1.bag'.
+Started controllers: hand_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Started controllers: imu_sensor_controller
+Arm tucked.
+connecting to ella-HP-ZBook-Studio-G5 42815
+Waiting for move_base action server...
+connecting to ella-HP-ZBook-Studio-G5 42815
+connecting to ella-HP-ZBook-Studio-G5 42815
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=1.0, y=-5.0"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.134)"
+Motion played successfully.
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.134)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.134)"
+GOAL Reached!
+Reached waypoint 1
+"Sending goal 2 to move_base: x=-2.5, y=-5.5"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-28.938)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-28.938)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-28.938)"
+Reached waypoint 2
+"Sending goal 3 to move_base: x=-4.0, y=-9.0"
+Navigating to waypoint 3...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-3-45.452)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-3-45.452)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-3-45.452)"
+Reached waypoint 3
+"Sending goal 4 to move_base: x=1.0, y=-11.0"
+Navigating to waypoint 4...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-4-59.258)"
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-4-59.258)"
+GOAL Reached!
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-4-59.258)"
+Reached waypoint 4
+"Sending goal 5 to move_base: x=2.0, y=-4.0"
+Navigating to waypoint 5...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-5-71.659)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-5-71.659)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-5-71.659)"
+Reached waypoint 5
