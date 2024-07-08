@@ -1,0 +1,22 @@
+When the robot encountered unfeasible paths or obstacles during its navigation to waypoint 5, it undertook several steps to handle the situation:
+
+1. **Detection of Obstacles and Path Replanning**:
+   - **Log Entry**: "New obstacle detected at position (1.0, -6.0)"
+   - The robot detected a new obstacle at the specified position. 
+   - **Log Entry**: "Robot is nearing the obstacle. Path is being replanned."
+   - The robot initiated a path replanning process in response to the obstacle.
+
+2. **Trajectory Feasibility Assessment**:
+   - **Log Entry**: "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..."
+   - The robot's local planner (TebLocalPlannerROS) assessed that the current trajectory was not feasible and reset the planner to attempt a new trajectory.
+
+3. **Oscillation Detection and Recovery**:
+   - **Log Entry**: "TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization)."
+   - The robot detected possible oscillations, which suggests either the robot or the local plan was repeating small, unproductive movements.
+   - To counter this, a recovery strategy was activated, specifically preferring the current turning direction during optimization to break out of the oscillation.
+
+4. **Clearing Costmaps**:
+   - **Log Entry**: "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+   - As part of the recovery strategy, the robot cleared its costmaps (data structures used to represent obstacles) to remove potentially stale obstacle information from around the robot within a 3-meter square area. This could help the robot find a new viable path without outdated obstacle data.
+
+Despite these efforts, the robot **failed to reach waypoint 5** ultimately, as indicated by the final log entry. The sequence of steps highlights the robot's systematic approach to dealing with the presence of unfeasible paths in the navigation process.

@@ -1,0 +1,11 @@
+The primary reason one or more paths were not feasible was the repeated detection of a new obstacle at the same position (3.0, 0.0). Here are the relevant details from the log messages:
+
+1. **Obstacle Detection**: 
+   - A new obstacle was detected multiple times at position (3.0, 0.0).
+   - Specifically during the navigation to waypoints 2, 3, 4, and 5.
+
+2. **Replanning and Failure**:
+   - For waypoint 5, the log explicitly mentions that the robot is nearing the obstacle and that path replanning was attempted.
+   - Despite the replanning effort, the robot ultimately failed to reach waypoint 5.
+
+In summary, the presence of an obstacle at position (3.0, 0.0) obstructed the robot's planned path, leading to infeasibility in reaching some waypoints and ultimately causing a failure to reach waypoint 5.

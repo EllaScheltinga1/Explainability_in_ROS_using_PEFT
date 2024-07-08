@@ -1,0 +1,25 @@
+The paths were not feasible primarily due to the detection of obstacles and the inability of the planner to generate a viable trajectory around those obstacles. Here are the specific points from the logs that highlight this issue:
+
+1. **New Obstacle Detected**: 
+   - "New obstacle detected at position (1.5, -3.5)"
+   - This indicates that an unexpected obstacle was encountered, necessitating a path replan.
+
+2. **Repeated Planning Failures**:
+   - "Failed to get a plan."
+   - "Robot is nearing the obstacle. Path is being replanned."
+   - Despite attempts to replan the path, the planner failed to generate a feasible trajectory multiple times.
+
+3. **TebLocalPlannerROS Reset**:
+   - "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..."
+   - Even the specific local planner, TebLocalPlannerROS, reported that it could not come up with a feasible path and had to reset.
+
+4. **Costmap Clearing**:
+   - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+   - "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+   - The log entries indicate that the costmaps, which the robot uses to avoid obstacles, were cleared multiple times to attempt to generate a new plan. This reveals there were significant environmental challenges.
+
+5. **Failure to Reach Waypoint**:
+   - "Failed to reach waypoint 1"
+   - The overall result of these planning issues was the inability to reach the designated waypoint.
+
+In summary, the paths were not feasible due to the detection of obstacles in the robot's path and the subsequent failure of the trajectory planner (TebLocalPlannerROS) to generate alternative feasible paths around those obstacles.

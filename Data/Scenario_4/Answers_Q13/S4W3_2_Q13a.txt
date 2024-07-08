@@ -1,0 +1,13 @@
+The paths were found to be not feasible for several reasons, as evidenced by the ROS log messages:
+
+1. **New Obstacles Detected**: New obstacles were detected multiple times in the robot's environment (`New obstacle detected at position (3.5, -11.0)`). These dynamic environmental changes caused the planner to frequently re-evaluate and try to find a new feasible trajectory.
+
+2. **Oscillation**: The log mentions potential oscillation issues (`TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected`). Oscillation refers to the robot, or its computed path, repeatedly switching directions or routes without making progress towards the goal. This can happen when the planner struggles to find a stable path around obstacles.
+
+3. **Trajectory Not Feasible**: Multiple reset attempts of the planner were noted (`TebLocalPlannerROS: trajectory is not feasible. Resetting planner...`). This indicates that the planner failed to compute a path that satisfies the robot's kinematic constraints and avoids collisions with obstacles, leading to several unsuccessful trajectory recalculations.
+
+4. **Recoveries and Costmap Clearing**: The log indicates recovery actions were undertaken, including clearing costmaps around the robot to eliminate potential errors due to outdated obstacle information (`Clearing both costmaps outside a square (3.00m) large centered on the robot`, `Clearing both costmaps outside a square (1.50m) large centered on the robot`). Despite these efforts, the robot still failed to find a feasible path.
+
+5. **Recovery Expiry**: At one point, oscillation recovery is noted as disabled/expired (`TebLocalPlannerROS: oscillation recovery disabled/expired`), meaning that one of the recovery mechanisms the planner relies on was no longer effective.
+
+Overall, the continuous detection of new obstacles, path oscillations, frequent trajectory feasibility resets, and recovery mechanisms failing to establish a clear, collision-free path led to the infeasibility of the paths to waypoints 2 and 3.

@@ -1,0 +1,10 @@
+The log messages indicate that multiple paths were deemed not feasible mainly due to the detection and presence of an obstacle at position (1.5, -3.0):
+
+1. **Repeated Obstacle Detection:** The robot consistently detected a new obstacle at position (1.5, -3.0) during its navigation, particularly influencing the path planning process. This obstacle likely blocked potential paths, leading to the failure in reaching waypoint 4.
+
+2. **Interference with Path Planning:**
+   - **Waypoint 4:** The robot tried several times to replan the path when nearing the obstacle but failed to get a feasible plan. The messages "Failed to get a plan" and "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..." indicate the planner's inability to generate a viable trajectory to avoid the obstacle.
+
+3. **Costmap Clearing:** The robot attempted to address the issue by clearing costmaps within a 3-meter square centered on the robot. However, this was not sufficient to find a clear path.
+
+The infeasibility of these paths is a combination of the static or dynamic nature of the detected obstacle and the limitations of the robot’s planning algorithms in generating viable alternate routes under these conditions.

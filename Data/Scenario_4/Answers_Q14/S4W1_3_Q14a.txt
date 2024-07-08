@@ -1,0 +1,13 @@
+The robot handled unfeasible paths using the TebLocalPlannerROS. Here's a detailed breakdown of actions taken:
+
+1. **Trajectory Infeasibility and Path Replanning**:
+   - Upon detecting an infeasible trajectory, the TebLocalPlannerROS issued a message stating "trajectory is not feasible. Resetting planner...", which indicates that the current path was not viable, prompting the planner to reset and attempt to generate a new path.
+   - Simultaneously, the robot recognized it was nearing an obstacle and performed path replanning multiple times.
+
+2. **Oscillation Detection and Recovery**:
+   - The TebLocalPlannerROS also detected a possible oscillation, indicated by the message "possible oscillation detected. Activating recovery strategy (prefer current turning direction during optimization)." This suggests that the robot identified undesirable oscillations either in its motion or its local plan and triggered a recovery strategy to stabilize its navigation by preferring a specific turning direction.
+
+3. **Costmap Clearing**:
+   - At one point, the robot cleared both its costmaps outside a 3.00-meter square centered on the robot. Clearing costmaps often helps resolve navigation issues by eliminating outdated or irrelevant obstacle data, allowing for a fresh start in planning a new path.
+
+Despite these measures, the robot ultimately failed to reach waypoint 1, suggesting that the combined efforts to reset the planner, perform replanning, activate recovery strategies, and clear the costmaps were not sufficient to overcome the navigation challenges it faced.

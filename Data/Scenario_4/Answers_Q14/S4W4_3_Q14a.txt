@@ -1,0 +1,11 @@
+Based on the provided ROS log messages, the robot employed several strategies to handle unfeasible paths, particularly when it detected obstacles or faced possible oscillations:
+
+1. **Path Replanning**: The logs frequently mention that the robot was "nearing the obstacle" and as a response, "Path is being replanned." This indicates that the robot dynamically adjusts its path to navigate around obstacles when they are detected in its current route.
+
+2. **Oscillation Recovery Strategies**: Logs such as "TebLocalPlannerROS: possible oscillation detected... Activating recovery strategy (prefer current turning direction during optimization)" indicate that the robot detected oscillations (repeated back-and-forth motions) during its navigation. To counter this, it activated a recovery strategy that likely increases stability by preferring a consistent turning direction.
+
+3. **Clearing Costmaps**: The log entries "Clearing both costmaps outside a square (3.00m) large centered on the robot" and the similar one for a 1.50m square indicate that the robot cleared the local costmaps (which represent obstacles and free space around the robot) to re-evaluate the environment and obtain a more accurate view for path planning.
+
+4. **Recovery Strategy for Oscillation Expiration**: The entry "TebLocalPlannerROS: oscillation recovery disabled/expired" suggests that the robot has a mechanism to disable certain recovery strategies if they are no longer effective or necessary.
+
+These strategies combined allowed the robot to manage unfeasible paths by attempting different corrective actions, such as dynamically replanning the path, applying recovery behaviors to stabilize navigation, and ensuring a more accurate environmental perception by clearing and updating its costmaps.

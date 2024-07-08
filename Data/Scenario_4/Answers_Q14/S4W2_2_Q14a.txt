@@ -1,0 +1,15 @@
+The robot employed several strategies to deal with the unfeasible paths. Initially, upon detecting a new obstacle at position (1.5, -2.5) while navigating to waypoint 2, the robot identified that it was nearing the obstacle and attempted to replan its path. Here is a step-by-step breakdown of how the robot addressed the unfeasible paths:
+
+1. **Path Replanning**: Initially, the robot detected an obstacle and triggered a path replanning process to find an alternative route.
+
+2. **Oscillation Detection**: The `TebLocalPlannerROS` identified possible oscillation, which can indicate that the robot or its local plan is unstable or ineffective. Consequently, the planner activated a recovery strategy that prioritized the current turning direction during optimization in an attempt to stabilize and find a feasible path.
+
+3. **Failed Plans**: Despite the replanning efforts, the robot failed to obtain a new viable path multiple times, as indicated by the repeated failures to get a plan.
+
+4. **Trajectory Infeasibility and Resetting Planner**: The `TebLocalPlannerROS` declared the trajectory not feasible. Consequently, the planner was reset to potentially clear previous states and approaches that led to failure.
+
+5. **Clearing Costmaps**: As a resourceful strategy, the robot cleared both local and global costmaps (used for obstacle avoidance and path planning) outside a 3.00m square centered on itself. This strategy effectively removes old or stale data about obstacles that might be leading the planner astray.
+
+6. **Disabling Oscillation Recovery**: Lastly, the planner noted that oscillation recovery was disabled or expired, indicating that the specific recovery mechanism had concluded or was no longer applicable.
+
+Despite these efforts, the robot ultimately failed to reach waypoint 2, as it couldn't find a feasible trajectory. This indicates persistent challenges in the environment or limitations within the planner's current configuration.

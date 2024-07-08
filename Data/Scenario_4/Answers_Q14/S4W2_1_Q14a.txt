@@ -1,0 +1,13 @@
+When the robot encountered unfeasible paths, it employed several strategies to handle the situation:
+
+1. **Path Replanning**:
+   - Upon detecting the obstacle at position (-3.0, -5.0), the robot began replanning its path multiple times as it neared the obstacle (`Robot is nearing the obstacle. Path is being replanned.`). This indicates that the robot is attempting to find an alternative route to avoid the obstacle.
+
+2. **Recovery Strategies**:
+   - The `TebLocalPlannerROS` component identified that the trajectory was not feasible (`TebLocalPlannerROS: trajectory is not feasible. Resetting planner...`). This prompted the system to reset the planner, suggesting that it discarded the current trajectory and generated a new plan.
+   - If a possible oscillation in the robot's movement or its local plan was detected (`TebLocalPlannerROS: possible oscillation...`), a recovery strategy was activated. In this instance, the strategy was to prefer the current turning direction during optimization to mitigate the oscillations and potentially find a more stable path.
+
+3. **Costmap Clearing**:
+   - As part of the recovery procedures, the robot cleared both the global and local costmaps within a 3-meter square centered on the robot (`Clearing both costmaps outside a square (3.00m) large centered on the robot.`). This action removes temporary obstacles and previously identified hazards, allowing the planning system to reconsider the environment with a fresh perspective.
+
+Despite these attempts, the log indicates that the robot ultimately failed to reach waypoint 2, highlighting the complexity of the obstacle scenario and the limitations of the current replanning and recovery strategies.

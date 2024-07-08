@@ -1,0 +1,13 @@
+The paths were not feasible due to multiple factors related to obstacles and local planning challenges:
+
+1. **Obstacle Detection**: During the attempt to reach waypoint 5 at position \( (1.0, -6.0) \), a new obstacle was detected, indicating that the planned path was impeded by an unexpected object or environmental feature.
+
+2. **Trajectory Feasibility**: The log mentions that `TebLocalPlannerROS` identified the trajectory as "not feasible". This implies that the local planner's proposed path could not be executed by the robot, potentially due to the proximity of obstacles or the complexity of the required maneuvers.
+
+3. **Path Replanning**: The robot repeatedly attempted to replan the path, which suggests that the initial trajectory and subsequent reattempts could not find a viable route around the obstacle.
+
+4. **Possible Oscillation**: The log mentions a "possible oscillation" detected by `TebLocalPlannerROS`. This indicates that either the robot or its local plan entered a state of back-and-forth movement without making progress, necessitating a recovery strategy.
+
+5. **Costmap Clearing**: The costmaps were cleared outside a specified square centered on the robot to reset the planning environment. This action is typically taken to remove temporary obstacles or inaccuracies in the map, indicating persistent difficulties in finding a stable path.
+
+Combined, these factors resulted in the failure to reach waypoint 5, as the local planner could not generate a feasible trajectory that safely navigated around the detected obstacle.

@@ -1,0 +1,37 @@
+The robot encountered issues with unfeasible paths primarily during its attempt to reach waypoint 4 (x=2.0, y=-7.0). The following sequence of actions was taken to address the unfeasible paths:
+
+1. **Obstacle Detection:**
+   - The system repeatedly detected an obstacle at position (1.5, -3.0) during the navigation toward waypoint 4.
+
+2. **Path Replanning Attempts:**
+   - Upon detecting that the robot was nearing the obstacle, the robot attempted to replan its path multiple times, as indicated by the log entries:
+     ```
+     Robot is nearing the obstacle. Path is being replanned.
+     Failed to get a plan.
+     Robot is nearing the obstacle. Path is being replanned.
+     Failed to get a plan.
+     ```
+   - Despite these replanning attempts, the robot was unable to generate a feasible path.
+
+3. **Planner Reset:**
+   - The system then attempted to reset the local planner (TebLocalPlannerROS), as indicated by the log:
+     ```
+     TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+     ```
+
+4. **Costmap Clearing:**
+   - The robot also cleared the costmaps to possibly remove perceived obstacles or incorrect data points. This is shown in the log:
+     ```
+     Clearing both costmaps outside a square (3.00m) large centered on the robot.
+     ```
+
+5. **Continued Obstacle Detection and Final Attempt:**
+   - After clearing the costmaps, the robot detected the same obstacle again.
+   - Subsequent attempts to plan a path continued to fail, leading to the ultimate failure to reach waypoint 4:
+     ```
+     New obstacle detected at position (1.5, -3.0)
+     Failed to reach waypoint 4
+     ```
+
+**Conclusion:**
+The robot dealt with unfeasible paths by attempting to replan routes around obstacles, resetting the local planner, and clearing costmaps. Despite these efforts, the robot was unable to navigate past the persistent obstacle at position (1.5, -3.0), resulting in a failure to reach a specific waypoint.

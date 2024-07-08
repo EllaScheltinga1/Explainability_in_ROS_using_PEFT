@@ -1,0 +1,10 @@
+The robot employed a series of actions to handle unfeasible paths:
+
+1. **Obstacle Detection**: It detected a new obstacle at position \((-3.0, -0.5)\).
+2. **Replanning**: Upon identifying the obstacle, it attempted to replan the path but failed to generate a successful plan.
+3. **Trajectory Feasibility Check**: The `TebLocalPlannerROS` identified that the trajectory was not feasible, prompting a reset of the planner.
+4. **Costmap Clearing**: In response to unfeasible paths, the robot cleared both costmaps around it to try and generate a new plan. This included clearing areas within a 3.00m and then a 1.50m square centered on the robot.
+5. **Rotate Recovery Behavior**: The robot initiated a rotate recovery behavior to attempt to either find a new path or reorient itself.
+6. **Replanning Attempts**: The robot continuously tried to replan its path when nearing the obstacle but eventually failed each time.
+
+Ultimately, after multiple replanning attempts and executing all available recovery behaviors without success, the robot aborted the goal and transitioned to a state where it acknowledged the plan could not be found and completed the sequence in the "DONE" state, marking the waypoint as failed to reach.

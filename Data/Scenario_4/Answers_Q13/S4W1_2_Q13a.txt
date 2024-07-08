@@ -1,0 +1,22 @@
+The log messages indicate that one or more paths were not feasible due to the presence of a new obstacle detected at position (-3.0, -0.5). Here is a breakdown of the relevant events and their implications:
+
+1. **New Obstacle Detected**: 
+   - "New obstacle detected at position (-3.0, -0.5)" implies that while executing the navigation plan, an unexpected obstacle was identified in the robot's path.
+
+2. **Path Replanning Attempts**:
+   - The robot attempted to replan the path multiple times in response to detecting the obstacle: "Path is being replanned". Each attempt ultimately failed: "Failed to get a plan".
+
+3. **Planner Infeasibility**:
+   - The error message: "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..." indicates that the navigation planner (in this case, TebLocalPlannerROS) determined that the proposed trajectory around the obstacle could not be executed. This could be due to:
+     - Insufficient space to navigate around the obstacle.
+     - Constraints in the robot's kinematic or dynamic capabilities.
+     - Other environmental factors (like narrow passages, irregular terrain).
+
+4. **Recovery Behaviors**:
+   - The robot executed recovery behaviors to try and clear the path, such as "Clearing both costmaps" and "Rotate recovery behavior started", which are intended to help the robot find a new feasible path.
+   - Despite these efforts, the planner continuously failed: "Failed to get a plan".
+
+5. **Final Abortion**:
+   - After all recovery behaviors and replanning efforts were exhausted, the navigation goal was aborted: "Aborting because a valid plan could not be found. Even after executing all recovery behaviors".
+
+In summary, the paths were not feasible due to the new obstacle, which the robot's planner could not navigate around despite multiple replanning attempts and recovery behaviors. This resulted in the goal being aborted, and the robot failed to reach waypoint 1.

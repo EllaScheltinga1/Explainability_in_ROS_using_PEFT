@@ -1,0 +1,19 @@
+The main reason the paths were not feasible is due to the detection of new obstacles and subsequent issues in path planning. Based on the log messages:
+
+1. **Obstacle Detection**:
+   - The log mentions, "New obstacle detected at position (-3.0, -5.0)".
+   - This indicates that an unexpected obstacle was found on the robot's planned path to waypoint 2.
+
+2. **Replanning Attempts**:
+   - Multiple messages indicate that the robot's path is being replanned: "Robot is nearing the obstacle. Path is being replanned."
+   - The `TebLocalPlannerROS` planner attempts to replan the trajectory multiple times but faces difficulties.
+
+3. **Planner Limitations**:
+   - The planner reports "trajectory is not feasible" and "possible oscillation (of the robot or its local plan) detected."
+   - The term "trajectory is not feasible" suggests that the planner cannot find a valid path that avoids the detected obstacle.
+
+4. **Recovery Behavior**:
+   - The planner activates a recovery strategy due to detected oscillations, indicating persistent issues in finding a stable and feasible path.
+   - Actions like "Activating recovery strategy (prefer current turning direction during optimization)" and "Clearing both costmaps outside a square (3.00m) large centered on the robot" indicate attempts to mitigate these issues.
+
+Despite these recovery attempts, the robot repeatedly nears the obstacle without finding a viable path, ultimately leading to the log message "Failed to reach waypoint 2." This failure suggests that the combination of the new obstacle and the planner's limitations in handling it resulted in infeasible paths.

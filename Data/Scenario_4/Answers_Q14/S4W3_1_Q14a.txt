@@ -1,0 +1,19 @@
+When the robot encountered unfeasible paths, it performed several key actions to handle the situation:
+
+1. **Obstacle Detection**: The robot first detected a new obstacle at position (1.5, -3.5). This initial identification of the obstruction was crucial in triggering subsequent actions.
+
+2. **Path Replanning**: Upon nearing the obstacle, the robot attempted to replan its path. This involved reconsidering its route to avoid the detected obstacle.
+
+3. **TebLocalPlannerROS Resetting**: The robot's local planner, TebLocalPlannerROS, determined that the current trajectory was not feasible and thus reset the planner. This step indicates that the planner reassessed the situation and attempted to generate a new feasible trajectory.
+
+4. **Costmap Clearing**: The robot then cleared both costmaps, which are used to store information about the environment around the robot. This was done in two stages:
+   - First, clearing the costmap outside a 3.00-meter square centered on the robot.
+   - Second, clearing the costmap outside a 1.50-meter square centered on the robot.
+   
+   These actions potentially remove outdated or incorrect obstacle data to ensure a fresh and accurate plan.
+
+5. **Repeated Path Replanning**: Despite these measures, the robot failed to get a plan and had to replan again after each attempt as it neared the obstacle.
+
+6. **Failing and Retrying with a New Goal**: When all attempts to generate a viable plan to reach waypoint 1 failed, the robot set a new navigation goal (goal 2) and directed its efforts towards reaching that instead.
+
+By performing these steps, the robot systematically assessed and adapted to the unfeasible paths, ultimately choosing alternative navigation goals to continue its mission successfully.

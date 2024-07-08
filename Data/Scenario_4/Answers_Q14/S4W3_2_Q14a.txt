@@ -1,0 +1,13 @@
+The ROS log messages indicate that the robot encountered multiple instances where the planned trajectory became unfeasible. Here are the steps the robot's system undertook to deal with unfeasible paths:
+
+1. **Replanning the Path:** When the robot neared an obstacle and the initially planned path was deemed unfeasible, the system attempted to replan the path multiple times.
+   
+2. **Clearing Costmaps:** 
+   - **First Clearing:** The system cleared both the global and local costmaps outside a square with a side length of 3.00 meters centered on the robot.
+   - **Second Clearing:** The system later cleared both costmaps again, this time outside a smaller square with a side length of 1.50 meters centered on the robot. This action is likely intended to remove obstacles from the costmaps that may no longer be present, helping the planner determine a new feasible path.
+
+3. **Recovery Strategies:** At one point, the `TebLocalPlannerROS` detected a possible oscillation (repetitive, unproductive movement) either in the robot or its local planning. As part of the recovery from this oscillation, the planner activated a strategy where it preferred the current turning direction during optimization.
+
+4. **Path Resetting:** The `TebLocalPlannerROS` noted "trajectory is not feasible" multiple times and reset the planner to seek new solutions.
+
+Despite these efforts, the robot was unable to find or execute a feasible trajectory to both waypoint 2 and waypoint 3, leading to failure in reaching these specific goals.

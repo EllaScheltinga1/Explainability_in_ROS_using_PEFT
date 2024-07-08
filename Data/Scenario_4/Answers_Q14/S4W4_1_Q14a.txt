@@ -1,0 +1,13 @@
+The robot has a sequence of mechanisms to handle unfeasible paths:
+
+1. **Path Replanning**: The robot detects a new obstacle at position (-4.0, -9.0) and attempts to replan its path. This is indicated by multiple log messages stating "Path is being replanned."
+
+2. **Trajectory Feasibility Check**: The `TebLocalPlannerROS` repeatedly determines that the trajectory is not feasible. This triggers the planner to reset, as shown by the log messages "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..."
+
+3. **Costmap Clearing**: In addition to replanning, the robot attempts to improve path planning by clearing the costmaps. The costmaps are cleared two times:
+   - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+   - "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+
+4. **Repeated Attempts**: Despite these efforts, multiple attempts to replan continue to fail, as indicated by the repeated log messages "Failed to get a plan."
+
+Ultimately, despite the replanning efforts and costmap clearings, the robot fails to generate a feasible path to reach waypoint 4 and therefore logs "Failed to reach waypoint 4."

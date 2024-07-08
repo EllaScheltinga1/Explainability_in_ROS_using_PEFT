@@ -1,0 +1,16 @@
+Several messages in the logs indicate that the planned paths were not feasible due to a detected obstacle at the goal position (-4.0, -9.0). Here is a step-by-step breakdown of the relevant log entries:
+
+1. **Obstacle Detection**:
+   - Multiple instances of "New obstacle detected at position (-4.0, -9.0)" appear, suggesting that the same obstacle was consistently detected at this specific location.
+   
+2. **Trajectory Planning Issues**:
+   - The log states "Robot is nearing the obstacle. Path is being replanned." multiple times, indicating that the robot attempted to navigate around the obstacle but encountered difficulties.
+   - Specific messages "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..." indicate that the planner utilized by the robot's local planning system (TebLocalPlannerROS) determined the trajectory to be infeasible, leading to a reset of the planner.
+
+3. **Planning and Replanning Attempts**:
+   - The system made multiple attempts to clear costmaps and replan the path:
+     - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+     - "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+   - Each attempt to reset and recalculate the trajectory failed, as noted by the repetitive logs "Failed to get a plan."
+
+From these logs, it is clear that the infeasibility of the paths arose due to the persistent presence of an obstacle at the goal location, coupled with repeated failures by the local planner to find a valid path around or through the obstacle. This led to unresolved planning issues that ultimately caused the robot to fail to reach waypoint 4.

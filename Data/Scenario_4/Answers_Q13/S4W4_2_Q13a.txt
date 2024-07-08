@@ -1,0 +1,27 @@
+One or more paths were deemed not feasible by the `TebLocalPlannerROS` due to detected obstacles and resulting oscillations. Below are detailed explanations based on the ROS log messages:
+
+1. **New Obstacle Detection**:
+   - Log: "New obstacle detected at position (-4.0, 0.0)"
+   - Explanation: The robot detected a new obstacle at a specific position. This likely required the path to be replanned for safe navigation.
+
+2. **Path Replanning**:
+   - Log: "Robot is nearing the obstacle. Path is being replanned."
+   - Explanation: As the robot approached the detected obstacle, the navigation system initiated a path replanning process to find an alternative route.
+
+3. **Trajectory Infeasibility**:
+   - Log: "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..."
+   - Explanation: The `TebLocalPlannerROS` detected that the planned trajectory was not feasible, possibly due to the inability to navigate around the obstacle within dynamic constraints. This necessitated resetting the path planner.
+
+4. **Oscillation Detection and Recovery**:
+   - Log: "TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization)."
+   - Explanation: The system detected oscillation, which indicates repeated failed attempts to navigate past an obstacle or difficulty in maintaining a stable path. In response, a recovery strategy was activated to favor the current turning direction during optimization in an attempt to stabilize the navigation process.
+
+5. **Continued Infeasibility of Trajectories**:
+   - Log: "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..."
+   - Explanation: Despite the recovery efforts, the planner again found the trajectory infeasible. This repeated infeasibility suggests that the obstacles or the environment posed significant challenges to path planning.
+
+6. **Failure to Reach Waypoint 2**:
+   - Log: "Failed to reach waypoint 2."
+   - Explanation: All efforts to replan the path to waypoint 2 failed, likely because of the persistent obstacles and possibly due to complex or dynamically changing environments.
+
+In summary, the infeasibility of one or more paths was primarily due to the detection of new obstacles, resulting oscillations, and the inability of the path planner to find a feasible alternative route despite repeated attempts and recovery strategies.

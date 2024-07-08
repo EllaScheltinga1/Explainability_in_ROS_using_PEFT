@@ -1,0 +1,15 @@
+The logs indicate the robot attempted several strategies to deal with unfeasible paths when it encountered obstacles. Here are the steps it undertook:
+
+1. **Path Replanning**: The robot first attempted to replan its path upon detecting an obstacle. This is signaled by messages indicating that the "Path is being replanned."
+
+2. **Repeated Attempts**: The robot made multiple attempts to replan the path, as shown by repeated instances of "Failed to get a plan" followed by "Path is being replanned."
+
+3. **Costmap Clearing**: When initial replanning attempts failed, the robot executed costmap clearing operations. The robot cleared costmaps outside a square centered on its position first with a larger area (3.00m) and then with a smaller area (1.50m). This was an effort to remove potentially outdated obstacle information from its maps that might have hindered path planning.
+
+4. **Recovery Behaviors**: After costmap clearing, the robot executed "Rotate recovery behavior". This usually involves the robot rotating in place to localize itself better and reassess the environment, aiding in creating new feasible plans.
+
+5. **Abort on Failure**: Despite these recovery actions, the robot continued to fail in generating a valid path ("Failed to get a plan"). Ultimately, after exhausting all recovery behaviors without success, it aborted the attempt ("Aborting because a valid plan could not be found. Even after executing all recovery behaviors").
+
+6. **Transition to Completion State**: Lastly, the robot transitioned from the ACTIVE state to WAITING_FOR_RESULT and then to DONE with the acknowledgment that it "Failed to reach waypoint 3."
+
+These steps outline a systematic approach involving replanning, environment re-evaluation, and recovery strategies to handle unfeasible paths.

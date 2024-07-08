@@ -1,0 +1,18 @@
+One or more paths were not feasible due to obstacles detected in the robot's path and subsequent challenges in navigation and planning. Here are specific reasons based on the log messages:
+
+1. **Obstacle Detection:**
+   - The logs indicate multiple instances of new obstacles being detected, such as at positions (1.5, -2.5), and during navigation towards waypoint 3 ("Robot is nearing the obstacle").
+
+2. **Path Replanning:**
+   - When the robot was nearing obstacles, the logs mention that the path was being replanned. This happened multiple times during the attempt to reach waypoint 3 ("Robot is nearing the obstacle. Path is being replanned").
+
+3. **Oscillation and Recovery:**
+   - The `TebLocalPlannerROS` detected possible oscillation, which is often an indication of a planning or execution issue where the robot or its plan is oscillating back and forth instead of making progress. The planner then activated a recovery strategy ("TebLocalPlannerROS: possible oscillation detected. Activating recovery strategy").
+
+4. **Costmap Clearing:**
+   - The robot performed multiple costmap clearing operations to remove obstacles from its navigation map. This was evident from the messages "Clearing both costmaps outside a square (3.00m) large centered on the robot" and "Clearing both costmaps outside a square (1.50m) large centered on the robot". Frequent need for costmap clearing indicates persistent or intermittent obstacles impacting the feasibility of the paths.
+
+5. **Failure to Reach Waypoint:**
+   - Despite replanning and costmap clearing, the robot ultimately failed to reach waypoint 3, as indicated by the message "Failed to reach waypoint 3". This failure highlights that the obstacles and the resulting replanning were significant enough to prevent successful navigation to the target waypoint.
+
+Overall, the primary reason for the infeasibility of one or more paths was the presence of obstacles that complicated the navigation process, leading to repeated replanning and recovery actions that were insufficient to ensure path viability.

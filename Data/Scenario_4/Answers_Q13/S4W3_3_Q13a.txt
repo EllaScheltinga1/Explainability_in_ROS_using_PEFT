@@ -1,0 +1,18 @@
+One or more paths were not feasible primarily due to the presence of a persistent obstacle near the robot's intended path, specifically at position (-2.5, -12.0). Here are the key points detailing why the paths were not feasible:
+
+1. **Obstacle Detection**:
+    - The log messages indicate the detection of an obstacle at position (-2.5, -12.0), repeatedly noted during attempts to navigate to waypoint 3.
+   
+2. **Path Replanning**:
+    - The robot attempted to replan its path multiple times when nearing the detected obstacle. Each time, the system logged "Robot is nearing the obstacle. Path is being replanned," followed by "Failed to get a plan," suggesting that the replanned paths were continuously found to be infeasible.
+    
+3. **Recovery Behaviors**:
+    - Several recovery behaviors were executed, including clearing the costmaps (outside a 3.00m and 1.50m square centered on the robot) and a rotate recovery behavior. These actions aim to recover from path-planning failures and find alternative feasible paths, but they were unsuccessful in this instance.
+    
+4. **Consistent Failures**:
+    - Despite these recovery attempts, the robot consistently failed to generate a valid navigation plan, ultimately resulting in the log entry "Aborting because a valid plan could not be found. Even after executing all recovery behaviors."
+
+5. **Final Outcome**:
+    - The robot ultimately aborted the mission to waypoint 3, transitioning to a DONE state from the WAITING_FOR_RESULT state with the conclusion "Failed to reach waypoint 3."
+
+In summary, the infeasibility of one or more paths was due to the robot's inability to effectively navigate around a persistent obstacle despite multiple replanning and recovery attempts.

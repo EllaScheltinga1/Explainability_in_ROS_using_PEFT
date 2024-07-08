@@ -1,0 +1,5 @@
+The paths were deemed not feasible primarily due to the continuous detection of obstacles as indicated by the repetitive log messages. Specifically, the log entries "Robot is nearing the obstacle. Path is being replanned." and "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..." suggest that the robot's planned paths were continuously encountering obstacles which made them impractical to follow.
+
+Moreover, there is a mention of "TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization)," which implies there were oscillations detected in the robot's movements or its local planning. Oscillations can occur when the robot frequently changes direction or hesitates, which can be an additional sign of path feasibility issues in complex or cluttered environments.
+
+Overall, the combination of detected obstacles and oscillations led to the infeasibility of one or more paths, preventing the robot from reaching waypoint 1.
