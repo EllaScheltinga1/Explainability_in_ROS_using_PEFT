@@ -1,0 +1,3 @@
+Based on the provided log messages, only one waypoint was received:
+
+- Waypoint 1: (x=-0.5, y=-2.0)

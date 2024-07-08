@@ -1,0 +1,4 @@
+The robot received two waypoints:
+
+1. Waypoint 1 with coordinates \( x = -2.5 \), \( y = -2.0 \) (referred to as goal 1 in the logs).
+2. Waypoint 2 with coordinates \( x = 2.0 \), \( y = 0.0 \) (referred to as goal 2 in the logs).

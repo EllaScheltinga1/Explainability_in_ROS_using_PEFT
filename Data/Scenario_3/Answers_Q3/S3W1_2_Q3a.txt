@@ -1,0 +1,4 @@
+The robot received one waypoint with the coordinates:
+
+- x = -0.5
+- y = -2.0

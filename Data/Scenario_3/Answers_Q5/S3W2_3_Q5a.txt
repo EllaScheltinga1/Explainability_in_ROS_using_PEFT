@@ -1,0 +1,1 @@
+The first waypoint the robot reached was waypoint 2. The logs indicate that the robot failed to reach waypoint 1 due to an inability to find a valid plan despite executing all recovery behaviors. However, it successfully transitioned through the states to reach the goal for waypoint 2 and confirmed "GOAL Reached!".

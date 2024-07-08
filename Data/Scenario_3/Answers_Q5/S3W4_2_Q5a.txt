@@ -1,0 +1,6 @@
+The first waypoint the robot reached was \( \text{x} = -4.0 \), \( \text{y} = -2.0 \). This is indicated in the log message:
+```
+GOAL Reached!
+...
+Reached waypoint 1
+```

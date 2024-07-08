@@ -1,0 +1,12 @@
+The log messages indicate that the robot only received one waypoint:
+
+- "Sending goal 1 to move_base: x=2.0, y=-10.0."
+- "Navigating to waypoint 1..."
+
+The subsequent messages also repeatedly reference the first goal, confirming that no additional waypoints were received:
+
+- "Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-25.113)"
+- "Failed to get a plan."
+- "Failed to reach waypoint 1."
+
+Therefore, the robot received a total of **one waypoint**.

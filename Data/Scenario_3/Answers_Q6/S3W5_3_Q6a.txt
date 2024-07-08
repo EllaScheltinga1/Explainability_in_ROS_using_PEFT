@@ -1,0 +1,8 @@
+The last waypoint the robot reached was at coordinates \( x=4.0 \), \( y=-8.0 \). This is indicated in the log message:
+
+```
+Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-5-80.134)
+Reached waypoint 5
+```
+
+This confirms that waypoint 5 was successfully reached.

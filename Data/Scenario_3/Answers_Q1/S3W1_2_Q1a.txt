@@ -1,0 +1,5 @@
+Based on the log messages, only one waypoint was received and attempted. The relevant log entries include:
+- "Sending goal 1 to move_base: x=-0.5, y=-2.0"
+- "Navigating to waypoint 1..."
+
+There is no indication of any other waypoints being received or processed in the provided logs.

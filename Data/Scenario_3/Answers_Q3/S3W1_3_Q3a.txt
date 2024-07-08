@@ -1,0 +1,5 @@
+Based on the provided ROS log messages, the only waypoint with specified coordinates that the robot received was:
+
+- Waypoint 1: \( x = 2.0 \), \( y = -10.0 \).
+
+No other waypoints with specific coordinates are mentioned in the log.

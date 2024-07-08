@@ -1,0 +1,7 @@
+The first waypoint the robot reached was waypoint 1, with the coordinates \( x = -2.0 \) and \( y = 0.0 \). The log message indicating this is:
+```
+GOAL Reached!
+Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-25.153)
+Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-25.153)
+Reached waypoint 1
+```

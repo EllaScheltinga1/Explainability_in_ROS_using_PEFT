@@ -1,0 +1,1 @@
+The log messages indicate that **two waypoints** were received. The first waypoint was successfully reached (`Reached waypoint 1`), and there was an attempt to navigate to a second waypoint (`Sending goal 2 to move_base: x=-4.0, y=-5.5`). However, the robot failed to reach the second waypoint (`Failed to reach waypoint 2`).

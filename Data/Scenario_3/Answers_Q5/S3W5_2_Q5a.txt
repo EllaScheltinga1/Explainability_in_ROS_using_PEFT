@@ -1,0 +1,2 @@
+The first waypoint the robot reached was **waypoint 1**. This is confirmed by the log message: 
+"Reached waypoint 1".

@@ -1,0 +1,22 @@
+No, not all received waypoints were successfully reached. The robot was able to reach waypoint 1, waypoint 3, and waypoint 4 successfully, but it failed to reach waypoint 2. 
+
+Here's a summary of the waypoints:
+
+1. **Waypoint 1: x=-4.0, y=-2.0**
+   - Status: **Reached** (Goal achieved)
+   
+2. **Waypoint 2: x=0.0, y=-2.0**
+   - Status: **Failed to reach**
+     - Issues faced: 
+       - "Failed to get a plan."
+       - "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..."
+       - Recovery behaviors executed without success
+       - Ultimately: "Aborting because a valid plan could not be found. Even after executing all recovery behaviors"
+   
+3. **Waypoint 3: x=-3.0, y=-5.5**
+   - Status: **Reached** (Goal achieved)
+
+4. **Waypoint 4: x=2.0, y=-7.0**
+   - Status: **Reached** (Goal achieved)
+
+So out of the four waypoints, three were successfully reached, and one failed due to planning and trajectory feasibility issues.

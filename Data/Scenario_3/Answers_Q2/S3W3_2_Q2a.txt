@@ -1,0 +1,5 @@
+The robot received three waypoints in total:
+
+1. Goal 1: Coordinates (x=1.5, y=-3.0). This is referred to as "waypoint 1".
+2. Goal 2: Coordinates (x=4.0, y=-7.0). This is referred to as "waypoint 2".
+3. Goal 3: Coordinates (x=2.0, y=-10.0). This is referred to as "waypoint 3".

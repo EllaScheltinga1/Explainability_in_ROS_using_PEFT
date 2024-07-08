@@ -1,0 +1,5 @@
+Based on the ROS log messages in the document, the following waypoints were received:
+
+1. **Waypoint 1:** x=-2.0, y=-2.0
+2. **Waypoint 2:** x=-3.5, y=-7.0
+3. **Waypoint 3:** x=2.0, y=-7.0

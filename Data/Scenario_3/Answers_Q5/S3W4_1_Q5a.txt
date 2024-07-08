@@ -1,0 +1,5 @@
+The first waypoint the robot reached was waypoint 2. According to the log messages, the robot failed to get a valid plan and reach waypoint 1. However, it successfully navigated to and reached waypoint 2, as indicated by the following log entries:
+
+- "Sending goal 2 to move_base: x=2.0, y=-7.0"
+- "GOAL Reached!"
+- "Reached waypoint 2"

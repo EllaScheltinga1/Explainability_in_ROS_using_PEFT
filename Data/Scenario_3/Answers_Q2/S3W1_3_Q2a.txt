@@ -1,0 +1,5 @@
+Based on the provided ROS log messages, only one waypoint was received. The details for the received waypoint are:
+
+- **Waypoint 1:** Coordinates \( x = 2.0 \), \( y = -10.0 \)
+
+No additional waypoints are mentioned in the log messages.

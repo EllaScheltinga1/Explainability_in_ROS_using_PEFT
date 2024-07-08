@@ -1,0 +1,7 @@
+The log indicates that a total of 5 waypoints were received:
+
+1. Waypoint 1: `/tiago_autonomous_navigation-1-10.119`
+2. Waypoint 2: `/tiago_autonomous_navigation-2-17.124`
+3. Waypoint 3: `/tiago_autonomous_navigation-3-37.530`
+4. Waypoint 4: `/tiago_autonomous_navigation-4-49.738`
+5. Waypoint 5: `/tiago_autonomous_navigation-5-59.043`
