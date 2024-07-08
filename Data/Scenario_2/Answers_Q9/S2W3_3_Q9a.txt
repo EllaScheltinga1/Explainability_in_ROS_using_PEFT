@@ -1,0 +1,12 @@
+Yes, the robot encountered obstacles during the navigation task. Here's a summary of the encounters:
+
+1. **While navigating to waypoint 1**:
+    - A new obstacle was detected at position (4.0, -8.0).
+
+2. **While navigating to waypoint 2**:
+    - The same obstacle was detected again at position (4.0, -8.0).
+
+3. **While navigating to waypoint 3**:
+    - The robot detected it was nearing the obstacle, prompting a path replan. 
+
+These log entries indicate that the robot was aware of an obstacle at position (4.0, -8.0) during its tasks and adjusted its navigation plan accordingly.

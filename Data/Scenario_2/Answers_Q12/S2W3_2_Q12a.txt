@@ -1,0 +1,12 @@
+When the robot detected a new obstacle at position (-2.0, -1.0) while navigating to waypoint 3, it initiated a path replanning process to avoid the obstacle. The system log indicates the following sequence in response to the obstacle:
+
+1. **Detection**: The log notes, "New obstacle detected at position (-2.0, -1.0)".
+2. **Proximity to Obstacle**: The log mentions, "Robot is nearing the obstacle."
+3. **Replanning**: The robot's path was being replanned as indicated by the message, "Path is being replanned."
+
+After replanning, the robot was able to continue its navigation successfully, resulting in the messages:
+
+- "GOAL Reached!" indicating the robot reached waypoint 3.
+- Transition logs confirm the navigation states changing from ACTIVE to WAITING_FOR_RESULT, and finally to DONE.
+
+This sequence shows that the robot effectively detected the obstacle, assessed its proximity, replanned its path, and navigated around the obstacle to reach its intended waypoint.

@@ -1,0 +1,19 @@
+Not all planned paths were immediately feasible during the navigation task. The logs indicate that obstacles were detected during the navigation to waypoints 3, 4, and 5, leading to replanning of the robot's path. Here are the specific details:
+
+1. **Waypoint 3**:
+   - The goal was sent to move_base with coordinates (x=1.0, y=-3.5).
+   - A new obstacle was detected at position (-2.5, -8.0).
+   - Despite this, the robot reached the goal successfully, implying that it was able to navigate around the obstacle.
+
+2. **Waypoint 4**:
+   - The goal was sent to move_base with coordinates (x=-2.5, y=-5.5).
+   - Again, the same obstacle was detected at position (-2.5, -8.0).
+   - The robot detected it was nearing the obstacle and replanned its path.
+   - The goal was eventually reached successfully.
+
+3. **Waypoint 5**:
+   - The goal was sent to move_base with coordinates (x=-4.0, y=-9.5).
+   - The robot detected it was nearing the obstacle and replanned its path.
+   - The goal was eventually reached successfully.
+
+In all cases, while obstacles posed challenges, the robot managed to replan its path and reach the intended waypoints. Thus, the initial paths might have encountered obstacles, but replanning ensured successful navigation to each waypoint.

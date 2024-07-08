@@ -1,0 +1,8 @@
+The robot's task was to autonomously navigate through a series of waypoints. The process involved interacting with the `move_base` action server to set navigation goals, transitioning through various states such as `ACTIVE`, `WAITING_FOR_RESULT`, and `DONE` as it progressed. Specific objectives included reaching the following coordinates:
+1. (x = -4.0, y = 0.0)
+2. (x = 1.5, y = 0.0)
+3. (x = 2.0, y = -1.5)
+4. (x = 1.0, y = -11.0)
+5. (x = 3.0, y = -7.0)
+
+Additionally, the robot engaged in path replanning when nearing obstacles to ensure safe and successful navigation to each waypoint.

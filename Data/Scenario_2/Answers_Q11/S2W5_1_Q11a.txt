@@ -1,0 +1,6 @@
+Based on the ROS log messages, the obstacle was encountered during the navigation to waypoint 1 and waypoint 2. The robot's path was replanned when it was nearing an obstacle while navigating to these waypoints:
+
+1. **Waypoint 1** at coordinates \( x = -4.0 \), \( y = 0.0 \).
+2. **Waypoint 2** at coordinates \( x = 1.5 \), \( y = 0.0 \).
+
+The logs specifically mention the robot's path being replanned due to nearing an obstacle during the navigation to these two waypoints. No obstacles were reported during the navigation to other waypoints.

@@ -1,0 +1,1 @@
+Yes, there were obstacles encountered during the navigation task. The logs indicate that while navigating to waypoint 1, the robot detected a new obstacle at position (-1.5, 0.5). Consequently, the robot's path had to be replanned to navigate around this obstacle. Despite this, the robot successfully reached waypoint 2 after replanning the path.

@@ -1,0 +1,7 @@
+The encountered obstacle is located at the position \((-2.5, -8.0)\). This location is reported twice in the logs during the navigation towards waypoint 3 and waypoint 4:
+
+1. While navigating to waypoint 3:
+   - "New obstacle detected at position (-2.5, -8.0)"
+
+2. While navigating to waypoint 4:
+   - "New obstacle detected at position (-2.5, -8.0)"

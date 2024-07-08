@@ -1,0 +1,15 @@
+When the robot detected the new obstacle at position (-3.5, -9.5) during its navigation to waypoint 2, it responded by initiating a replanning process. Here's a step-by-step analysis of the response based on the ROS log messages:
+
+1. **Obstacle Detection:**
+   - A new obstacle was detected at position (-3.5, -9.5).
+
+2. **Proximity Notification:**
+   - The logs indicated that the robot was nearing the obstacle.
+
+3. **Path Replanning:**
+   - The log explicitly stated, "Path is being replanned," which means the robot reassessed its current path and computed a new one to avoid the detected obstacle.
+
+4. **Continued Navigation and Goal Achievement:**
+   - Despite the obstacle, the robot successfully navigated to the designated waypoint (Reached waypoint 2).
+   
+So, in summary, upon detecting the new obstacle, the robot responded by replanning its path to avoid the obstacle and successfully continued its navigation to reach the goal.

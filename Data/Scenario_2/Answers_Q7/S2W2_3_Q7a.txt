@@ -1,0 +1,11 @@
+The ROS log messages indicate that the robot successfully navigated to both waypoints, achieving the goals at each destination:
+
+1. **Waypoint 1**: 
+   - Goal 1 was set to coordinates x=-3.0, y=-5.5.
+   - The robot reached this waypoint successfully, despite detecting an obstacle at position (-3.5, -9.5). The logs show transitions to ACTIVE, WAITING_FOR_RESULT, and DONE states, confirming the goal was reached.
+
+2. **Waypoint 2**:
+   - Goal 2 was set to coordinates x=-3.5, y=-12.0.
+   - During navigation, an obstacle at position (-3.5, -9.5) was detected again, requiring the robot to replan its path. Despite this, the logs confirm successful transitions to ACTIVE, WAITING_FOR_RESULT, and DONE states, indicating the robot also reached this waypoint successfully.
+
+From the recorded logs, it is evident that while there were obstacles during the navigation, the robot was able to replan its paths effectively to complete its navigation tasks. Thus, despite the presence of obstacles, all planned paths ultimately proved feasible.

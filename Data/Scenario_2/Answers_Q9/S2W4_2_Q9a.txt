@@ -1,0 +1,7 @@
+Yes, the robot encountered obstacles during its navigation task. The log messages show that the robot detected new obstacles at position (0.0, -4.0) while navigating to waypoints 2, 3, and 4. Specifically:
+
+1. **Waypoint 2**: An obstacle was detected at position (0.0, -4.0). Despite this, the robot successfully reached waypoint 2.
+2. **Waypoint 3**: Again, an obstacle was detected at position (0.0, -4.0). The log further states that the "Robot is nearing the obstacle. Path is being replanned," indicating that the robot had to adjust its path due to the obstacle.
+3. **Waypoint 4**: Once more, an obstacle was detected at position (0.0, -4.0). However, the robot still reached the waypoint successfully.
+
+Overall, the obstacles were detected but successfully navigated by the robot.

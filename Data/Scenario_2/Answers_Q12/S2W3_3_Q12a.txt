@@ -1,0 +1,17 @@
+Upon detecting a new obstacle at position (4.0, -8.0), the robot continued to successfully navigate to its goals. Here's the detailed response breakdown:
+
+1. **First Detection**:
+   - When the obstacle was first detected while heading towards waypoint 1, the robot did not make any specific mention of a path adjustment, but it continued and successfully reached waypoint 1.
+   
+2. **Repetition of Detection**:
+   - The same obstacle at position (4.0, -8.0) was detected again during the journey to waypoint 2.
+   - Similar to the first waypoint, the robot reached waypoint 2 without explicitly mentioning a change in its path planning.
+
+3. **Nearing the Obstacle & Replanning**:
+   - During the navigation to waypoint 3, the log states, "Robot is nearing the obstacle. Path is being replanned."
+   - This indicates that as the robot approached the obstacle, it adapted by replanning its path to avoid the obstacle.
+
+In summary, upon detecting the obstacle at (4.0, -8.0):
+- The robot continued to reach its waypoints initially without special mention of path change.
+- When nearing the obstacle on the way to waypoint 3, the robot proactively replanned its path to avoid collision.
+- It successfully reached all the designated waypoints despite the presence of the obstacle.

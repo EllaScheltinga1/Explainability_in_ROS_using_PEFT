@@ -1,0 +1,22 @@
+Based on the provided ROS log messages, the robot reached all the waypoints it attempted. Here are the specific details for each waypoint:
+
+1. **Waypoint 1 (x=1.0, y=-1.0)**: 
+   - Goal sent and navigation started.
+   - Transitioned to active state.
+   - Successfully reached the goal.
+   - Transitioned to DONE state confirming the waypoint was reached.
+   
+2. **Waypoint 2 (x=2.0, y=-1.0)**:
+   - Goal sent and navigation started.
+   - Transitioned to active state.
+   - Successfully reached the goal.
+   - Transitioned to DONE state confirming the waypoint was reached.
+   
+3. **Waypoint 3 (x=-4.0, y=-1.5)**:
+   - Goal sent and navigation started.
+   - Transitioned to active state.
+   - Detected a new obstacle and replanned the path.
+   - Successfully reached the goal despite the obstacle.
+   - Transitioned to DONE state confirming the waypoint was reached.
+
+Therefore, the robot successfully reached all waypoints (waypoint 1, waypoint 2, and waypoint 3). None of the waypoints were missed or failed.

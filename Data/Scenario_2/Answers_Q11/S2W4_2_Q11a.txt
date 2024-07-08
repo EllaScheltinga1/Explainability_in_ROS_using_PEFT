@@ -1,0 +1,1 @@
+The encountered obstacle is consistently reported at the position (0.0, -4.0). This same obstacle location is mentioned for the goals sent to move_base for waypoint 2, waypoint 3, and waypoint 4.

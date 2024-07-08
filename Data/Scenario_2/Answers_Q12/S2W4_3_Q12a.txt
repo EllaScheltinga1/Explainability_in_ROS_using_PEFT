@@ -1,0 +1,6 @@
+The robot detected a new obstacle at position (0.5, -6.5) during its navigation to waypoint 1. Upon detecting the obstacle, the log indicates that the robot responded by replanning its path. Specifically, the entries state:
+
+1. "New obstacle detected at position (0.5, -6.5)"
+2. "Robot is nearing the obstacle. Path is being replanned."
+
+This shows that the robot employed a dynamic response strategy to avoid the detected obstacle by recalculating its path. This enabled the robot to successfully navigate around the obstacle and reach its intended goal, as indicated by the subsequent log entry: "GOAL Reached!"

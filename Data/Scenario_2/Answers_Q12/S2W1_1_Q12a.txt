@@ -1,0 +1,1 @@
+When the robot detected a new obstacle at position (-2.5, -1.0), it took corrective action by replanning its path. This ensured that the robot could safely navigate around the obstacle and continue towards its goal. Eventually, the robot successfully reached its waypoint, indicating that the replanning was effective.

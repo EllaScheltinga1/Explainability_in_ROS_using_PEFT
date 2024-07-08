@@ -1,0 +1,13 @@
+The robot encountered a detected obstacle several times at the position (0.0, -4.0) during its navigation to waypoints. The log messages indicate the following responses to the obstacle detection:
+
+1. **First Obstacle Detection:**
+   - **Waypoint 2:** Upon detecting the obstacle after transitioning to the ACTIVE state (goal: /tiago_autonomous_navigation-2-19.398), it transitioned to WAITING_FOR_RESULT and subsequently to DONE, indicating that the robot reached the goal successfully despite the obstacle.
+
+2. **Second Obstacle Detection:**
+   - **Waypoint 3:** The robot detected the obstacle again and provided an additional response: 
+     - "Robot is nearing the obstacle. Path is being replanned." This demonstrates that the robot actively engaged a path re-planning mechanism to navigate around the obstacle effectively. Despite the obstacle, the robot transitioned to WAITING_FOR_RESULT and then to DONE, successfully reaching the goal.
+
+3. **Third Obstacle Detection:**
+   - **Waypoint 4:** The obstacle was detected once more. Similar to the earlier responses, the robot transitioned to WAITING_FOR_RESULT from ACTIVE, and then to DONE, indicating successful goal achievement notwithstanding the obstacle.
+
+In summary, the robot responded to the detected obstacle by transitioning to the relevant states and successfully reaching its goals. Specifically, during the navigation to waypoint 3, the robot triggered a path re-planning process to avoid the obstacle. In other cases, it handled the obstacle without explicitly noting any re-planning.

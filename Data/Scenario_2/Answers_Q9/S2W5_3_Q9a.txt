@@ -1,0 +1,7 @@
+Yes, obstacles were encountered during the navigation task. Specifically:
+
+1. While navigating to waypoint 3 (goal coordinates: x=1.0, y=-3.5), a new obstacle was detected at position (-2.5, -8.0).
+2. While navigating to waypoint 4 (goal coordinates: x=-2.5, y=-5.5), the same obstacle at position (-2.5, -8.0) was detected again. The robot had to replan its path to avoid nearing the obstacle.
+3. While navigating to waypoint 5 (goal coordinates: x=-4.0, y=-9.5), the robot was nearing the detected obstacle, and the path had to be replanned.
+
+Despite these obstacles, the robot successfully reached all assigned waypoints by replanning its path when necessary.

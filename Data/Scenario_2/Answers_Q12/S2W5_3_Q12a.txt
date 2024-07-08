@@ -1,0 +1,15 @@
+The robot encountered an obstacle twice as indicated by the logs at different waypoints. Here is the summarized response of the robot:
+
+1. **First Detection at Waypoint 3:**
+   - **Detection:** "New obstacle detected at position (-2.5, -8.0)"
+   - **Response:** No immediate action in terms of motion adjustment was logged, but the robot proceeded to reach the goal successfully ("GOAL Reached!"). This implies that the robot might have been able to navigate around the obstacle autonomously or the obstacle was not directly in its path.
+
+2. **Second Detection at Waypoint 4:**
+   - **Detection:** Again, at the position (-2.5, -8.0)
+   - **Response:** The log indicates a more explicit response: "Robot is nearing the obstacle. Path is being replanned." This means the robot detected it was nearing the same location of the obstacle and proactively replanned its path to avoid it before reaching the goal ("GOAL Reached!").
+
+3. **Third Encounter at Waypoint 5:**
+   - **Detection:** Not explicitly mentioned but inferred from the log entry when nearing waypoint 5.
+   - **Response:** Similar to the second encounter, "Robot is nearing the obstacle. Path is being replanned." This reaffirms the robot's strategy of replanning its path when nearing the known obstacle, successfully reaching the goal afterward ("GOAL Reached!").
+
+In summary, upon detecting the obstacle, the robot responded by replanning its path to navigate around the obstacle successfully, ensuring it reached its designated waypoints.

@@ -1,0 +1,9 @@
+Based on the ROS log messages, the robot successfully reached all the waypoints mentioned. Here is the summary of the waypoints:
+
+1. **Waypoint 1 (x=-2.0, y=-1.0)**: The robot successfully navigated to and reached this waypoint.
+2. **Waypoint 2 (x=0.0, y=-0.5)**: The robot successfully navigated to and reached this waypoint.
+3. **Waypoint 3 (x=1.0, y=-3.5)**: The robot successfully navigated to and reached this waypoint, even though a new obstacle was detected.
+4. **Waypoint 4 (x=-2.5, y=-5.5)**: The robot successfully navigated to and reached this waypoint, despite detecting an obstacle and needing to replan the path.
+5. **Waypoint 5 (x=-4.0, y=-9.5)**: The robot successfully navigated to and reached this waypoint after replanning the path due to an obstacle.
+
+All goals transitioned to the "DONE" state after being "ACTIVE," which confirms that the robot reached all waypoints without failure.

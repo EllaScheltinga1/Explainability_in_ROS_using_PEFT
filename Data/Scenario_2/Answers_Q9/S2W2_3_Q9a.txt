@@ -1,0 +1,1 @@
+Yes, the robot encountered obstacles during the navigation task. Specifically, new obstacles were detected at position \((-3.5, -9.5)\) twice: once while navigating to waypoint 1, and again while navigating to waypoint 2. In the latter case, the log indicates that the robot's path was replanned to avoid the obstacle.

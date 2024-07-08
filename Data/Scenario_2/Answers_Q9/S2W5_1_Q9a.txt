@@ -1,0 +1,9 @@
+Yes, the robot encountered obstacles during its navigation tasks. Specifically, the log messages indicate that the robot had to replan its path due to nearing obstacles at waypoint 1 and waypoint 2:
+
+1. **Waypoint 1**: 
+   - Log: "Robot is nearing the obstacle. Path is being replanned."
+   
+2. **Waypoint 2**: 
+   - Log: "Robot is nearing the obstacle. Path is being replanned."
+
+No obstacles were mentioned for waypoints 3, 4, and 5.

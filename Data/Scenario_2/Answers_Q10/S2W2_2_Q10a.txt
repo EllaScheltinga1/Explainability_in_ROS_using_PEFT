@@ -1,0 +1,6 @@
+The task the robot had to perform involves autonomous navigation to specified waypoints. Specifically, the robot navigated to two different waypoints:
+
+1. First goal: x=0.5, y=-10.0 (navigating to waypoint 1).
+2. Second goal: x=-3.0, y=-9.5 (navigating to waypoint 2).
+
+Throughout this task, the robot had to manage and replan its path in response to detected obstacles, confirming successful goal completion with each waypoint reached.

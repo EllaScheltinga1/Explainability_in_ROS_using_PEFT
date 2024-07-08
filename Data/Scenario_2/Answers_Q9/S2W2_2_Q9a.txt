@@ -1,0 +1,1 @@
+Yes, the robot encountered obstacles during the navigation task. Specifically, a new obstacle was detected at position (0.5, -6.5) during both navigations to waypoint 1 and waypoint 2. The robot had to replan its path when it detected the obstacle while nearing it on the way to waypoint 1. There was no indication of replanning during the navigation to waypoint 2.

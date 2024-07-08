@@ -1,0 +1,9 @@
+When the robot detected an obstacle during its navigation to waypoints, it initiated a path replanning process. Specifically, this occurred at two instances:
+
+1. **Waypoint 1:**
+   - Log entry: "Robot is nearing the obstacle. Path is being replanned."
+   
+2. **Waypoint 2:**
+   - Log entry: "Robot is nearing the obstacle. Path is being replanned."
+
+In response to the detected obstacles, the robot replanned its path to navigate around the obstacles and successfully reached both waypoints after replanning. This indicates that the robot has a dynamic navigation system capable of altering its path when encountering unexpected obstacles.

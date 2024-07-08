@@ -1,0 +1,1 @@
+The task the robot had to perform was to navigate to a specified waypoint. The robot was given a navigation goal to reach coordinates \( x = -1.5 \) and \( y = -5.5 \), which it successfully accomplished, overcoming obstacles by replanning its path.

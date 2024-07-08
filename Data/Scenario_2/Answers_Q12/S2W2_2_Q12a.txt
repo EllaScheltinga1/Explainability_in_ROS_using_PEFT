@@ -1,0 +1,11 @@
+When the robot detected the obstacle at position (0.5, -6.5) during its navigation:
+
+1. **For Goal 1 (Waypoint 1)**:
+   - Upon detecting the new obstacle at position (0.5, -6.5), the log indicates: "Robot is nearing the obstacle. Path is being replanned." This suggests that the robot's system automatically initiated a path replanning process to navigate around the obstacle.
+   - Despite the obstacle detection, the log follows with the transition to "WAITING_FOR_RESULT" and subsequently to "DONE", which signifies that the robot successfully adjusted its path and reached the intended goal (waypoint 1).
+
+2. **For Goal 2 (Waypoint 2)**:
+   - The same obstacle was detected again at position (0.5, -6.5). However, there is no explicit mention of path replanning in the logs for this second encounter.
+   - The robot still successfully reached its goal (waypoint 2) as indicated by the transitions to "WAITING_FOR_RESULT" and "DONE".
+
+In summary, the robot responded to the detected obstacle by initiating a path replanning process for the first goal, ensuring successful navigation to the waypoint. For the second goal, it handled the obstacle effectively, reaching the waypoint without explicit indication of further replanning in the logs.

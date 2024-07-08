@@ -1,0 +1,1 @@
+The obstacle detected by the robot is located at position coordinates \((-3.5, -9.5)\).

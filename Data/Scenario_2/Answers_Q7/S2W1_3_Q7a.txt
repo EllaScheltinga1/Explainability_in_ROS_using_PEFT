@@ -1,0 +1,6 @@
+Not all planned paths were feasible during the navigation task. The log indicates that the robot detected a new obstacle at position (0.5, -4.0) and consequently had to replan its path, as mentioned in the following log entry:
+
+"New obstacle detected at position (0.5, -4.0)
+Robot is nearing the obstacle. Path is being replanned."
+
+This suggests that the original planned path was not feasible and required adjustments to avoid the detected obstacle.
