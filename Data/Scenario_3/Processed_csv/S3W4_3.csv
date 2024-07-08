@@ -1,0 +1,43 @@
+Started controllers: force_torque_sensor_controller
+Started controllers: hand_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Tuck arm...
+Started controllers: imu_sensor_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Waiting for move_base action server...
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=2.0, y=-2.0"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.129)"
+Arm tucked.
+Motion played successfully.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.129)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.129)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=3.0, y=-7.0"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-21.835)"
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-21.835)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-21.835)"
+Reached waypoint 2
+"Sending goal 3 to move_base: x=2.5, y=-8.0"
+Navigating to waypoint 3...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-3-38.136)"
+GOAL Reached!
+Failed to get a plan.
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+Clearing both costmaps outside a square (1.50m) large centered on the robot.
+Rotate recovery behavior started.
+Failed to get a plan.
+Aborting because a valid plan could not be found. Even after executing all recovery behaviors
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-3-38.136)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-3-38.136)"
+Failed to reach waypoint 3
+"Sending goal 4 to move_base: x=3.5, y=-11.0"
+Navigating to waypoint 4...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-4-45.592)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-4-45.592)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-4-45.592)"
+Reached waypoint 4

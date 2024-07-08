@@ -1,0 +1,58 @@
+msg
+Started controllers: force_torque_sensor_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Started controllers: imu_sensor_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+connecting to ella-HP-ZBook-Studio-G5 43067
+Started controllers: hand_controller
+Recording to 'S3W5_3.bag'.
+Waiting for move_base action server...
+connecting to ella-HP-ZBook-Studio-G5 58771
+connecting to ella-HP-ZBook-Studio-G5 58771
+connecting to ella-HP-ZBook-Studio-G5 58771
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=-2.0, y=0.0"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-25.153)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-25.153)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-25.153)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=2.5, y=-5.5"
+Navigating to waypoint 2...
+Failed to get a plan.
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-38.660)"
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+Clearing both costmaps outside a square (1.50m) large centered on the robot.
+Rotate recovery behavior started.
+Failed to get a plan.
+Aborting because a valid plan could not be found. Even after executing all recovery behaviors
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-38.660)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-38.660)"
+Failed to reach waypoint 2
+"Sending goal 3 to move_base: x=1.0, y=-10.0"
+Navigating to waypoint 3...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-3-46.016)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-3-46.016)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-3-46.016)"
+Reached waypoint 3
+"Sending goal 4 to move_base: x=-3.5, y=-10.5"
+Navigating to waypoint 4...
+Failed to get a plan.
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-4-72.526)"
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+Clearing both costmaps outside a square (1.50m) large centered on the robot.
+Rotate recovery behavior started.
+Failed to get a plan.
+Aborting because a valid plan could not be found. Even after executing all recovery behaviors
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-4-72.526)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-4-72.526)"
+Failed to reach waypoint 4
+"Sending goal 5 to move_base: x=4.0, y=-8.0"
+Navigating to waypoint 5...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-5-80.134)"
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-5-80.134)"
+GOAL Reached!
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-5-80.134)"
+Reached waypoint 5
