@@ -1,0 +1,27 @@
+Robot is nearing the obstacle. Path is being replanned.
+Tuck arm...
+Started controllers: force_torque_sensor_controller
+Started controllers: imu_sensor_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Started controllers: hand_controller
+Waiting for move_base action server...
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=2.5, y=0.0"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.127)"
+Arm tucked.
+Motion played successfully.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.127)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.127)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=-4.0, y=1.0"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-20.342)"
+"New obstacle detected at position (-1.5, 0.5)"
+Robot is nearing the obstacle. Path is being replanned.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-20.342)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-20.342)"
+Reached waypoint 2

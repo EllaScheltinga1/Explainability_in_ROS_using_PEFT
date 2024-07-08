@@ -1,0 +1,34 @@
+msg
+connecting to ella-HP-ZBook-Studio-G5 54707
+Recording to 'S2W2_3.bag'.
+Started controllers: imu_sensor_controller
+Started controllers: hand_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Tuck arm...
+Started controllers: force_torque_sensor_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Arm tucked.
+Waiting for move_base action server...
+connecting to ella-HP-ZBook-Studio-G5 59305
+connecting to ella-HP-ZBook-Studio-G5 59305
+connecting to ella-HP-ZBook-Studio-G5 59305
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=-3.0, y=-5.5"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.189)"
+Motion played successfully.
+"New obstacle detected at position (-3.5, -9.5)"
+"New obstacle detected at position (-3.5, -9.5)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.189)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.189)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=-3.5, y=-12.0"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-48.193)"
+"New obstacle detected at position (-3.5, -9.5)"
+Robot is nearing the obstacle. Path is being replanned.
+Robot is nearing the obstacle. Path is being replanned.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-48.193)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-48.193)"
