@@ -1,0 +1,19 @@
+The last waypoint the robot reached was at coordinates \(x=-3.0, y=-8.5\). This is indicated by the log message: 
+
+"Reached waypoint 3" following the sending and navigating towards the goal 3:
+
+"Sending goal 3 to move_base: x=-3.0, y=-8.5
+
+Navigating to waypoint 3...
+
+Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-3-38.583)
+
+New obstacle detected at position (1.5, -5.5)
+
+Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-3-38.583)
+
+GOAL Reached!
+
+Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-3-38.583)
+
+Reached waypoint 3"

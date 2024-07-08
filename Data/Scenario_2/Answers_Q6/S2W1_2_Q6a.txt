@@ -1,0 +1,1 @@
+The last waypoint the robot reached was waypoint 1. This is confirmed by the log message indicating "Reached waypoint 1" after transitioning to the DONE state for the move_base goal.

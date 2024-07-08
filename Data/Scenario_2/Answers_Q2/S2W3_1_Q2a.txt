@@ -1,0 +1,5 @@
+Based on the ROS log messages, the robot received and navigated to the following waypoints:
+
+1. **Waypoint 1**: \( x=1.0, y=-2.0 \)
+2. **Waypoint 2**: \( x=1.5, y=-8.0 \)
+3. **Waypoint 3**: \( x=-3.0, y=-8.5 \)

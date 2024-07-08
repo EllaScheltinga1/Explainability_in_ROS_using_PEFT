@@ -1,0 +1,10 @@
+Based on the ROS log messages provided, only one waypoint, waypoint 1, is mentioned. The messages indicate that the robot successfully navigated to and reached this waypoint. Here’s a detailed breakdown:
+
+1. "Sending goal 1 to move_base: x=-1.5, y=-5.5" indicates that waypoint 1 was sent to the move_base action server.
+2. "Navigating to waypoint 1..." confirms that the robot started moving towards waypoint 1.
+3. "Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.248)" shows that the goal became active.
+4. "New obstacle detected at position (0.5, -4.0)" and "Robot is nearing the obstacle. Path is being replanned." indicate the robot detected an obstacle and recalculated its path.
+5. "GOAL Reached!" and "Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.248)" followed by "Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.248)" confirm that the robot successfully reached the goal for waypoint 1.
+6. Finally, "Reached waypoint 1\." explicitly states that waypoint 1 was reached.
+
+Therefore, the only received waypoint mentioned in the log was successfully reached. If there were other waypoints, they are not documented in the provided log messages.

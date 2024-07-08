@@ -1,0 +1,4 @@
+The robot received a total of 2 waypoints. 
+
+1. The first goal, referred to as waypoint 1, was set to coordinates \( x = -3.0, y = -5.5 \).
+2. The second goal, referred to as waypoint 2, was set to coordinates \( x = -3.5, y = -12.0 \).

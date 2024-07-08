@@ -1,0 +1,3 @@
+Based on the provided ROS log messages, there has been mention of only one specific waypoint, which is referred to as "waypoint 1". This is evidenced by the goal sent to move_base and the subsequent navigation and completion messages pertaining to this waypoint. 
+
+Thus, only one waypoint was received.

@@ -1,0 +1,3 @@
+Based on the provided ROS log messages, there is only one waypoint mentioned, which is:
+
+- Waypoint 1 with the coordinates \(x = -4.0\) and \(y = -1.5\).

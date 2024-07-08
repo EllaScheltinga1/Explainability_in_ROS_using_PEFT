@@ -1,0 +1,3 @@
+The last waypoint the robot reached was at the coordinates \( x = -3.0, y = -9.0 \). This is confirmed in the log message:
+
+"Reached waypoint 4".

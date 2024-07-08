@@ -1,0 +1,8 @@
+The ROS log messages provided mention a single waypoint: 
+
+```
+Sending goal 1 to move_base: x=-4.0, y=-1.5
+Navigating to waypoint 1...
+```
+
+Thus, only one waypoint was received.

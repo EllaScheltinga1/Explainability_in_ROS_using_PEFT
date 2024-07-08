@@ -1,0 +1,13 @@
+Yes, all received waypoints were successfully reached. The robot navigated to both waypoints 1 and 2 as indicated by the log messages:
+
+1. For waypoint 1:
+   - "Sending goal 1 to move_base: x=0.5, y=-10.0"
+   - "GOAL Reached!"
+   - "Reached waypoint 1"
+
+2. For waypoint 2:
+   - "Sending goal 2 to move_base: x=-3.0, y=-9.5"
+   - "GOAL Reached!"
+   - "Reached waypoint 2"
+
+These messages confirm that the robot successfully reached both goals.

@@ -1,0 +1,4 @@
+Based on the ROS log messages, the robot received one waypoint with coordinates:
+
+- x = -1.5
+- y = -5.5

@@ -1,0 +1,7 @@
+The robot received a total of three waypoints. This can be identified by the following log entries:
+
+1. **Waypoint 1**: "Sending goal 1 to move_base: x=1.0, y=-1.0"
+2. **Waypoint 2**: "Sending goal 2 to move_base: x=2.0, y=-1.0"
+3. **Waypoint 3**: "Sending goal 3 to move_base: x=-4.0, y=-1.5"
+
+Each goal corresponds to a unique waypoint received and processed by the robot.

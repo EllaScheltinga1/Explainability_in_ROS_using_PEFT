@@ -1,0 +1,20 @@
+Yes, all received waypoints were successfully reached. The log messages indicate the following:
+
+1. **Waypoint 1 (x=1.0, y=-1.0):**
+   - Navigating to waypoint 1...
+   - GOAL Reached!
+   - Reached waypoint 1
+
+2. **Waypoint 2 (x=2.0, y=-1.0):**
+   - Navigating to waypoint 2...
+   - GOAL Reached!
+   - Reached waypoint 2
+
+3. **Waypoint 3 (x=-4.0, y=-1.5):**
+   - Navigating to waypoint 3...
+   - New obstacle detected at position (-2.0, -1.0)
+   - Robot is nearing the obstacle. Path is being replanned.
+   - GOAL Reached!
+   - Reached waypoint 3
+
+The robot successfully navigated to all three waypoints despite encountering an obstacle while heading to waypoint 3.

@@ -1,0 +1,1 @@
+The last waypoint the robot reached was at coordinates x = -4.0, y = -1.5. This is indicated by the goal sent to the move_base action server and confirmed by the log statement "GOAL Reached!" followed by "Reached waypoint 1."
