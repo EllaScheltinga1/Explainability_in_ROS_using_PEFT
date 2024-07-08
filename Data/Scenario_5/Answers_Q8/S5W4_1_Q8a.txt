@@ -1,0 +1,8 @@
+Yes, the robot failed to reach all the waypoints it attempted to navigate to. Specifically, it failed to reach:
+
+1. Waypoint 1 (x=6.0, y=-14.5)
+2. Waypoint 2 (x=-3.0, y=1.5)
+3. Waypoint 3 (x=-7.5, y=-6.0)
+4. Waypoint 4 (x=-8.0, y=3.0)
+
+In each case, the failure was due to the inability to generate a valid plan, with some goals being off the global costmap, and the failure persisted even after executing recovery behaviors.

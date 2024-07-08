@@ -1,0 +1,23 @@
+Based on the ROS log messages, the robot employs a series of recovery behaviors when it encounters unfeasible paths. Here is a breakdown of the robot's actions in response to unfeasible goals:
+
+1. **Waypoint 2 (x=-6.0, y=0.0):**
+   - The goal was identified as off the global costmap, making it unfeasible for the global planner to create a valid plan.
+   - **Recovery Actions:** 
+     - The robot executed two costmap clearing operations: 
+       1. Clearing the costmaps outside a 3.00m square centered on the robot.
+       2. Clearing the costmaps outside a 1.50m square centered on the robot.
+     - The robot initiated a rotate recovery behavior to try and reestablish a feasible path.
+   - Outcome: Despite the recovery behaviors, the goal remained unfeasible, and the robot failed to reach waypoint 2.
+
+2. **Waypoint 3 (x=-3.0, y=-9.5):**
+   - Initially, the robot could not find a valid plan and performed recovery behaviors.
+   - **Recovery Actions:** 
+     - The type and specifics of the recovery behaviors are not explicitly stated in the logs, but the robot mentions execution of "all recovery behaviors."
+   - Outcome: The recovery behaviors succeeded, and the robot eventually reached waypoint 3.
+
+In summary, the robot engages in several recovery strategies when it encounters unfeasible paths, including:
+- Clearing costmaps to remove potentially outdated or inaccurate obstacle information.
+- Utilizing rotate recovery behavior to potentially realign itself and find a new path.
+- Persisting with various recovery actions until a valid plan is possibly established or ultimately confirming the unfeasibility.
+
+This approach aligns with standard autonomous navigation behavior where recovery mechanisms are in place to handle navigation failures.

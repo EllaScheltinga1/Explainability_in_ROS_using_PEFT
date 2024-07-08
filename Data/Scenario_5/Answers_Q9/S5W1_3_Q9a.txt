@@ -1,0 +1,5 @@
+The logs do not explicitly mention any obstacles encountered during the navigation task. However, the crucial issue identified was that the goal sent to the global planner was off the global costmap, which means the coordinates of the goal were outside the area which the planner considers navigable. This misconfiguration suggests that even if obstacles had not been present, the planner still would not have been able to generate a valid path to the goal.
+
+Several attempts were made to clear both costmaps centered on the robot, but the issue persisted, implying that either the goal location was continually misconfigured outside the navigable area, or the costmaps weren't accurately reflecting the environment. The robot's failure to create a valid plan led to the activation of recovery behaviors, but these were also unsuccessful, resulting in the eventual abortion of the goal.
+
+In summary, the problem was more related to the goal positioning outside the navigable area rather than explicit obstacles.

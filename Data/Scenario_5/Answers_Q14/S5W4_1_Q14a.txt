@@ -1,0 +1,29 @@
+When the robot encountered unfeasible paths, it consistently undertook specific recovery behaviors and eventually aborted the mission if a valid plan could not be established. Here is the detailed process:
+
+1. **Initial Identification**: 
+   - The robot identified that the goal sent to the global planner was off the global costmap, meaning that the desired path or destination was outside the robot's navigational map.
+   - This was evident from log entries such as "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal."
+
+2. **Recovery Behaviors**:
+   - Upon identifying an unfeasible path, the robot attempted to clear the local and global costmaps around its current location. This was done to potentially remove any transient or temporary obstacles that might have been affecting the global planner.
+   - Specific log entries annotated this action: 
+     - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+     - "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+   - If clearing the costmaps did not resolve the path planning issue, the robot then initiated a "rotate recovery behavior." This behavior typically involves rotating in place to reassess the environment and update sensor data, possibly enabling the robot to find a safer and feasible path.
+     - This is reflected in the log: "Rotate recovery behavior started."
+
+3. **Failure and Abortion**:
+   - After executing all recovery behaviors, if planning still failed, the robot aborted the mission to that specific waypoint.
+   - The log statements indicated this final step:
+     - "Aborting because a valid plan could not be found. Even after executing all recovery behaviors."
+
+4. **Transitioning States**:
+   - During this process, the robot's state machine transitioned between several states:
+     - From `WAITING_FOR_GOAL_ACK` to `ACTIVE` when navigating to the waypoint.
+     - From `ACTIVE` to `WAITING_FOR_RESULT` when the goal could not be met.
+     - From `WAITING_FOR_RESULT` to `DONE` when the attempt was fully aborted.
+
+5. **Retries**:
+   - The robot also retried different goals sequentially, but each goal that was off the global costmap faced the same sequence of identification, recovery behaviors, and eventual aborting.
+
+In essence, the robot followed a systematic approach to deal with unfeasible paths by trying to clear costmaps and rotating on the spot to reassess the environment. When these strategies failed, it aborted the current mission and tried the next goal, eventually aborting the entire sequence of tasks due to persistent failures.

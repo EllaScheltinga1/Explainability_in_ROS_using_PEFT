@@ -1,0 +1,7 @@
+One or more paths were not feasible due to the goal being off the global costmap. This means the specified target location was outside the preconfigured area that the global planner uses to generate a viable path for the robot to follow. Specifically, for waypoint 3 (x=0.0, y=-15.0), the ROS logs indicate:
+
+1. **Goal off the global costmap**: "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal."
+2. **Recovery attempts**: The log records multiple attempts to clear the costmaps ("Clearing both costmaps outside a square (3.00m) large centered on the robot" and "Clearing both costmaps outside a square (1.50m) large centered on the robot") followed by a rotate recovery behavior, indicating attempts to recover and find an alternate path.
+3. **Final failure**: "Aborting because a valid plan could not be found. Even after executing all recovery behaviors."
+
+Given these points, the robot was unable to find a valid plan to reach waypoint 3 due to it being outside the accessible planning area defined in the global costmap.

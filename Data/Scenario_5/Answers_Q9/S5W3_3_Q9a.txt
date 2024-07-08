@@ -1,0 +1,13 @@
+Based on the provided ROS log messages, there is no explicit mention of obstacles encountered during the navigation task. The logs indicate successful navigation to waypoints 1 and 2 but a failure to reach waypoint 3 due to issues with the global costmap.
+
+Here are the key points relevant to obstacles:
+1. **Waypoint 1 and 2 Navigation:**
+   - No obstacles were reported.
+   - Successfully navigated and reached both waypoints.
+
+2. **Waypoint 3 Navigation:**
+   - The logs state: "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal."
+   - This implies that the target waypoint (3) is outside the defined costmap, leading to planning failure.
+   - The robot also cleared costmaps and executed a rotate recovery behavior, but this was not due to detected obstacles but rather was an attempt to find a path within the constraints.
+
+Overall, the failure to reach waypoint 3 was not due to physical obstacles but due to the waypoint being outside the effective area of the robot's global costmap, making path planning impossible.

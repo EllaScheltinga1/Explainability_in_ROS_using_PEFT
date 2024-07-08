@@ -1,0 +1,1 @@
+No, not all planned paths were feasible during the navigation task. The robot encountered issues with the goal being off the global costmap, which means the global planner could not generate a valid path to the goal. Despite attempting recovery behaviors, the planning continued to fail, leading to the goal being aborted and the robot failing to reach waypoint 1.

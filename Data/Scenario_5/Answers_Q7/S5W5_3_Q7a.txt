@@ -1,0 +1,7 @@
+No, not all planned paths were feasible during the navigation task. The robot successfully reached four of the five waypoints (waypoints 1, 2, 4, and 5). However, it failed to reach waypoint 3 because the goal was outside the global costmap, making it impossible for the global planner to find a valid path. Despite executing all recovery behaviors, the robot could not navigate to waypoint 3 and aborted the attempt. This situation is documented with the following messages from the log:
+
+1. "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal."
+2. "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+3. "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+4. "Rotate recovery behavior started."
+5. "Aborting because a valid plan could not be found. Even after executing all recovery behaviors"

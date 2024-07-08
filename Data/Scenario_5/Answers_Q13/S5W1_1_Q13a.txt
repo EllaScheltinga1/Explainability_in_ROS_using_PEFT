@@ -1,0 +1,27 @@
+Based on the ROS log messages provided, the robot encountered difficulties in planning a feasible path for the following reasons:
+
+1. **Goal was off the Global Costmap**: The logs indicate that the goal position sent to the global planner was off the global costmap. This means the target location for the robot to navigate to was outside the boundaries of the mapped area that the planner uses to generate paths. Because of this, the planner could not generate a valid path to the goal.
+
+   Log excerpt for reference:
+   ```
+   The goal sent to the global planner is off the global costmap. Planning will always fail to this goal.
+   ```
+
+2. **Costmap Clearing and Recovery Behaviors**: To address this issue, the robot attempted to clear its costmaps centered on its current position with varying sizes (3.00 meters and 1.50 meters), which is a common recovery behavior. Additionally, the robot executed a rotate recovery behavior, which implies it tried to re-orient itself to find a viable path.
+
+   Log excerpt for reference:
+   ```
+   Clearing both costmaps outside a square (3.00m) large centered on the robot.
+   Clearing both costmaps outside a square (1.50m) large centered on the robot.
+   Rotate recovery behavior started.
+   ```
+
+3. **Failure Despite Recovery Efforts**: Despite these recovery efforts, the issue persisted, and the planner continued to fail. Consequently, the process was aborted as a valid plan could not be determined.
+
+   Log excerpt for reference:
+   ```
+   The goal sent to the global planner is off the global costmap. Planning will always fail to this goal.
+   Aborting because a valid plan could not be found. Even after executing all recovery behaviors.
+   ```
+
+In summary, the paths were not feasible because the goal location was outside the global costmap boundaries, which prevented the global planner from generating valid paths to reach the target. Recovery maneuvers, such as clearing costmaps and performing rotate behaviors, were unsuccessful in resolving the issue, leading to the abortion of the navigation task.

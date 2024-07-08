@@ -1,0 +1,21 @@
+The robot encountered an unfeasible path when attempting to navigate to waypoint 3 (x=0.0, y=-15.0). Here is how it handled the situation:
+
+1. **Global Planner Issue Detection**: The robot identified that "the goal sent to the global planner is off the global costmap," indicating that the desired goal location was beyond the robot's known map boundaries, making it impossible to plan a path.
+
+2. **Costmap Clearing Attempt**: The robot attempted to clear the costmaps to potentially resolve the issue. 
+   - Initially, it cleared both costmaps outside a square 3.00 meters large centered on the robot. 
+   - Subsequently, it cleared both costmaps outside a smaller square 1.50 meters large centered on the robot.
+
+3. **Recovery Behaviors**: After clearing the costmaps, the robot initiated a "Rotate recovery behavior." Recovery behaviors are predefined actions taken to attempt to recover from infeasibility issues, such as rotating to scan for obstacles.
+
+4. **Re-evaluation by Global Planner**: Despite these recovery attempts, the goal was still deemed unfeasible as it remained off the global costmap. This was again noted with the message, "The goal sent to the global planner is off the global costmap."
+
+5. **Abort Mission**: Having exhausted all recovery behaviors and strategies for feasible path planning, the robot decided to abort the mission for waypoint 3. This was marked by the message, "Aborting because a valid plan could not be found. Even after executing all recovery behaviors."
+
+6. **State Transition**: The robot transitioned through its state machine:
+   - From ACTIVE to WAITING_FOR_RESULT
+   - From WAITING_FOR_RESULT to DONE
+   
+   And then it logged, "Failed to reach waypoint 3."
+
+In summary, when faced with an unfeasible path, the robot attempted costmap clearing and engaged in recovery behaviors such as rotating. When these efforts failed to result in a feasible path, it aborted the mission for that specific waypoint and logged the failure, moving on to the next goal.

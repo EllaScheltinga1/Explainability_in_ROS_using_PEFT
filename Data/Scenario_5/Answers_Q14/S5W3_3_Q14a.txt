@@ -1,0 +1,17 @@
+The robot's handling of unfeasible paths is clearly documented in the log messages. Here’s the step-by-step process as per the logs:
+
+1. **Identification of Problematic Goal**: The log indicates that the goal sent to the global planner is off the global costmap, implying that the path is inherently unfeasible. This is recognized immediately when goal 3 is sent (`The goal sent to the global planner is off the global costmap. Planning will always fail to this goal.`).
+
+2. **Initial Navigation Attempt**: Despite the earlier warning, the robot transitions the goal state to ACTIVE and attempts to navigate (`Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-3-85.543)`).
+
+3. **Costmap Clearing**: In an attempt to correct the planning issue, the robot clears both costmaps twice, first within a larger 3.00m square and then within a smaller 1.50m square centered on the robot. This is a standard recovery action trying to refresh the navigation data and potentially remove any transient obstacles.
+
+4. **Fallback to Recovery Behavior**: When clearing costmaps doesn’t help, the robot attempts a recovery behavior (`Rotate recovery behavior started`). This maneuver typically attempts to reorient the robot to find alternative navigation paths or clear slightly obstructed ones.
+
+5. **Final Assessment and Abort**: Despite the recovery behaviors, the planner still identifies the goal as off the costmap (`The goal sent to the global planner is off the global costmap. Planning will always fail to this goal.`). Consequently, the robot aborts the navigation attempt (`Aborting because a valid plan could not be found. Even after executing all recovery behaviors`).
+
+6. **Status Transition to Completion**: The robot transitions the goal state to WAITING_FOR_RESULT and finally to DONE, marking the end of the navigation attempt for waypoint 3 (`Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-3-85.543)`, `Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-3-85.543)`).
+
+The final log message explicitly states that the robot failed to reach waypoint 3 due to the inability to generate a valid plan even after all recovery attempts (`Failed to reach waypoint 3`).
+
+In summary, the robot dealt with unfeasible paths by attempting to clear costmaps, executing recovery behaviors such as rotate recovery, and aborting the mission when it was clear that no valid path could be planned.

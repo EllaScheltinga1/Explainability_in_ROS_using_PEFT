@@ -1,0 +1,19 @@
+The robot encountered an unfeasible path when attempting to reach waypoint 2 (with coordinates x=2.0, y=-13.0). The following sequence of actions was taken in response to the unfeasible path:
+
+1. **Identification of the Issue**: The log indicates that "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal." This means that the destination fell outside the area known and mapped by the robot's global planner, making it impossible to generate a valid path.
+
+2. **Costmap Clearing**: The robot attempted to remedy the situation by clearing its costmaps, which are used to store information about the environment:
+    - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+    - "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+
+3. **Recovery Behaviors**: The robot initiated a "Rotate recovery behavior," a common method used to help the robot reorient and potentially find a viable path by rotating in place to reassess its surroundings.
+
+Despite these attempts, the robot was still unable to plan a feasible path to waypoint 2, as indicated by the repeated log statement: "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal."
+
+4. **Failure and Abortion**: Ultimately, the robot aborted the navigation attempt due to the inability to find a valid plan even after trying all recovery behaviors: 
+    - "Aborting because a valid plan could not be found. Even after executing all recovery behaviors."
+    - The robot then transitioned its status: "Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-41.331)" and eventually to "DONE."
+
+5. **Outcome**: The final status indicates the robot failed to reach waypoint 2: "Failed to reach waypoint 2."
+
+In summary, the robot dealt with the unfeasible path by clearing its costmaps, attempting recovery behaviors, and ultimately aborting the navigation task once it was clear that a valid path could not be found.

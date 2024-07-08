@@ -1,0 +1,15 @@
+One of the paths, specifically the path to waypoint 4 (coordinates x=6.0, y=-7.0), was not feasible due to the goal being off the global costmap. The ROS logs provide detailed information about the issue:
+
+1. **Initial Error Detection**:
+   - "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal." This message indicates that the specified goal location is outside the boundaries defined by the global costmap, making it impossible for the global planner to generate a valid path.
+
+2. **Recovery Attempts**:
+   - The system attempted several recovery behaviors to solve this issue. This included clearing the costmaps within specific areas around the robot:
+     - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+     - "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+   - Despite these attempts, the recovery behaviors were not sufficient to resolve the issue. This continued with another occurrence of the same error message, indicating that the goal remained off the global costmap.
+
+3. **Failure to Generate a Valid Plan**:
+   - "Aborting because a valid plan could not be found. Even after executing all recovery behaviors." This final message confirms that the system was unable to generate a valid navigation plan to reach waypoint 4, and hence, the attempt to navigate to this waypoint was aborted.
+
+In summary, waypoint 4 was unreachable because the specified coordinates were outside the allowable region defined by the global costmap, and all recovery attempts to clear the costmaps and re-plan the path failed.

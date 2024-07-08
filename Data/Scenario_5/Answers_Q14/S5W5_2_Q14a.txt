@@ -1,0 +1,15 @@
+The robot encountered an issue when dealing with the unfeasible path to waypoint 5. Here's a detailed explanation of how it attempted to handle the situation:
+
+1. **Detection of an Unreachable Goal**: The log indicates that the goal sent to the global planner was outside the global costmap, which implies that the goal was beyond the boundaries that the planner could handle. This is a critical detail because the planner relies on the costmap to define navigable areas, and planning paths to locations outside this map will inherently fail.
+
+2. **Active Navigation Attempts**: Despite the unfeasible goal, the robot transitioned into the ACTIVE state from WAITING_FOR_GOAL_ACK, indicating that it initially attempted to navigate to the waypoint. This suggests that the system might have considered some possibilities before completely ruling out the goal.
+
+3. **Costmap Clearing**: Once it became apparent that the path was challenging, the robot engaged in recovery behaviors. It cleared both costmaps, which are data structures used to represent the environment, OBSTACLES, and free space around the robot, within varying sizes (first within a 3.00m square and then within a 1.50m square centered on the robot). This action could have been an attempt to refresh and eliminate any erroneous or outdated sensory data obstructing optimal path planning.
+
+4. **Recovery Behaviors**: The robot utilized a "rotate recovery behavior," which typically involves rotating in place to find a viable path or clear obstacles within its immediate vicinity. This is a standard recovery behavior intended to help the robot get unstuck and potentially find alternative free paths.
+
+5. **Repeated Detection and Failure to Plan**: Even after undertaking the recovery procedures, the global planner repeatedly identified that the goal remained off the global costmap. Consequently, planning continued to fail.
+
+6. **Transition to DONE and Abortion**: After active attempts and recovery behaviors, the robot transitioned from ACTIVE to WAITING_FOR_RESULT and finally to DONE, concluding with a failure to reach the goal. The sequence was terminated when it aborted the mission for the waypoint, citing that no valid plan could be found despite all recovery efforts.
+
+In summary, when faced with unfeasible paths, the robot attempted to refresh its environment understanding via costmap clearing and engaged in rotate recovery behavior to potentially re-evaluate the path. Despite these measures, if a path remains unfeasible due to being outside the global costmap, the robot aborts the navigation attempt to prevent further futile planning.

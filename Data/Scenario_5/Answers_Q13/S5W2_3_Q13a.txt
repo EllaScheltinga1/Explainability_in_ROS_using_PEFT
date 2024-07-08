@@ -1,0 +1,12 @@
+The paths for both waypoints were determined to be infeasible due to the goals being set outside the robot's global costmap. Here's a breakdown of the issues:
+
+1. **Off the Global Costmap:**
+   - For both waypoint 1 (x=6.0, y=-2.0) and waypoint 2 (x=-8.0, y=5.0), the log messages state, "The goal sent to the global planner is off the global costmap." This indicates that the goals were positioned outside the defined boundaries of the global costmap, which is the area the global planner uses to calculate a feasible path for the robot. As a result, the planner was unable to compute a valid path to these goals.
+
+2. **Recovery Behaviors:**
+   - Several recovery behaviors were attempted to salvage the navigation process, including clearing parts of the costmap and starting a rotate recovery behavior. However, these recovery actions were insufficient to resolve the issue because the goals were fundamentally outside of the reachable planning area, not just temporarily obstructed.
+
+3. **Failure to Generate Valid Plans:**
+   - The repeated message, "Planning will always fail to this goal," underlines the core reason: the planner could not generate any valid path due to the goals being beyond its operational boundary.
+
+In summary, the infeasibility of the paths stems from the goal positions lying outside the boundary limits of the robot's global costmap, preventing the planner from formulating any workable routes to these destinations.

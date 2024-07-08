@@ -1,0 +1,10 @@
+The robot employed several recovery strategies when it encountered unfeasible paths:
+
+1. **Clearing Costmaps:**
+    - The system attempted to clear the local and global costmaps around the robot. Initially, it cleared a larger 3.00-meter square area centered on the robot.
+    - After that, it attempted to clear a smaller 1.50-meter square area around the robot.
+
+2. **Rotate Recovery Behavior:**
+    - When clearing the costmaps did not yield a feasible path, the robot initiated a "rotate recovery behavior." This behavior typically involves the robot spinning on the spot in an attempt to reorient itself and find a new path.
+
+Despite these recovery attempts, the path to waypoint 4 remained unfeasible because the goal was consistently off the global costmap—indicating that the target location was outside the known navigable area or obstructed by permanent obstacles. Consequently, the robot aborted the attempt to reach waypoint 4 after executing all recovery behaviors and transitioned back to the "WAITING_FOR_RESULT" state before eventually marking the goal as "DONE" with a failure status.

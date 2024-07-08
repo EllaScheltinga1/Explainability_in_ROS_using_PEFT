@@ -1,0 +1,21 @@
+No, all the planned paths were not feasible during the navigation task. 
+
+The log messages indicate that multiple goals sent to the global planner were off the global costmap, resulting in continuous planning failures. For each waypoint (1 through 4):
+
+1. **Waypoint 1 (x=6.0, y=-14.5)**: 
+   - The goal was off the global costmap.
+   - Planning always failed, even after executing all recovery behaviors.
+
+2. **Waypoint 2 (x=-3.0, y=1.5)**: 
+   - The planner failed to get a plan.
+   - Recovery behaviors did not resolve the issue.
+
+3. **Waypoint 3 (x=-7.5, y=-6.0)**: 
+   - The goal was off the global costmap.
+   - Planning always failed, even after attempting recovery behaviors.
+
+4. **Waypoint 4 (x=-8.0, y=3.0)**:
+   - The goal was off the global costmap.
+   - Multiple recovery attempts failed to make the path feasible.
+
+In summary, none of the paths planned for waypoints 1 through 4 were feasible, leading to the robot failing to reach any of the specified waypoints.

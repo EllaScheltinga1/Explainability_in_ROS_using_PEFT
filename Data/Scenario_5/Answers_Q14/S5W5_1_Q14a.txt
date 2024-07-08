@@ -1,0 +1,37 @@
+When the robot encountered an unfeasible path while attempting to reach waypoint 4 at coordinates (x=6.0, y=-7.0), it executed several specific steps to handle the situation:
+
+1. **Detection of the Issue**:
+   - The log indicates that the goal sent to the global planner was off the global costmap, and therefore planning to this goal would always fail:
+     ```
+     The goal sent to the global planner is off the global costmap. Planning will always fail to this goal.
+     ```
+
+2. **Costmap Clearing**:
+   - The robot attempted to clear the costmaps to potentially create a viable path. It cleared both costmaps within certain areas around the robot:
+     ```
+     Clearing both costmaps outside a square (3.00m) large centered on the robot.
+     Clearing both costmaps outside a square (1.50m) large centered on the robot.
+     ```
+
+3. **Recovery Behavior**:
+   - The robot engaged a rotate recovery behavior, which is a common strategy to re-evaluate the surrounding area by rotating the robot to update its sensor readings and recalibrate its position:
+     ```
+     Rotate recovery behavior started.
+     ```
+
+4. **Re-attempt**:
+   - Despite clearing costmaps and attempting recovery behaviors, the goal still remained off the global costmap:
+     ```
+     The goal sent to the global planner is off the global costmap. Planning will always fail to this goal.
+     ```
+
+5. **Aborting the Goal**:
+   - Finally, after exhausting all potential recovery behaviors and still failing to find a valid plan to reach the goal, the robot aborted the attempt:
+     ```
+     Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-4-64.102)
+     Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-4-64.102)
+     Aborting because a valid plan could not be found. Even after executing all recovery behaviors
+     Failed to reach waypoint 4
+     ```
+
+In summary, the robot dealt with the unfeasible path by trying to clear its costmaps, executing recovery behaviors such as rotation, and ultimately aborting the mission to that specific waypoint when all recovery strategies failed.

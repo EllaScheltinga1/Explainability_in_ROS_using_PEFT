@@ -1,0 +1,5 @@
+Based on the provided ROS log messages, it doesn't appear that the robot encountered specific physical obstacles during the navigation tasks. Instead, the robot faced issues related to planning due to goals being set outside the global costmap, which means the target waypoints were outside the robot’s defined operational area.
+
+The logs contain repeated warnings such as "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal." This indicates that the robot's navigation system couldn't generate a valid path to the specified waypoints. The robot attempted various recovery behaviors, including clearing costmaps and initiating rotate recovery behaviors, but these efforts failed to yield a valid plan for reaching any of the waypoints.
+
+In summary, the failure in navigation was due to invalid goals rather than obstacles in the environment.

@@ -1,0 +1,19 @@
+The logs indicate that the path to the second goal was not feasible due to the following reasons:
+
+1. **Goal Location Issues**:
+   - The log states: "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal." This means that the target waypoint (goal 2 at x=2.0, y=-13.0) was outside the boundaries of the robot's known or defined operational area (global costmap).
+   
+2. **Costmap Clearing Attempts**:
+   - There were attempts to resolve potential obstructions by clearing the costmaps: 
+     - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+     - "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+   Despite these efforts to refresh the map and eliminate transient obstacles, the goal still remained out of feasible range.
+
+3. **Recovery Behaviors**:
+   - The system engaged a recovery behavior: "Rotate recovery behavior started."
+   - Despite executing recovery behaviors, the log still indicates: "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal," confirming that the goal was unattainable through both standard planning and recovery maneuvers.
+
+4. **Aborting the Goal**:
+   - The final decision was to abort the goal: "Aborting because a valid plan could not be found. Even after executing all recovery behaviors." This shows that all possible recovery strategies were exhausted and none succeeded.
+
+Overall, the infeasibility was primarily due to the goal being set outside the defined operational area (global costmap) and despite attempts at recovery and clearing the costmap, the goal remained unreachable.

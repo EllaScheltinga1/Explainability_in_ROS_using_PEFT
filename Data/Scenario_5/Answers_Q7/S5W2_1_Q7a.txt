@@ -1,0 +1,9 @@
+No, not all planned paths were feasible during the navigation task. 
+
+The robot attempted to navigate to two waypoints:
+
+1. **Waypoint 1 (x=-1.0, y=5.0)**: The goal was off the global costmap, meaning it was outside the map's boundaries or in an area where the planner could not generate a valid path. Consequently, planning to this goal always failed, and the robot couldn't reach this waypoint.
+
+2. **Waypoint 2 (x=2.0, y=0.0)**: Although there were initial difficulties finding a valid plan, after executing recovery behaviors, a valid plan was found, and the robot successfully reached this waypoint.
+
+In summary, the path to Waypoint 1 was not feasible, while the path to Waypoint 2 was feasible.

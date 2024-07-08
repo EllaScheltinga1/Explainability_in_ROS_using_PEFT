@@ -1,0 +1,7 @@
+The task the robot had to perform was autonomous navigation through a series of waypoints. The robot was instructed to move to specific coordinates (waypoints) in sequence and used the ROS `move_base` action server to navigate to these destinations. 
+
+- **Waypoint 1**: Coordinates (x=-3.0, y=-6.0)
+- **Waypoint 2**: Coordinates (x=-3.0, y=-12.0)
+- **Waypoint 3**: Coordinates (x=-2.0, y=-14.0)
+
+The robot successfully reached waypoints 1 and 2, but failed to reach waypoint 3 because the goal was off the global costmap, causing planning and recovery behaviors to fail.

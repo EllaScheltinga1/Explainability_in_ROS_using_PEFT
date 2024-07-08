@@ -1,0 +1,9 @@
+One or more paths were not feasible mainly because the goals sent to the global planner were off the global costmap. This occurred specifically for the first goal (waypoint 1 with coordinates x=5.5, y=0.0). When the goal is off the global costmap, the planner does not have a valid area to generate a path, leading to persistent failures in the planning process. The logs indicate the following key points regarding waypoint 1:
+
+1. **Off the Global Costmap**: The log message "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal." explicitly states that the goal's position is outside the bounds of the robot’s known operational environment.
+   
+2. **Recovery Behaviors**: Despite automatic recovery behaviors like "Rotate recovery behavior started" and attempts to clear costmaps (both at 3.00m and 1.50m large squares centered on the robot), the planning still failed to generate a valid path.
+
+3. **Abortion**: After trying all recovery behaviors without success, the system aborted the operation with the message "Aborting because a valid plan could not be found. Even after executing all recovery behaviors."
+
+In contrast, subsequent goals (waypoints 2 and 3) were within the global costmap, and the robot was able to navigate to these waypoints successfully as indicated by the "GOAL Reached!" messages. This implies that the critical issue affecting the first path was the goal being off the bounds of the global costmap.

@@ -1,0 +1,5 @@
+The paths were not feasible due to an issue with the goal's position relative to the global costmap. Specifically, the log message "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal." indicates that the goal coordinates (x=9.0, y=-6.0) were outside the bounds or range of the global costmap used by the robot's navigation system.
+
+The global costmap is a critical component in autonomous navigation, as it represents the navigable areas and obstacles in the robot's environment. If a goal is set outside this map, the planner cannot generate a valid path to reach it because it lacks the necessary information about the environment beyond the current extents of the map.
+
+Despite attempts to recover by clearing parts of the costmap and executing recovery behaviors like the rotate recovery (which involves rotating in place to potentially find a clearer path), the planner could still not find a valid path. Thus, the navigation task was aborted, and the goal was marked as failed ("Failed to reach waypoint 1").

@@ -1,0 +1,12 @@
+The log messages indicate several reasons why some of the paths were not feasible for the autonomous robot:
+
+1. **Goal 2 – x=-6.0, y=0.0:**
+   - **Off the Global Costmap:** The log message "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal." indicates that the specified waypoint is outside the defined area that the global planner is able to navigate. The costmap is a representation of the environment used for planning paths, and any goals outside this area cannot be reached.
+   - **Multiple Recovery Attempts:** Despite the robot trying to clear the costmaps and initiate a rotate recovery behavior, it was still unable to find a valid path. The log messages "Clearing both costmaps outside a square (3.00m) large centered on the robot." and "Clearing both costmaps outside a square (1.50m) large centered on the robot." show attempts to clear obstacles or update the costmap, but these efforts did not succeed.
+   - **Final Transition:** The goal was ultimately marked as "Failed to reach waypoint 2" by transitioning to DONE from WAITING_FOR_RESULT after the failure in planning.
+
+2. **Goal 3 – x=-3.0, y=-9.5:**
+   - **No Valid Plan Found:** The log message "Aborting because a valid plan could not be found. Even after executing all recovery behaviors" suggests that despite attempting recovery behaviors, the robot was unable to formulate a path to the goal. This could be due to obstacles, map inaccuracies, or dynamic changes in the environment.
+   - **Subsequent Success:** Interestingly, even after reporting an inability to find a valid plan, the log indicates that the robot did reach the goal eventually. This might imply that the initial obstacles or planning difficulties were resolved dynamically or via manual intervention.
+
+In summary, one or more paths were not feasible due to the goals being outside the robot's navigable costmap and the inability of the robot's recovery behaviors to generate a valid path around obstacles or within its known environment.

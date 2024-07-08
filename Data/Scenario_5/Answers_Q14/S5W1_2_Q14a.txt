@@ -1,0 +1,21 @@
+Based on the ROS log messages, the robot handled the unfeasible paths in the following manner:
+
+1. **Initial Notification**:
+   - The logs first indicated that the goal provided to the global planner was off the global costmap, which means the goal was in an area where path planning is not feasible.
+
+2. **Costmap Clearing**:
+   - As a response, the robot attempted to clear both the local and global costmaps twice. The robot defined squares (3.00m and 1.50m) centered on itself and cleared the areas within these squares to remove any outdated or potentially obstructive information.
+
+3. **Recovery Behaviors**:
+   - The robot then initiated a "Rotate recovery behavior," which is a common strategy to re-orient itself and re-evaluate the environment in hopes of discovering a feasible path.
+
+4. **Re-Evaluation**:
+   - Despite these measures, the goal remained unfeasible, as indicated by the repeated message stating that the goal is off the global costmap.
+
+5. **Abortion and Status Transition**:
+   - Finally, as the goal continued to be unfeasible, the robot aborted the mission, completing all possible recovery behaviors without success. This caused a transition in state from ACTIVE to WAITING_FOR_RESULT and subsequently to DONE.
+
+6. **Outcome**:
+   - The robot ultimately failed to reach waypoint 1 and documented this failure.
+
+In summary, the robot dealt with unfeasible paths by attempting to clear costmaps, using recovery behaviors like rotating, and aborting the mission after repeated failures and exhaustive efforts.

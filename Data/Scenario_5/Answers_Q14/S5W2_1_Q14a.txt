@@ -1,0 +1,34 @@
+The robot follows several specific steps to deal with unfeasible paths:
+
+1. **Initial Goal Failure Detection**:
+   - When the robot sends a goal to `move_base` and the goal is determined to be off the global costmap, it recognizes that planning for this goal will always fail. This is evident in the log line: 
+     ```
+     The goal sent to the global planner is off the global costmap. Planning will always fail to this goal.
+     ```
+
+2. **Costmap Clearing**:
+   - The robot tries to mitigate the issue by clearing the local and global costmaps. This is an attempt to remove any erroneous or outdated obstacle data that may be preventing the path from being planned.
+     ```
+     Clearing both costmaps outside a square (3.00m) large centered on the robot.
+     Clearing both costmaps outside a square (1.50m) large centered on the robot.
+     ```
+
+3. **Recovery Behaviors**:
+   - If clearing the costmap does not resolve the issue, the robot attempts recovery behaviors such as `rotate recovery` to find a valid path.
+     ```
+     Rotate recovery behavior started.
+     ```
+
+4. **Abort After Recovery Failure**:
+   - Despite recovery attempts, if the goal is still off the costmap and path planning continuously fails, the robot ultimately aborts the current goal.
+     ```
+     Aborting because a valid plan could not be found. Even after executing all recovery behaviors
+     ```
+
+5. **Re-evaluation and Alternate Goals**:
+   - The robot then sends new goal coordinates and proceeds with navigation. This is seen when it moves on to `goal 2` after failing to reach `goal 1`.
+     ```
+     Sending goal 2 to move_base: x=2.0, y=0.0
+     ```
+
+The robot systematically uses costmap clearing and recovery behaviors to handle path planning difficulties. If these methods do not work, it aborts the current goal and sets a new feasible goal.

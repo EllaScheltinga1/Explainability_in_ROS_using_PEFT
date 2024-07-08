@@ -1,0 +1,13 @@
+The paths were not feasible due to an issue with the global costmap. For waypoint 3, the log message "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal." indicates that the goal position was outside the boundaries of the area mapped by the global planner's costmap. 
+
+Here are the key points indicating the infeasibility:
+
+1. **Goal Outside Costmap Boundaries:** The message indicates that the goal could not be planned because it was outside the known and navigable area as defined by the costmap.
+   
+2. **Costmap Clearing Attempts:** The log shows attempts to clear the costmap by reducing its size, "Clearing both costmaps outside a square (3.00m) large centered on the robot" and "Clearing both costmaps outside a square (1.50m) large centered on the robot." This suggests efforts to refresh the mapping data around the robot to successfully plan a route, but these efforts did not resolve the issue.
+
+3. **Recovery Behaviors:** The log mentions the "Rotate recovery behavior started," which indicates attempts to recover from navigation failures. Despite these efforts, the goal remained off the costmap.
+   
+4. **Final Abortion:** Eventually, the system reports "Aborting because a valid plan could not be found. Even after executing all recovery behaviors," concluding that navigation to the specified goal was impossible given the current conditions and map data.
+
+Conclusively, the combination of these factors resulted in the robot being unable to find a feasible path to waypoint 3 due to its location being outside the globally mapped area.

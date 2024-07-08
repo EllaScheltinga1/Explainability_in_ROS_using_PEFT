@@ -1,0 +1,7 @@
+One or more paths were not feasible primarily because the goal sent to the global planner was off the global costmap. This means that the specified goal location (x=10.0, y=-9.0) was outside the bounds of the area that the robot's navigation system could plan a path to. The log indicates multiple instances where the planning failed due to this issue:
+
+1. **Goal off the global costmap:** The goal for waypoint 5 (x=10.0, y=-9.0) fell outside the navigation system’s map, making it impossible to plan a path.
+2. **Recovery behaviors:** The robot attempted recovery behaviors such as clearing costmaps and starting a rotate recovery behavior, but these did not resolve the issue.
+3. **Repeated planning failure:** Despite multiple recovery attempts, the global planner consistently failed to generate a viable path to the goal.
+
+This combination of factors led to the inability to reach waypoint 5, resulting in the robot aborting the navigation process for that waypoint.

@@ -1,0 +1,6 @@
+Yes, the robot failed to reach both waypoints it was sent to. Specifically:
+
+1. **Waypoint 1** with coordinates (x=6.0, y=-2.0): The robot attempted to navigate to this waypoint but aborted because the goal sent to the global planner was off the global costmap, and a valid plan could not be found despite executing all recovery behaviors.
+2. **Waypoint 2** with coordinates (x=-8.0, y=5.0): Similarly, the robot attempted to navigate to this waypoint but again aborted for the same reason — the goal was off the global costmap, and a valid plan could not be found even after executing all recovery behaviors.
+
+In both cases, the logs indicate the robot transitioned through various states (ACTIVE, WAITING_FOR_RESULT, DONE) and ultimately failed to reach the specified waypoints.

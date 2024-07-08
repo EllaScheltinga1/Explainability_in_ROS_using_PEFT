@@ -1,0 +1,1 @@
+Yes, the robot failed to reach waypoint 1. The logs detail that the goal sent to the global planner was off the global costmap, causing planning to fail continually. Despite executing recovery behaviors such as clearing costmaps and initiating a rotate recovery behavior, the robot could not find a valid plan and ultimately aborted navigating to waypoint 1.

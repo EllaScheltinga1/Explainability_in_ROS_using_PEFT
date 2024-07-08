@@ -1,0 +1,13 @@
+The paths were not feasible because the goal position sent to the global planner was outside the boundaries of the global costmap. 
+
+### Detailed Explanation:
+
+1. **Definition of Global Costmap**: The global costmap is a representation of the environment that marks the navigable areas and obstacles. It is used by the global planner to compute feasible paths from the robot’s current position to the target goal.
+
+2. **Off the Global Costmap**: The log message explicitly states that "The goal sent to the global planner is off the global costmap." This means that the coordinates of the goal (x=7.0, y=-2.0) lie outside the area the global costmap covers. The global planner cannot generate a valid path to a goal that is not within the known navigable area.
+
+3. **Path Planning Failure**: Consequently, any attempts to compute a path to this goal will fail. This is reflected in the message "Planning will always fail to this goal," which indicates that no valid path can be found to reach the goal due to its position being outside the operational map.
+
+4. **Recovery Behaviors**: The system attempted to rectify the situation using recovery behaviors such as clearing the costmaps and executing rotate recovery behavior. However, these efforts did not succeed in bringing the goal within the costmap boundaries or generating a valid path, leading to the final abort of the navigation attempt.
+
+In summary, the infeasibility of paths was due to the goal being located outside the limits of the global costmap, preventing the global planner from finding a viable route to it.

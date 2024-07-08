@@ -1,0 +1,26 @@
+The robot attempted to handle unfeasible paths using several strategies as indicated by the log messages:
+
+1. **Initial Detection and Notification**:
+   - "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal." 
+     - This message indicates that the robot's global planner identified that the goal was outside the robot's known map, and thus, planning a path to that goal was impossible.
+
+2. **Activating Recovery Behaviors**:
+   - "Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-25.121)"
+   - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+   - "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+   - "Rotate recovery behavior started."
+     - The robot tried to use recovery behaviors such as clearing specific areas of the costmap (essentially trying to refresh its understanding of its surroundings) and performing a rotate recovery behavior (rotating in place to potentially change its perception of nearby obstacles or to clear minor localization issues).
+
+3. **Aborting After Recovery Behaviors Fail**:
+   - "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal."
+   - "Aborting because a valid plan could not be found. Even after executing all recovery behaviors."
+     - After attempting the recovery behaviors and still being unable to generate a valid plan, the robot concluded that it could not successfully navigate to the goal and thus aborted the attempt.
+
+4. **Transitioning to Different States**:
+   - "Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-25.121)"
+   - "Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-25.121)"
+   - "Failed to reach waypoint 1"
+     - The robot transitioned through various states indicating its progress (or lack thereof) toward the goal, finally reaching a "DONE" state and logging a failure to reach the first waypoint.
+
+### Summary
+The robot used recovery behavior such as clearing the costmap and rotating in place to try and rectify the issue of unfeasible paths. When these recovery attempts failed, the robot aborted the goal and logged the failure, then proceeded to the next goal in its list.

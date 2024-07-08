@@ -1,0 +1,18 @@
+When the robot encountered unfeasible paths, it executed specific recovery behaviors to try to mitigate the situation and find a valid path. Here's a detailed explanation based on the provided log messages:
+
+1. **Attempting to Clear Costmaps:** To handle obstacles or issues related to its navigation map, the robot tried to clear its costmaps:
+   - **"Clearing both costmaps outside a square (3.00m) large centered on the robot."**
+   - **"Clearing both costmaps outside a square (1.50m) large centered on the robot."**
+   Clearing costmaps is a common recovery behavior to refresh the robot's understanding of its environment, potentially resolving navigation issues that arose due to outdated or obstructed maps.
+
+2. **Rotate Recovery Behavior:** When clearing the costmaps didn't resolve the navigation issue, the robot performed a rotate recovery behavior:
+   - **"Rotate recovery behavior started."**
+   This involves the robot rotating in place to scan its surroundings more effectively, which helps update the environment map and possibly find a feasible path.
+
+3. **Abort and Transition:** Despite the recovery attempts, whenever the robot failed to find a valid path:
+   - It logged that the goal remained off the global costmap indicating that the path planning continued to fail: **"The goal sent to the global planner is off the global costmap. Planning will always fail to this goal."**
+   - It then transitioned to abort the mission and acknowledged the failure:
+     -**"Aborting because a valid plan could not be found. Even after executing all recovery behaviors"**
+     - It recorded transitions indicating the status changes, such as: **"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-25.148)"** and **"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-32.916)"**
+
+Overall, the robot employed several recovery strategies (clearing costmaps and performing rotation recovery) when dealing with unfeasible paths. However, when these strategies did not result in a viable plan, it safely aborted the mission to avoid further complications.

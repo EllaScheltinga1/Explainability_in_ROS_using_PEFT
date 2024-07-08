@@ -1,0 +1,10 @@
+The robot attempted multiple strategies to handle the unfeasible path:
+
+1. **Clearing Costmaps:**
+   - The robot cleared both its local and global costmaps initially outside a square 3 meters large centered on itself. This action potentially removes outdated or incorrect obstacle data that might be obstructing path planning.
+   - When the initial clearing did not help, the robot reduced the clearing area to a square 1.5 meters large. This narrower clearing might focus on more immediate surroundings, also hoping to resolve any local map issues.
+
+2. **Recovery Behaviors:**
+   - The robot initiated a "rotate recovery behavior," which generally involves rotating in place to scan the surroundings better and update its costmap with new sensor information.
+
+Despite these recovery strategies, the robot identified that the goal was off the global costmap twice, indicating that the waypoints were unreachable within the known map boundaries. Ultimately, after these attempts failed, the robot aborted the mission since it could not generate a valid path.
