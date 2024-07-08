@@ -1,0 +1,24 @@
+Tuck arm...
+Started controllers: imu_sensor_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Started controllers: hand_controller
+Started controllers: force_torque_sensor_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Arm tucked.
+Waiting for move_base action server...
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=-4.0, y=-4.5"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.139)"
+Motion played successfully.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.139)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.139)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=-2.5, y=-11.0"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-48.955)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-48.955)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-48.955)"
+Reached waypoint 2

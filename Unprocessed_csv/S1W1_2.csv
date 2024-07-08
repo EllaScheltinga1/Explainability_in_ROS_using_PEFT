@@ -1,0 +1,24 @@
+msg
+Subscribing to /rosout
+Tuck arm...
+connecting to ella-HP-ZBook-Studio-G5 39853
+Started controllers: hand_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Started controllers: force_torque_sensor_controller
+Recording to 'S1W1_2.bag'.
+Started controllers: imu_sensor_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Arm tucked.
+Waiting for move_base action server...
+connecting to ella-HP-ZBook-Studio-G5 48455
+connecting to ella-HP-ZBook-Studio-G5 48455
+connecting to ella-HP-ZBook-Studio-G5 48455
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=-3.5, y=-3.5"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.117)"
+Motion played successfully.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.117)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.117)"
+Reached waypoint 1

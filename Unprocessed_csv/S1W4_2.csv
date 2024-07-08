@@ -1,0 +1,49 @@
+msg
+Recording to 'S1W4_2.bag'.
+connecting to ella-HP-ZBook-Studio-G5 59865
+Tuck arm...
+Started controllers: hand_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Started controllers: imu_sensor_controller
+Started controllers: force_torque_sensor_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Arm tucked.
+Waiting for move_base action server...
+connecting to ella-HP-ZBook-Studio-G5 55979
+connecting to ella-HP-ZBook-Studio-G5 55979
+connecting to ella-HP-ZBook-Studio-G5 55979
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=-4.0, y=-2.0"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.107)"
+Motion played successfully.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.107)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.107)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=1.0, y=-2.5"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-32.110)"
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization).
+TebLocalPlannerROS: oscillation recovery disabled/expired.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-32.110)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-32.110)"
+Reached waypoint 2
+"Sending goal 3 to move_base: x=1.0, y=-5.0"
+Navigating to waypoint 3...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-3-61.435)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-3-61.435)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-3-61.435)"
+Reached waypoint 3
+"Sending goal 4 to move_base: x=-3.0, y=-6.0"
+Navigating to waypoint 4...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-4-70.842)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-4-70.842)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-4-70.842)"
+Reached waypoint 4
