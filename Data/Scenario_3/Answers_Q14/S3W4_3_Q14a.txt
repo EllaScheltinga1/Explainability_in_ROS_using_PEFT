@@ -1,0 +1,35 @@
+When the robot encountered unfeasible paths during its navigation to waypoint 3, it employed several strategies to try and resolve the issue. Here’s a step-by-step breakdown of the robot's actions in dealing with the unfeasible paths:
+
+1. **Detecting the Problem:** The robot failed to generate a feasible plan to reach waypoint 3.
+   - **Log Entry:** "Failed to get a plan."
+
+2. **Clearing Costmaps:** 
+   - Initially, the robot cleared both global and local costmaps within a square region centered on the robot. This can help to remove any dynamic obstacles or erroneous costmap data that might be blocking the path.
+     - **Log Entry:** "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+   - The robot then attempted a more aggressive clear within a smaller region.
+     - **Log Entry:** "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+
+3. **Recovery Behavior:** 
+   - The robot initiated the rotate recovery behavior, which typically involves spinning in place to scan the surroundings and try to find a new, feasible path.
+     - **Log Entry:** "Rotate recovery behavior started."
+
+4. **Retrying Plan Generation:** 
+   - After executing these recovery steps, the robot attempted to generate a plan again. Unfortunately, the plan generation still failed.
+     - **Log Entry:** "Failed to get a plan."
+
+5. **Aborting the Goal:** 
+   - After exhausting all recovery behaviors and still failing to find a feasible plan, the robot aborted the navigation goal to waypoint 3.
+     - **Log Entry:** "Aborting because a valid plan could not be found. Even after executing all recovery behaviors"
+
+6. **Logging the Failure:** 
+   - The robot logged the transition to a state indicating the failure to reach the goal and acknowledged the aborting of the goal.
+     - **Log Entry:** "Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-3-38.136)"
+     - **Log Entry:** "Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-3-38.136)"
+     - **Log Entry:** "Failed to reach waypoint 3"
+
+Following this failure, the robot proceeded to set and navigate towards the next goal (waypoint 4), indicating that it continued its mission with the subsequent targets.
+
+Overall, the robot's approach to dealing with unfeasible paths included:
+- Clearing costmaps to remove potential obstacles or erroneous data.
+- Performing rotate recovery behavior to scan for a new path.
+- Finally, aborting the goal after these efforts were unsuccessful.

@@ -1,0 +1,20 @@
+From the ROS log messages provided, it is clear that the autonomous robot encountered issues in navigating to certain waypoints. Here are the reasons behind the infeasibility of the paths for waypoints 2 and 4:
+
+1. **Waypoint 2 (x=2.5, y=-5.5)**:
+   - The robot initially failed to get a plan.
+   - The system attempted recovery behaviors, which included clearing both costmaps outside squares centered on the robot (first 3.00m and then 1.50m).
+   - Rotate recovery behavior was executed as well.
+   - Despite these recovery efforts, the robot again failed to generate a valid plan.
+   - Ultimately, it aborted the goal due to the inability to find a feasible path, even after executing all recovery behaviors.
+
+   **Reason**: The area around waypoint 2 likely had obstacles or a complex environment that made path planning infeasible. The recovery behaviors (clearing costmaps and rotating) were not sufficient to resolve the obstacle issues or environmental complexities.
+
+2. **Waypoint 4 (x=-3.5, y=-10.5)**:
+   - Similar to waypoint 2, the robot failed to get a plan initially.
+   - Recovery behaviors were again executed, including clearing costmaps and the rotate recovery behavior.
+   - However, it once more failed to come up with a feasible plan even after these actions.
+   - The robot aborted the goal after these attempts failed.
+
+   **Reason**: The situation for waypoint 4 mirrors that of waypoint 2. The environmental conditions around this point likely had obstacles or complexities that the robot's path planning algorithms could not overcome, leading to the inability to find a viable path.
+
+In summary, for both waypoints 2 and 4, the robot could not generate feasible paths due to obstacles or difficult terrain in the environment that couldn't be overcome by standard recovery behaviors.

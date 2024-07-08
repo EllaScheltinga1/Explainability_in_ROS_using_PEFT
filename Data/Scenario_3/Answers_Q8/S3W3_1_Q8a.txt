@@ -1,0 +1,25 @@
+Yes, the robot failed to reach two waypoints:
+
+1. **Waypoint 1**
+   - Coordinates: x = -2.0, y = -2.0
+   - Sequence of events:
+     - Sent goal 1 to move_base.
+     - Transitioned to ACTIVE.
+     - Failed to get a plan.
+     - Attempted recovery behaviors, but still failed to get a plan.
+     - Aborted the goal.
+     - Transitioned to DONE.
+     - Logged message "Failed to reach waypoint 1."
+
+2. **Waypoint 2**
+   - Coordinates: x = -3.5, y = -7.0
+   - Sequence of events:
+     - Sent goal 2 to move_base.
+     - Transitioned to ACTIVE.
+     - Failed to get a plan.
+     - Attempted recovery behaviors, but still failed to get a plan.
+     - Aborted the goal.
+     - Transitioned to DONE.
+     - Logged message "Failed to reach waypoint 2."
+
+The robot only successfully reached waypoint 3.

@@ -1,0 +1,18 @@
+The robot made several attempts to deal with unfeasible paths as evident from the log messages. Here’s a step-by-step explanation of how it handled these situations:
+
+1. **Failed to Get a Plan**: When the robot could not generate a feasible path to the desired waypoint, it indicated "Failed to get a plan."
+   
+2. **Costmap Clearing**: The robot attempted to clear obstacles from its costmaps to find a new viable path. It executed this in two stages:
+   - **Clearing a Larger Area**: It cleared obstacles outside a square with a 3.00-meter side centered on the robot.
+   - **Clearing a Smaller Area**: It then tried to clear a smaller area with a 1.50-meter side centered on the robot.
+
+3. **Recovery Behaviors**: After the costmaps were cleared, the robot initiated a recovery behavior called "Rotate recovery behavior," where it rotated to re-evaluate its surroundings and look for a feasible path.
+
+4. **Repeat Planning**: Despite these recovery steps, if the robot still failed to find a valid plan after clearing costmaps and executing recovery behaviors, it aborted the operation for that particular waypoint.
+
+Overall, the robot followed a structured approach:
+- Attempt planning.
+- Clear costmaps (first larger, then smaller).
+- Execute recovery behaviors such as rotating.
+- Repeat planning.
+- Abort if no valid plan can be found after these steps.

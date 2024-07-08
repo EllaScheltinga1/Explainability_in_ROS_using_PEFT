@@ -1,0 +1,13 @@
+The robot employed a series of recovery strategies when it encountered unfeasible paths:
+
+1. **Recovery Strategies Activation**: When the `TebLocalPlannerROS` detected possible oscillation (either in the robot's movement or its local plan), it activated a recovery strategy. Specifically, it tried to prefer the current turning direction during optimization.
+
+2. **Costmap Clearing**: The robot attempted to clear obstacles by clearing costmaps (maps that indicate obstacles) in different-sized squares centered on the robot. Initially, a 3.00m square was cleared, followed by a 1.50m square.
+
+3. **Rotate Recovery Behavior**: The robot engaged in a rotate recovery behavior, which typically involves rotating on the spot to try to find a new viable path out of the oscillatory state or to re-evaluate its surroundings.
+
+4. **Abort Mission on Oscillation**: If the robot continued to oscillate (repeatedly move back and forth without making progress) despite executing these recovery behaviors, it aborted the current navigation goal. This happened when attempting to reach waypoint 2.
+
+5. **Abort Mission on Plan Failure**: If the robot failed to generate a valid plan even after executing all recovery behaviors, it also aborted the current navigation goal. This occurred when attempting to reach waypoint 3.
+
+Despite these recovery attempts, the robot was unable to reach waypoint 2 due to persistent oscillation and waypoint 3 due to an inability to generate a valid plan. However, it successfully reached other waypoints either without the need for recovery strategies or after the initial recovery attempts worked.

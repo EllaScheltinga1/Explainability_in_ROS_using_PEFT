@@ -1,0 +1,13 @@
+When the robot encountered an unfeasible path for waypoint 5, it implemented several actions to address the issue:
+
+1. **Clearing Costmaps**:
+    - **Initial Attempt**: Cleared both costmaps outside a 3.00-meter square centered on the robot. Costmaps store information about the environment and obstacles, and clearing them helps in re-evaluating the environment for potential paths.
+    - **Subsequent Attempt**: When the initial clearing did not help, the robot attempted clearing both costmaps again, but this time outside a 1.50-meter square.
+
+2. **Recovery Behaviors**:
+    - **Rotate Recovery**: The robot initiated a rotate recovery behavior, which involves rotating in place to potentially find a new trajectory or clear minor localization errors.
+
+Despite these efforts, the robot failed to generate a valid path and therefore:
+- **Aborted the Plan**: Ultimately, the robot aborted the goal to waypoint 5 after failing to find a viable path even after executing all recovery behaviors.
+
+These steps illustrate the robot's attempt to re-evaluate and recover from navigation failures before ultimately deciding that the goal was not feasible to reach under the given conditions.

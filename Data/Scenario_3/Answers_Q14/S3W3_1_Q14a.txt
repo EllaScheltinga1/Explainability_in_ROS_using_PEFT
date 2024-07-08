@@ -1,0 +1,13 @@
+When the robot encountered unfeasible paths, it implemented several recovery behaviors before ultimately aborting the attempts to reach the waypoints. Here are the steps the robot took to deal with the unfeasible paths:
+
+1. **Failed to Get a Plan**: Initially, when the robot failed to obtain a valid plan to the desired waypoint, it did not immediately give up.
+
+2. **Clearing Costmaps**: It cleared both local and global costmaps in two different stages: first, outside a square 3.00 meters large, and second, outside a square 1.50 meters large centered on the robot. This action is aimed at eliminating any erroneous or outdated information about the surroundings that might be obstructing path planning.
+
+3. **Rotate Recovery Behavior**: It activated a rotate recovery behavior, which involves the robot rotating on the spot to potentially identify a new feasible path by perceiving its environment from different angles.
+
+4. **Repeating the Plan Attempt**: After performing these recovery steps, the robot attempted again to get a plan. 
+
+5. **Aborting the Goal**: When these recovery behaviors (clearing costmaps and rotating) did not lead to a successful plan, the robot aborted the mission for the specific waypoint. This is indicated by the transition to `WAITING_FOR_RESULT` followed by `DONE` with the status of the goal as failed.
+
+These steps were repeated for each unsuccessful goal attempt until the robot was eventually able to navigate successfully to a feasible waypoint (waypoint 3).

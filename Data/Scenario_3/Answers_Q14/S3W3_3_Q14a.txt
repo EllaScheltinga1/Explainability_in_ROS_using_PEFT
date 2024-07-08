@@ -1,0 +1,17 @@
+When the robot encountered unfeasible paths, its behavior and subsequent actions were as detailed in the logs:
+
+1. **Initial Attempt to Navigate**: The robot started by sending its first goal to the `move_base` action server with coordinates \( x=2.0 \) and \( y=1.0 \).
+
+2. **Failed to Get a Plan**: The navigation system failed to generate a valid plan to reach the first waypoint. This failure was acknowledged by the message "Failed to get a plan."
+
+3. **Recovery Behavior – Clearing Costmaps**: In an attempt to recover from this failure, the robot executed a recovery behavior. Specifically, it cleared both costmaps (the mapping of obstacles) within squares centered on the robot, first with a size of 3.00m and then with a size of 1.50m. This step is often done to clear any potentially stale or inaccurate data that could be obstructing the planning process.
+
+4. **Rotate Recovery Behavior**: After clearing the costmaps, the robot engaged in a "Rotate recovery behavior." This typically involves rotating the robot in place to help with re-localizing itself in the environment and potentially clearing any immediate minor obstacles.
+
+5. **Repeated Failed Plan**: Despite the recovery behaviors, the robot still failed to generate a feasible plan. This is indicated by the repeated message "Failed to get a plan."
+
+6. **Aborting the Goal**: After all recovery behaviors were exhausted without success, the system aborted the goal with the message "Aborting because a valid plan could not be found. Even after executing all recovery behaviors." This indicates that the robot's navigation system could not find any feasible path to the initial waypoint.
+
+7. **Transitioning Back to Waiting and Reporting Failure**: Once aborted, the robot transitioned back to the state `WAITING_FOR_RESULT` and subsequently to `DONE` with the log message "Failed to reach waypoint 1."
+
+In summary, the robot attempted several recovery strategies such as clearing costmaps and performing a rotate recovery. Once those strategies failed to yield a feasible path, it aborted the effort and reported the failure to reach the waypoint.

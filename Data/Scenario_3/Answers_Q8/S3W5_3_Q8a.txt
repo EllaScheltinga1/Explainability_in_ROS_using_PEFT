@@ -1,0 +1,11 @@
+Yes, the robot failed to reach two waypoints:
+
+1. **Waypoint 2** at coordinates \( x=2.5, y=-5.5 \):
+    - The log indicates that the robot failed to get a plan and executed recovery behaviors such as clearing costmaps and rotating but was unsuccessful in finding a valid plan. This led to aborting the goal.
+   
+2. **Waypoint 4** at coordinates \( x=-3.5, y=-10.5 \):
+    - Similarly, the robot failed to generate a plan for this waypoint and despite executing recovery behaviors, it could not find a valid plan and hence aborted the goal.
+
+Logs confirming failure:
+- For Waypoint 2: "Aborting because a valid plan could not be found. Even after executing all recovery behaviors"
+- For Waypoint 4: "Aborting because a valid plan could not be found. Even after executing all recovery behaviors"

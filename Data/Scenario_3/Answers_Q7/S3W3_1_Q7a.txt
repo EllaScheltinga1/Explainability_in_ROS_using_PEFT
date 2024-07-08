@@ -1,0 +1,3 @@
+No, not all planned paths were feasible during the navigation task. The log messages indicate that the robot failed to reach both waypoint 1 (x=-2.0, y=-2.0) and waypoint 2 (x=-3.5, y=-7.0). The robot attempted various recovery behaviors, including clearing costmaps and performing rotate recovery, but ultimately could not find valid paths for these waypoints. 
+
+However, the robot successfully navigated to waypoint 3 (x=2.0, y=-7.0), reaching the goal without any issues. Therefore, out of the three waypoints, only the path to waypoint 3 was feasible.

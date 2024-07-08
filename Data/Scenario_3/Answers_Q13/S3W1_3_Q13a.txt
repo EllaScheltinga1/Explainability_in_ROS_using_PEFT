@@ -1,0 +1,15 @@
+The logs indicate several reasons why the paths might not have been feasible:
+
+1. **Failed Planning**:
+    - The log mentions twice that the robot "Failed to get a plan.” This implies that the path planning algorithm utilized by the robot was unable to compute a viable path from its current location to the specified goal coordinates (x=2.0, y=-10.0).
+    
+2. **Recovery Behaviors**:
+    - After failing to get a valid plan initially, the robot executed recovery behaviors like "Clearing both costmaps" at different sizes (3.00m and 1.50m) and "Rotate recovery behavior." Despite these recovery attempts, it still could not generate a feasible path.
+
+3. **Resource Constraints**:
+    - Costmap clearing efforts indicate that there may have been obstacles or invalid cost values in the costmap preventing the planner from finding a viable route. Clearing the costmaps was an attempt to remove these impediments, but it wasn’t sufficient.
+
+4. **Abortion Due to Infeasibility**:
+    - The robot ultimately transitioned to "ABORTING" because even after all recovery behaviors, a valid plan could not be obtained. This strongly suggests that the environment might have been dynamically changing, or there were insurmountable obstacles that made any direct or navigable path infeasible.
+
+In summary, the robot was unable to find a feasible path due to initial and persistent planning failures, even after executing multiple recovery actions. This indicates that environmental constraints and the limitations of the path planning algorithm in handling these constraints were the primary reasons for infeasibility.

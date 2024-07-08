@@ -1,0 +1,17 @@
+When the robot encountered unfeasible paths during its navigation, it undertook several specific recovery behaviors to try and find a feasible path. Here's how the robot dealt with such situations:
+
+1. **Trajectory Feasibility Check:** When attempting to navigate to the second and third waypoints, the robot's local planner (TebLocalPlannerROS) identified that the trajectory was not feasible.
+   
+2. **Resetting Planner:** Upon detecting an unfeasible trajectory, the planner was reset to attempt to find an alternative path.
+
+3. **Clearing Costmaps:** The robot performed actions to clear its costmaps:
+   - It first cleared costmaps outside a 3.00-meter square centered on the robot.
+   - Following that, it cleared costmaps outside a 1.50-meter square centered on the robot. 
+
+4. **Rotate Recovery Behavior:** As part of its recovery strategy, the robot initiated a rotate recovery behavior, which is a maneuver to help the robot reorient and potentially find a new viable path.
+
+Despite these recovery attempts, the robot was unable to find a valid plan to reach Waypoint 2 and ultimately aborted the navigation for that specific goal.
+
+For Waypoint 3, similar steps were followed, including the local planner resetting due to an unfeasible trajectory. However, this time the recovery actions were successful, and the robot eventually reached the waypoint.
+
+In summary, the robot's strategy for dealing with unfeasible paths involved resetting its local planner, clearing costmaps to remove potentially problematic obstacles, and executing rotate recovery behaviors to reorient itself and attempt to identify a viable path.

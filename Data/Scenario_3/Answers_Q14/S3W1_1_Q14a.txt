@@ -1,0 +1,11 @@
+The robot identified that it could not generate a valid plan to reach waypoint 1. To address this issue, it executed several recovery behaviors:
+
+1. **Clearing Costmaps:**
+   - The robot first cleared both its local and global costmaps. Costmaps are used to represent the obstacles in the robot's environment. Clearing these maps outside a 3.00m square centered on the robot and then within a 1.50m square would potentially remove any erroneous or transient obstacles that might be blocking the path.
+
+2. **Rotate Recovery Behavior:**
+   - The "rotate recovery behavior" was then initiated. This involves the robot performing a rotational movement in place to scan the environment afresh, helping it to re-evaluate its surroundings and possibly find a new feasible path.
+
+Despite these recovery attempts, the robot was still unable to generate a valid plan. It then proceeded to abort the task, transitioning back through its state machine to "WAITING_FOR_RESULT," and ultimately to "DONE," indicating it had stopped trying to reach the waypoint and declared the mission as failed.
+
+In summary, the robot dealt with the unfeasible path by clearing its costmaps and performing a rotate recovery behavior. When these attempts failed, it aborted the mission.

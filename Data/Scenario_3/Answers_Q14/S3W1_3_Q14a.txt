@@ -1,0 +1,12 @@
+The robot attempted multiple strategies to deal with unfeasible paths during its navigation to waypoint 1:
+
+1. **Costmap Clearing:** The robot first cleared the costmaps, which are used for path planning, to remove obstacles or any extraneous data that might hinder the planning of a feasible path. This was done in two steps, first by clearing a 3.00-meter square centered on the robot, and then by clearing a smaller 1.50-meter square.
+
+2. **Recovery Behaviors:** After clearing the costmaps, the robot initiated a recovery behavior, specifically a "rotate recovery" behavior. This typically involves the robot rotating in place to scan its surroundings, hoping to find a valid path by re-evaluating the environment from a different perspective.
+
+Despite these efforts, the robot was unable to generate a valid path. Consequently, it aborted the navigation task and transitioned through various states indicating the failure:
+
+- **WAITING_FOR_RESULT:** This state indicates the robot was waiting to see if the recent actions (costmap clearing and recovery behaviors) resolved the issue.
+- **DONE:** Finally, the robot transitioned to the DONE state, signaling the end of the navigation attempt because a valid plan could not be found even after executing all recovery behaviors.
+
+Therefore, the robot's approach to handling unfeasible paths involved clearing costmaps to remove potential obstacles and performing a rotate recovery behavior to reassess the environment, but these measures were ultimately unsuccessful.
