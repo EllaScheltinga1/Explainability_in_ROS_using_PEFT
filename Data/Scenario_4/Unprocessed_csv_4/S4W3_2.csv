@@ -1,0 +1,57 @@
+msg
+connecting to ella-HP-ZBook-Studio-G5 36877
+Recording to 'S4W3_2.bag'.
+Started controllers: imu_sensor_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Tuck arm...
+Started controllers: force_torque_sensor_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Started controllers: hand_controller
+Arm tucked.
+Waiting for move_base action server...
+connecting to ella-HP-ZBook-Studio-G5 36991
+connecting to ella-HP-ZBook-Studio-G5 36991
+connecting to ella-HP-ZBook-Studio-G5 36991
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=3.5, y=-7.0"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.229)"
+Motion played successfully.
+"New obstacle detected at position (3.5, -11.0)"
+"New obstacle detected at position (3.5, -11.0)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.229)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.229)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=1.0, y=-11.0"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-33.933)"
+"New obstacle detected at position (3.5, -11.0)"
+Robot is nearing the obstacle. Path is being replanned.
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+Robot is nearing the obstacle. Path is being replanned.
+TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization).
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+Robot is nearing the obstacle. Path is being replanned.
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+Clearing both costmaps outside a square (1.50m) large centered on the robot.
+Failed to reach waypoint 2
+"Sending goal 3 to move_base: x=4.0, y=-12.0"
+Navigating to waypoint 3...
+"Transitioning to PENDING (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-3-63.942)"
+"Transitioning to ACTIVE (from PENDING, goal: /tiago_autonomous_navigation-3-63.942)"
+Robot is nearing the obstacle. Path is being replanned.
+TebLocalPlannerROS: oscillation recovery disabled/expired.
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+Robot is nearing the obstacle. Path is being replanned.
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+Robot is nearing the obstacle. Path is being replanned.
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+Failed to reach waypoint 3

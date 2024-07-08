@@ -1,0 +1,57 @@
+msg
+Started controllers: imu_sensor_controller
+connecting to ella-HP-ZBook-Studio-G5 35835
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Started controllers: force_torque_sensor_controller
+Recording to 'S4W4_2.bag'.
+Started controllers: hand_controller
+Tuck arm...
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Waiting for move_base action server...
+Arm tucked.
+connecting to ella-HP-ZBook-Studio-G5 57487
+connecting to ella-HP-ZBook-Studio-G5 57487
+connecting to ella-HP-ZBook-Studio-G5 57487
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=1.5, y=0.0"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.160)"
+Motion played successfully.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.160)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.160)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=-4.0, y=1.0"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-18.466)"
+TF_REPEATED_DATA ignoring data with redundant timestamp for frame odom at time 21.782000 according to authority unknown_publisher
+TF_REPEATED_DATA ignoring data with redundant timestamp for frame odom at time 21.782000 according to authority unknown_publisher
+"TF_REPEATED_DATA ignoring data with redundant timestamp for frame odom at time 21,782000 according to authority unknown_publisher"
+TF_REPEATED_DATA ignoring data with redundant timestamp for frame odom at time 21.782000 according to authority unknown_publisher
+"New obstacle detected at position (-4.0, 0.0)"
+Robot is nearing the obstacle. Path is being replanned.
+Robot is nearing the obstacle. Path is being replanned.
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization).
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+Failed to reach waypoint 2
+"Sending goal 3 to move_base: x=1.0, y=-4.5"
+Navigating to waypoint 3...
+"Transitioning to PENDING (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-3-48.466)"
+"Transitioning to ACTIVE (from PENDING, goal: /tiago_autonomous_navigation-3-48.466)"
+Robot is nearing the obstacle. Path is being replanned.
+TebLocalPlannerROS: oscillation recovery disabled/expired.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-3-48.466)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-3-48.466)"
+Reached waypoint 3
+"Sending goal 4 to move_base: x=1.0, y=-11.0"
+Navigating to waypoint 4...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-4-69.767)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-4-69.767)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-4-69.767)"
+Reached waypoint 4

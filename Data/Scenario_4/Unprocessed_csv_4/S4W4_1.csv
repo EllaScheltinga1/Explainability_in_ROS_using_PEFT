@@ -1,0 +1,57 @@
+msg
+connecting to ella-HP-ZBook-Studio-G5 57971
+Tuck arm...
+Started controllers: force_torque_sensor_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Recording to 'S4W4_1.bag'.
+Started controllers: hand_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Started controllers: imu_sensor_controller
+Arm tucked.
+Waiting for move_base action server...
+connecting to ella-HP-ZBook-Studio-G5 37787
+connecting to ella-HP-ZBook-Studio-G5 37787
+connecting to ella-HP-ZBook-Studio-G5 37787
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=1.0, y=-2.0"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.139)"
+Motion played successfully.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.139)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.139)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=0.0, y=-5.0"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-22.342)"
+"New obstacle detected at position (-4.0, -9.0)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-22.342)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-22.342)"
+Reached waypoint 2
+"Sending goal 3 to move_base: x=-3.0, y=-5.5"
+Navigating to waypoint 3...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-3-34.249)"
+"New obstacle detected at position (-4.0, -9.0)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-3-34.249)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-3-34.249)"
+Reached waypoint 3
+"Sending goal 4 to move_base: x=-4.0, y=-9.0"
+Navigating to waypoint 4...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-4-49.769)"
+"New obstacle detected at position (-4.0, -9.0)"
+"New obstacle detected at position (-4.0, -9.0)"
+Robot is nearing the obstacle. Path is being replanned.
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+Failed to get a plan.
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+Clearing both costmaps outside a square (1.50m) large centered on the robot.
+Robot is nearing the obstacle. Path is being replanned.
+Failed to get a plan.
+Robot is nearing the obstacle. Path is being replanned.
+Failed to get a plan.
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+Clearing both costmaps outside a square (1.50m) large centered on the robot.
+Failed to reach waypoint 4

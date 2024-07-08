@@ -1,0 +1,30 @@
+Tuck arm...
+Started controllers: imu_sensor_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Started controllers: hand_controller
+Started controllers: force_torque_sensor_controller
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Arm tucked.
+Waiting for move_base action server...
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=1.0, y=-2.0"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.156)"
+Motion played successfully.
+"New obstacle detected at position (3.0, -7.0)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.156)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.156)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=3.0, y=-7.0"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-22.466)"
+"New obstacle detected at position (3.0, -7.0)"
+Robot is nearing the obstacle. Path is being replanned.
+Failed to get a plan.
+Robot is nearing the obstacle. Path is being replanned.
+Failed to get a plan.
+TebLocalPlannerROS: trajectory is not feasible. Resetting planner...
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+Robot is nearing the obstacle. Path is being replanned.
+Failed to reach waypoint 2

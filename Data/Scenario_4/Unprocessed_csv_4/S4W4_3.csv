@@ -1,0 +1,55 @@
+msg
+Tuck arm...
+Started controllers: imu_sensor_controller
+connecting to ella-HP-ZBook-Studio-G5 34895
+Controller Spawner: Loaded controllers: arm_velocity_trajectory_controller
+Started controllers: hand_controller
+"Started controllers: joint_state_controller, torso_controller, head_controller, arm_controller, mobile_base_controller"
+Recording to 'S4W4_3.bag'.
+Started controllers: force_torque_sensor_controller
+Arm tucked.
+Waiting for move_base action server...
+connecting to ella-HP-ZBook-Studio-G5 57279
+connecting to ella-HP-ZBook-Studio-G5 57279
+connecting to ella-HP-ZBook-Studio-G5 57279
+Connected to move_base action server.
+"Sending goal 1 to move_base: x=-3.5, y=-0.5"
+Navigating to waypoint 1...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-1-15.171)"
+Motion played successfully.
+"New obstacle detected at position (1.5, -2.5)"
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.171)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.171)"
+Reached waypoint 1
+"Sending goal 2 to move_base: x=1.0, y=0.0"
+Navigating to waypoint 2...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-2-31.676)"
+"New obstacle detected at position (1.5, -2.5)"
+"New obstacle detected at position (1.5, -2.5)"
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-2-31.676)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-2-31.676)"
+Reached waypoint 2
+GOAL Reached!
+"Sending goal 3 to move_base: x=3.0, y=-4.5"
+Navigating to waypoint 3...
+"Transitioning to ACTIVE (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-3-41.082)"
+Robot is nearing the obstacle. Path is being replanned.
+Robot is nearing the obstacle. Path is being replanned.
+TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization).
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+Robot is nearing the obstacle. Path is being replanned.
+Clearing both costmaps outside a square (1.50m) large centered on the robot.
+Failed to reach waypoint 3
+"Sending goal 4 to move_base: x=3.0, y=0.0"
+Navigating to waypoint 4...
+"Transitioning to PENDING (from WAITING_FOR_GOAL_ACK, goal: /tiago_autonomous_navigation-4-71.093)"
+"Transitioning to ACTIVE (from PENDING, goal: /tiago_autonomous_navigation-4-71.093)"
+Robot is nearing the obstacle. Path is being replanned.
+Clearing both costmaps outside a square (3.00m) large centered on the robot.
+Robot is nearing the obstacle. Path is being replanned.
+TebLocalPlannerROS: oscillation recovery disabled/expired.
+GOAL Reached!
+"Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-4-71.093)"
+"Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-4-71.093)"
+Reached waypoint 4
