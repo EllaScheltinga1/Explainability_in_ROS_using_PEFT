@@ -1,0 +1,1 @@
+The first waypoint the robot reached was at coordinates \( x=2.0 \), \( y=-6.5 \).

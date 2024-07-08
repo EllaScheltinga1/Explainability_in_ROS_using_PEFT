@@ -1,0 +1,18 @@
+Yes, all received waypoints were successfully reached. The log messages indicate the following for each waypoint:
+
+1. **Waypoint 1:**
+   - Sent goal: `x=2.0, y=-6.5`
+   - Navigation state changes: `ACTIVE` ➔ `WAITING_FOR_RESULT` ➔ `DONE`
+   - Confirmation: `GOAL Reached!` and `Reached waypoint 1`
+
+2. **Waypoint 2:**
+   - Sent goal: `x=-2.0, y=-6.0`
+   - Navigation state changes: `ACTIVE` ➔ `WAITING_FOR_RESULT` ➔ `DONE`
+   - Confirmation: `GOAL Reached!` and `Reached waypoint 2`
+
+3. **Waypoint 3:**
+   - Sent goal: `x=-3.0, y=-12.0`
+   - Navigation state changes: `ACTIVE` ➔ `WAITING_FOR_RESULT` ➔ `DONE`
+   - Confirmation: `GOAL Reached!` and `Reached waypoint 3`
+
+Each waypoint goal sent to the `move_base` action server was followed by confirmation that the goal was reached, as indicated by the state transition to `DONE` and the `GOAL Reached!` messages.

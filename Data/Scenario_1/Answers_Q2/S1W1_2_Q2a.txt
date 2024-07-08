@@ -1,0 +1,3 @@
+The log messages indicate that a goal corresponding to waypoint 1 was received and acted upon by the robot. Specifically, the goal is detailed as "Sending goal 1 to move_base: x=-3.5, y=-3.5." This is the only waypoint mentioned in the logs. Therefore, the waypoint received is:
+
+1. Waypoint 1: Coordinates (x=-3.5, y=-3.5)

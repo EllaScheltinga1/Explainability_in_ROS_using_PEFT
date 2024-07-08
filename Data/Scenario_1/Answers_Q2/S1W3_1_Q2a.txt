@@ -1,0 +1,7 @@
+The waypoints received by the ROS-based autonomous robot are as follows:
+
+1. Waypoint 1: x = -2.0, y = -1.0
+2. Waypoint 2: x = -4.0, y = -1.0
+3. Waypoint 3: x = 2.0, y = -4.0
+
+These coordinates indicate the target positions the robot aimed to navigate to during its operation.

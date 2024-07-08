@@ -1,0 +1,6 @@
+The ROS log messages indicate that the robot received two waypoints:
+
+1. Waypoint 1: Coordinates (x=3.0, y=-4.5)
+2. Waypoint 2: Coordinates (x=-2.0, y=-5.5)
+
+These coordinates were provided in the log lines where goals were sent to the `move_base` action server.

@@ -1,0 +1,7 @@
+The log messages indicate that the following waypoints were received and processed by the robot:
+
+1. Waypoint 1: (x=3.0, y=-4.0)
+2. Waypoint 2: (x=2.5, y=-6.5)
+3. Waypoint 3: (x=2.0, y=-11.0)
+
+Each waypoint was sent to the `move_base` action server, and the robot navigated to these points successfully.

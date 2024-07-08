@@ -1,0 +1,8 @@
+The first waypoint the robot reached was at coordinates \( x = -3.5, y = 0.0 \). This information is derived from the log segment:
+
+```
+Sending goal 1 to move_base: x=-3.5, y=0.0
+Navigating to waypoint 1...
+GOAL Reached!
+Reached waypoint 1
+```

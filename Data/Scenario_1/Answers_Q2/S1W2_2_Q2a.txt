@@ -1,0 +1,4 @@
+Two waypoints were received:
+
+1. Waypoint 1 with coordinates \(x=1.0\), \(y=-4.5\).
+2. Waypoint 2 with coordinates \(x=2.0\), \(y=-10.5\).

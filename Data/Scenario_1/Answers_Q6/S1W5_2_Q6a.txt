@@ -1,0 +1,1 @@
+The last waypoint the robot reached was at coordinates \( x=0.0, y=1.0 \). This is confirmed by the log statement "Reached waypoint 5," which corresponds to the coordinates \( x=0.0, y=1.0 \) sent to the `move_base` just before that.

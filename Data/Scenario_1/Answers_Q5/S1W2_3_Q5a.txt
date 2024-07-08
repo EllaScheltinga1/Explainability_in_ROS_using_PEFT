@@ -1,0 +1,13 @@
+The first waypoint the robot reached was at coordinates \( x=3.0, y=-4.5 \). The robot initiated navigation to this waypoint with the goal message:
+
+```
+Sending goal 1 to move_base: x=3.0, y=-4.5
+```
+
+It successfully reached this waypoint as indicated by the logs:
+
+```
+GOAL Reached!
+Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.076)
+Reached waypoint 1
+```
