@@ -1,0 +1,7 @@
+Yes, there was an instance where an obstacle was encountered during the navigation task. Specifically, the log mentions the following issues at waypoint 2:
+
+1. **Trajectory Feasibility Issue:** The message "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..." indicates that the initially planned trajectory could not be followed, which typically happens due to obstacles or other path constraints.
+
+2. **Oscillation Detected:** The message "TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy..." confirms that the robot experienced oscillation, likely as a result of trying to navigate around an obstacle or a local path planning issue.
+
+These logs suggest that while navigating to waypoint 2, the robot needed to activate a recovery strategy to handle obstacles or other navigation difficulties. However, it successfully reached the goal after the planner reset and recovery strategy were applied.

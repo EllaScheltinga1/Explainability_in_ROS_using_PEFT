@@ -1,0 +1,7 @@
+Not all planned paths were feasible during the navigation task. Specifically, for the navigation to waypoint 2 (goal 2), there were issues indicated by the "TebLocalPlannerROS" log messages:
+
+- "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..."
+- "TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization)."
+- "TebLocalPlannerROS: oscillation recovery disabled/expired."
+
+These messages indicate that the trajectory initially planned for reaching waypoint 2 was deemed not feasible, and the system had to reset the planner and activate an oscillation recovery strategy to navigate successfully. Despite these issues, the goal was eventually reached. Other waypoints did not show similar issues, indicating that their planned paths were feasible.
