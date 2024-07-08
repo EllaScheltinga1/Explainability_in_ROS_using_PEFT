@@ -1,0 +1,1 @@
+The last waypoint the robot reached was waypoint 4, which had the coordinates x=-3.0 and y=-6.0.

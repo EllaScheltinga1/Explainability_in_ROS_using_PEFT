@@ -1,0 +1,1 @@
+No, not all received waypoints were successfully reached. The robot successfully reached waypoint 1 (x=-3.0, y=0.5), but it failed to reach waypoint 2 (x=2.0, y=-13.0). The log indicates that the global planner could not find a valid plan to the second goal because it was off the global costmap, and despite executing recovery behaviors, the planning still failed.

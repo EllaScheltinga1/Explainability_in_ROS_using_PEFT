@@ -1,0 +1,3 @@
+Based on the provided ROS log messages, only one waypoint was received by the robot:
+
+- Waypoint 1 with coordinates \( \text{x} = -6.0 \), \( \text{y} = -10.0 \).

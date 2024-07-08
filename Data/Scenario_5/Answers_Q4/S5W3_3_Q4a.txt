@@ -1,0 +1,1 @@
+No, not all received waypoints were successfully reached. The robot successfully navigated to and reached waypoint 1 (x=-3.0, y=-6.0) and waypoint 2 (x=-3.0, y=-12.0). However, it failed to reach waypoint 3 (x=-2.0, y=-14.0) due to the goal being off the global costmap, which caused the planning to fail and the robot to abort the mission after attempting all recovery behaviors.

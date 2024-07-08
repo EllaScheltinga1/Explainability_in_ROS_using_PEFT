@@ -1,0 +1,4 @@
+The autonomous robot received two waypoints:
+
+1. **Waypoint 1:** Coordinates \( x = 6.0, y = -2.0 \)
+2. **Waypoint 2:** Coordinates \( x = -8.0, y = 5.0 \)

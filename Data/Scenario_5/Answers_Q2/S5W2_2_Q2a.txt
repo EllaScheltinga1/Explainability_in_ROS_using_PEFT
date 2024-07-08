@@ -1,0 +1,9 @@
+The logs indicate that the robot received two waypoints. 
+
+1. **Waypoint 1:**
+   - Coordinates: x = -3.0, y = 0.5
+   - The robot successfully navigated to this waypoint and reached the goal.
+
+2. **Waypoint 2:**
+   - Coordinates: x = 2.0, y = -13.0
+   - The robot failed to navigate to this waypoint because the goal was off the global costmap, and a valid plan could not be found even after performing recovery behaviors.

@@ -1,0 +1,8 @@
+The log messages indicate that two waypoints were received:
+
+1. The first waypoint with coordinates \(x=-3.0, y=0.5\).
+2. The second waypoint with coordinates \(x=2.0, y=-13.0\).
+
+These waypoints are evidenced by the log messages:
+- "Sending goal 1 to move_base: x=-3.0, y=0.5"
+- "Sending goal 2 to move_base: x=2.0, y=-13.0"

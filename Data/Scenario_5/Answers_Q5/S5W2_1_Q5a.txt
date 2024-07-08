@@ -1,0 +1,1 @@
+The first waypoint the robot reached was waypoint 2. According to the logs, the robot failed to reach waypoint 1 due to the goal being off the global costmap, which caused the planning to fail. It successfully reached waypoint 2, as evidenced by the log messages indicating "GOAL Reached!" and the subsequent state transitions to "WAITING_FOR_RESULT" and "DONE."

@@ -1,0 +1,1 @@
+No, not all received waypoints were successfully reached. The logs indicate that the robot successfully reached waypoint 1 and waypoint 2. However, it failed to reach waypoint 3 due to the goal being off the global costmap, and planning continued to fail even after executing recovery behaviors.

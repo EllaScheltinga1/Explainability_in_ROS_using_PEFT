@@ -1,0 +1,1 @@
+Only one waypoint was received according to the provided log messages. Specifically, the move_base action server received a goal with the coordinates x=7.0, y=-2.0, which is referred to as waypoint 1. The log message "Sending goal 1 to move_base: x=7.0, y=-2.0" confirms this.

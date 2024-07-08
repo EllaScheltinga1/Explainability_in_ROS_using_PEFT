@@ -1,0 +1,7 @@
+No, not all received waypoints were successfully reached. The log messages indicate that the robot attempted to navigate to two waypoints:
+
+1. **Waypoint 1 (x=-1.0, y=5.0)**: The robot failed to reach this waypoint. The logs indicate that the goal sent to the global planner was off the global costmap, resulting in a failure to plan and reach this goal. The logs further mention executing rotate recovery behavior and ultimately transitioning to a DONE state with a failed result.
+
+2. **Waypoint 2 (x=2.0, y=0.0)**: The robot successfully reached this waypoint. The logs show successful transitions through the various states (ACTIVE to WAITING_FOR_RESULT to DONE) and explicitly mention "GOAL Reached!" and "Reached waypoint 2."
+
+Therefore, the robot only reached waypoint 2 successfully and failed to reach waypoint 1.

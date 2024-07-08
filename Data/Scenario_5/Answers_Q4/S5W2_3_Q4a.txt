@@ -1,0 +1,6 @@
+No, none of the received waypoints were successfully reached. The robot attempted to navigate to two waypoints:
+
+1. Waypoint 1 at coordinates (x=6.0, y=-2.0)
+2. Waypoint 2 at coordinates (x=-8.0, y=5.0)
+
+In both cases, the robot failed to arrive at the designated waypoints due to the goals being off the global costmap, resulting in the global planner's inability to generate a valid plan. Despite executing various recovery behaviors, the robot was unable to find a valid path to these goals and subsequently aborted the navigation attempts for both waypoints.

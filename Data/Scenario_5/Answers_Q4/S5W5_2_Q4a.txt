@@ -1,0 +1,9 @@
+No, not all received waypoints were successfully reached. Here is a summary of the status for each waypoint:
+
+1. Waypoint 1 (x=1.0, y=-1.0): Successfully reached.
+2. Waypoint 2 (x=2.0, y=-4.0): Successfully reached.
+3. Waypoint 3 (x=0.0, y=-6.0): Successfully reached.
+4. Waypoint 4 (x=-3.0, y=-6.0): Successfully reached.
+5. Waypoint 5 (x=10.0, y=-9.0): Not reached due to being off the global costmap and failure in planning a valid path despite recovery attempts.
+
+Thus, out of the five goals sent to move_base, only the first four waypoints were successfully reached. The goal for waypoint 5 could not be achieved.

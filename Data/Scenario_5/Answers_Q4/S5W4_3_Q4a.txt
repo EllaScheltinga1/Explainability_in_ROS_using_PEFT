@@ -1,0 +1,15 @@
+No, not all received waypoints were successfully reached. According to the log messages:
+
+1. **Waypoint 1**: Successfully reached.
+   - Log: "GOAL Reached!" and "Reached waypoint 1"
+
+2. **Waypoint 2**: Failed to reach.
+   - Log: "The goal sent to the global planner is off the global costmap. Planning will always fail to this goal." followed by "Failed to reach waypoint 2"
+
+3. **Waypoint 3**: Successfully reached.
+   - Log: "GOAL Reached!" and "Reached waypoint 3"
+
+4. **Waypoint 4**: Successfully reached.
+   - Log: "GOAL Reached!" and "Reached waypoint 4"
+
+Out of the four waypoints received, the robot successfully reached waypoints 1, 3, and 4, but failed to reach waypoint 2.

@@ -1,0 +1,1 @@
+No, not all received waypoints were successfully reached. The robot was able to reach waypoints 1, 2, and 3, but it failed to reach waypoint 4 due to the goal being off the global costmap, which made planning impossible. Despite attempts to clear the costmaps and perform recovery behaviors, a valid plan could not be found, resulting in the failure to reach waypoint 4.

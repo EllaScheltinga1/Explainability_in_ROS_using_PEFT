@@ -1,0 +1,4 @@
+Based on the ROS log messages, the robot received the following waypoints:
+
+1. **Waypoint 1** with coordinates \(x = -1.0\), \(y = 5.0\)
+2. **Waypoint 2** with coordinates \(x = 2.0\), \(y = 0.0\)

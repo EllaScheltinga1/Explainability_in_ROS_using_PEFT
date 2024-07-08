@@ -1,0 +1,7 @@
+The robot received a total of 5 waypoints. Each waypoint corresponds to a distinct "Sending goal" log message:
+
+1. Sending goal 1 to move_base: x=1.0, y=-7.0
+2. Sending goal 2 to move_base: x=1.0, y=-8.0
+3. Sending goal 3 to move_base: x=0.0, y=-15.0
+4. Sending goal 4 to move_base: x=-4.0, y=-8.0
+5. Sending goal 5 to move_base: x=-3.0, y=-9.0

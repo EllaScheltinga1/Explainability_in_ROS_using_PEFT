@@ -1,0 +1,11 @@
+No, none of the received waypoints were successfully reached. Each attempt to navigate to a waypoint failed for the following reasons:
+
+1. **Waypoint 1 (x=6.0, y=-14.5)**: The goal was off the global costmap, causing the planning to fail, even after executing all recovery behaviors.
+
+2. **Waypoint 2 (x=-3.0, y=1.5)**: The robot failed to get a plan, and despite clearing costmaps and executing recovery behaviors, a valid plan could not be found.
+
+3. **Waypoint 3 (x=-7.5, y=-6.0)**: Similar to waypoint 1, the goal was off the global costmap, leading to planning failure after recovery behaviors.
+
+4. **Waypoint 4 (x=-8.0, y=3.0)**: Once again, the goal was off the global costmap, resulting in persistent planning failure after recovery behaviors.
+
+All attempts resulted in the robot transitioning to the "DONE" state with a failure to reach the respective waypoints.

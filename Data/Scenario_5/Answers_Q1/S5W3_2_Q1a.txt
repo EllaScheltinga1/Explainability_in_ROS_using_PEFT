@@ -1,0 +1,7 @@
+Based on the ROS log messages, the move_base action server received goals for three waypoints:
+
+1. Goal 1: x=1.0, y=-11.5
+2. Goal 2: x=-2.0, y=-12.0
+3. Goal 3: x=-6.0, y=-9.0
+
+Therefore, three waypoints were received.

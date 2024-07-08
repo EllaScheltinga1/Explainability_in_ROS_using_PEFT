@@ -1,0 +1,1 @@
+Based on the provided ROS log messages, only one waypoint was received. This is indicated by the messages related to "Sending goal 1 to move_base: x=-6.0, y=-10.0" and subsequent actions attempting to reach "waypoint 1." There are no mentions of any other waypoints in the log.

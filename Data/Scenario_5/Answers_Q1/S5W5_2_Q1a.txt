@@ -1,0 +1,23 @@
+The log messages indicate that the robot received a total of 5 waypoints. Here are the specific entries for each:
+
+1. **Waypoint 1:** 
+   - "Sending goal 1 to move_base: x=1.0, y=-1.0"
+   - Reached waypoint 1
+
+2. **Waypoint 2:** 
+   - "Sending goal 2 to move_base: x=2.0, y=-4.0"
+   - Reached waypoint 2
+
+3. **Waypoint 3:** 
+   - "Sending goal 3 to move_base: x=0.0, y=-6.0"
+   - Reached waypoint 3
+
+4. **Waypoint 4:** 
+   - "Sending goal 4 to move_base: x=-3.0, y=-6.0"
+   - Reached waypoint 4
+
+5. **Waypoint 5:** 
+   - "Sending goal 5 to move_base: x=10.0, y=-9.0"
+   - Failed to reach waypoint 5 due to planning issues.
+
+Each goal corresponds to a waypoint, making a total of 5 waypoints.

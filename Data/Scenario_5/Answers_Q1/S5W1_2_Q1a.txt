@@ -1,0 +1,5 @@
+The log messages indicate that one waypoint was received:
+
+- "Sending goal 1 to move_base: x=7.0, y=-2.0"
+
+There is no mention of any other waypoints in the log, so it can be concluded that only one waypoint was received.
