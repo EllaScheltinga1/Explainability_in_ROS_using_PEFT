@@ -1,0 +1,1 @@
+The encountered obstacle is located at position (-2.5, -12.0). This location is mentioned while navigating to waypoint 1 and waypoint 2 and again noted during the unsuccessful attempt to reach waypoint 3.

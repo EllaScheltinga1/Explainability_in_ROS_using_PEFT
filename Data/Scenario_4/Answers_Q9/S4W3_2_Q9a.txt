@@ -1,0 +1,19 @@
+Yes, the robot encountered multiple obstacles during the navigation task. Here are the relevant details from the logs:
+
+1. **During navigation to waypoint 1:**
+   - New obstacle detected at position (3.5, -11.0).
+
+2. **During navigation to waypoint 2:**
+   - New obstacle detected again at position (3.5, -11.0).
+   - Several logs indicate that the robot was nearing an obstacle and had to replan its path:
+     - "Robot is nearing the obstacle. Path is being replanned."
+     - "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..."
+     - "TebLocalPlannerROS: possible oscillation detected. Activating recovery strategy."
+
+3. **During navigation to waypoint 3:**
+   - Multiple logs again indicate that the robot was nearing an obstacle and had to replan its path:
+     - "Robot is nearing the obstacle. Path is being replanned."
+     - "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..."
+     - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+
+Overall, these obstacles significantly impacted the robot's ability to successfully navigate to its waypoints 2 and 3.

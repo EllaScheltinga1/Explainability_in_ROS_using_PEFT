@@ -1,0 +1,11 @@
+The robot's response to the detected obstacle at position (3.0, -7.0) involved several actions attempting to navigate around it:
+
+1. **Replanning the Path**: Upon detecting the new obstacle, the log entries indicate that the robot attempted to replan its path multiple times as it was nearing the obstacle. The log shows the messages "Path is being replanned" repeated several times.
+
+2. **Failed Plans**: Despite multiple replanning attempts, each attempt failed, as evidenced by the repeated log entries "Failed to get a plan."
+
+3. **Trajectory Feasibility Check**: At some point, the TebLocalPlannerROS noted that the current trajectory was not feasible. This led to the log entry "Resetting planner..."
+
+4. **Costmap Clearing**: To attempt to alleviate the difficulty in replanning, the robot cleared both the local and global costmaps within a 3.00m square centered on the robot, as logged by "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+
+Despite these efforts, the robot ultimately failed to navigate past the obstacle and did not reach waypoint 2, as indicated by the final log entry "Failed to reach waypoint 2."

@@ -1,0 +1,9 @@
+When the robot detected a new obstacle at position (1.5, -2.5), it initiated a sequence of actions to navigate around it:
+
+1. **Path Replanning**: Upon detecting the obstacle, the robot attempted to replan its path to avoid the obstacle.
+2. **Attempted New Plans**: Despite multiple efforts, as indicated by the repeated log entries "Robot is nearing the obstacle. Path is being replanned," the robot could not successfully generate a feasible new path.
+3. **Recovery Strategy Initiated**: The message "TebLocalPlannerROS: possible oscillation... Activating recovery strategy" indicates the robot identified a potential oscillation issue and tried to optimize its movement by favoring the current turning direction.
+4. **Clearing Costmaps**: The robot then tried to clear its costmaps within a 3.00m square area centered on its position, which is a typical recovery action to discard any potentially incorrect or outdated obstacle data that might be causing planning issues.
+5. **Trajectory Feasibility and Recovery Expiry**: The message "TebLocalPlannerROS: oscillation recovery disabled/expired" suggests that the recovery attempt did not yield a usable trajectory, and the robot disabled further oscillation recovery attempts.
+
+In sum, the robot detected the obstacle, attempted to replan its path multiple times, initiated a recovery strategy to correct potential path planning issues, cleared its costmaps to remove stale data, and ultimately still failed to generate a feasible plan to reach waypoint 2.

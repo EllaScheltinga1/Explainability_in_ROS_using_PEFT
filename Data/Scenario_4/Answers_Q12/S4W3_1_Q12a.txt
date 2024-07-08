@@ -1,0 +1,13 @@
+When the robot detected a new obstacle at position (1.5, -3.5), it attempted several steps to address the situation:
+
+1. **Initial Detection and Response**: Upon detecting the obstacle, the robot found itself unable to generate a new plan and recognized that it was nearing the obstacle.
+   
+2. **Replanning and Trajectory Reset**: The robot's `TebLocalPlannerROS` indicated that the trajectory was not feasible, prompting a reset of the planner. However, it still failed to generate a viable plan.
+
+3. **Costmap Clearing**: In an effort to improve planning capabilities, the robot cleared both local and global costmaps starting with a large area (3.00m square) and then a smaller, more focused area (1.50m square) centered on the robot.
+   
+4. **Further Replanning Attempts**: Despite these actions, the robot continued to identify itself as nearing the obstacle and made additional attempts to replan its path.
+
+5. **Failure to Reach the Waypoint**: Eventually, due to the continual failures in planning around the obstacle, the robot failed to reach waypoint 1.
+
+In summary, upon detecting the obstacle, the robot engaged in multiple rounds of path replanning, trajectory reset, and costmap clearing attempts but was ultimately unable to navigate around the obstacle to reach its initial goal. Following these unsuccessful attempts, the robot proceeded to navigate to subsequent goals, successfully reaching waypoints 2 and 3 without further complications mentioned.

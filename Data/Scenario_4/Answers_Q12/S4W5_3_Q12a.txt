@@ -1,0 +1,25 @@
+From the logs, we can see that the robot detected a new obstacle multiple times at the position (3.0, 0.0) during its navigation:
+
+1. **Waypoint 2:** 
+   - Detected a new obstacle at position (3.0, 0.0).
+   - Successfully reached the goal and proceeded to transition states indicating successful completion.
+
+2. **Waypoint 3:** 
+   - Detected a new obstacle at position (3.0, 0.0).
+   - Successfully reached the goal and proceeded to transition states indicating successful completion.
+
+3. **Waypoint 4:** 
+   - Detected a new obstacle at position (3.0, 0.0).
+   - Successfully reached the goal and proceeded to transition states indicating successful completion.
+
+4. **Waypoint 5:** 
+   - Detected a new obstacle at position (3.0, 0.0).
+   - A response indicating the robot was nearing the obstacle and its path being replanned was logged.
+   - Ultimately, it failed to reach waypoint 5.
+
+The logs specifically for the attempted navigation to waypoint 5 show that the robot responded to the detected obstacle by:
+   - Notifying that the robot was nearing the obstacle.
+   - Initiating a path replan to avoid the obstacle.
+   - Despite these measures, the robot ultimately failed to reach waypoint 5, suggesting that the replanned path might not have been viable or the obstacle could not be bypassed effectively.
+
+In summary, the robot consistently detected the obstacle and took steps to replan its path when nearing the obstacle. However, the replanning efforts were insufficient to successfully navigate to waypoint 5.

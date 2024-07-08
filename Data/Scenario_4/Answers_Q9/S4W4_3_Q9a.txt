@@ -1,0 +1,29 @@
+Yes, multiple obstacles were encountered during the navigation tasks:
+
+1. **Waypoint 1:**
+   - **Position:** (1.5, -2.5)
+   - **Log Details:** "New obstacle detected at position (1.5, -2.5)"
+   - The obstacle did not prevent reaching the waypoint.
+
+2. **Waypoint 2:**
+   - **Position:** (1.5, -2.5)
+   - **Log Details:** "New obstacle detected at position (1.5, -2.5)"
+   - The same obstacle position was detected as for waypoint 1. It did not prevent reaching the waypoint.
+
+3. **Waypoint 3:**
+   - Multiple entries indicating the robot was nearing obstacles.
+   - **Log Details:**
+     - "Robot is nearing the obstacle. Path is being replanned."
+     - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+     - "Clearing both costmaps outside a square (1.50m) large centered on the robot."
+   - **Issues:** Oscillation was detected and recovery strategies were activated but failed ("Failed to reach waypoint 3").
+
+4. **Waypoint 4:**
+   - Multiple entries indicating the robot was nearing obstacles.
+   - **Log Details:**
+     - "Robot is nearing the obstacle. Path is being replanned."
+     - "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+     - "TebLocalPlannerROS: oscillation recovery disabled/expired."
+   - Despite the obstacles, the goal was successfully reached.
+
+Overall, the robot encountered obstacles at several waypoints, especially around waypoints 3 and 4, necessitating path replanning and recovery strategies.

@@ -1,0 +1,1 @@
+The encountered obstacle is located at the position (1.5, -2.5).

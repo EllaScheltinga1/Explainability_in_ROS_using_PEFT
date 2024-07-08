@@ -1,0 +1,13 @@
+The robot demonstrated a consistent protocol when responding to the detected obstacle:
+
+1. **Navigation Adjustments**:
+    - **Waypoint 1**: Upon detecting a new obstacle at position (1.5, -3.0), the robot successfully navigated to and reached the goal.
+    - **Waypoint 3**: Again, the same obstacle was detected, but the robot successfully reached the goal.
+
+2. **Path Replanning Attempts**:
+    - **Waypoint 4**: The obstacle continued to be at position (1.5, -3.0). The robot tried to replan the path multiple times when nearing the obstacle. This included several attempts to get a new plan which failed and triggering a planner reset due to a trajectory feasibility issue. The costmaps were cleared to enhance planning flexibility. Despite these efforts, the robot ultimately failed to reach Waypoint 4.
+
+3. **Modified Behavior**:
+    - **Waypoint 5**: Despite the same obstacle, the robot was able to navigate and reach the goal. It performed a successful path replan when nearing the obstacle, indicating improved handling at this stage.
+
+In summary, the robot predominantly attempted to replan its path when encountering the obstacle. Its success varied, as it failed to overcome the obstacle at Waypoint 4 but successfully navigated past it on other occasions.

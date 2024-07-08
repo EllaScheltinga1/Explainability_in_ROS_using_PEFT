@@ -1,0 +1,15 @@
+Yes, the robot encountered obstacles during the navigation task to waypoint 2. Specifically, the log messages indicate:
+
+1. **New obstacle detected at position (1.5, -2.5)**: This log message confirms the detection of an obstacle at the specified coordinates.
+   
+2. **Path is being replanned**: This is a direct consequence of the obstacle being detected, indicating that the robot's path was adjusted to avoid the obstacle.
+
+3. **TebLocalPlannerROS: possible oscillation detected**: This message suggests difficulties in planning around the obstacle, leading to the activation of a recovery strategy.
+
+4. **Failed to get a plan**: Indicating that the path replanning was initially unsuccessful.
+
+5. **TebLocalPlannerROS: trajectory is not feasible. Resetting planner...**: Further difficulties in finding a feasible path were encountered, necessitating a reset of the planner.
+
+6. **Clearing both costmaps outside a square (3.00m)**: This represents an effort to clear the planning maps to better understand the surroundings and find a new path.
+
+Despite these efforts, the robot ultimately **failed to reach waypoint 2** due to these obstacles.

@@ -1,0 +1,10 @@
+Yes, obstacles were encountered during the navigation task. Here are the details:
+
+1. **Waypoint 2**:
+   - A new obstacle was detected at position (-4.0, -9.0). Despite this, the robot successfully reached waypoint 2.
+
+2. **Waypoint 3**:
+   - The same obstacle at position (-4.0, -9.0) was detected again, but the robot still managed to reach waypoint 3 successfully.
+
+3. **Waypoint 4**:
+   - The obstacle at position (-4.0, -9.0) was detected again when the robot was navigating to waypoint 4. This time, the robot's path planning failed multiple times due to the obstacle, leading to an inability to reach waypoint 4. The `TebLocalPlannerROS` repeatedly found the trajectory not feasible, and multiple attempts to replan the path failed. Consequently, the navigation to waypoint 4 was unsuccessful.

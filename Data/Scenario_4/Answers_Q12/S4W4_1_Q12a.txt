@@ -1,0 +1,3 @@
+The robot initially detected a new obstacle at position (-4.0, -9.0) while navigating to waypoints 2 and 3. However, in those cases, it successfully reached the goals. 
+
+When the robot was sent to waypoint 4, which was located at the obstacle's position, it again detected the obstacle and attempted to replan its path multiple times as it neared the obstacle. The log messages indicate that the "TebLocalPlannerROS" reported the trajectory was not feasible and reset the planner multiple times. Additionally, attempts to clear both costmaps (areas used for path planning) outside squares of varying sizes centered on the robot were made. Despite these efforts, the robot was unable to create a viable plan to reach waypoint 4 and ultimately failed to reach the specified goal.

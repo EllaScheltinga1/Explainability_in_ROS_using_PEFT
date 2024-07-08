@@ -1,0 +1,11 @@
+When the robot detected the obstacle at position (-3.0, -5.0), it took several responsive actions:
+
+1. **Path Replanning**: The log shows multiple instances of "Path is being replanned," indicating that the navigation system attempted to find an alternative route around the obstacle.
+
+2. **Local Planner Reset**: The `TebLocalPlannerROS` component reported a non-feasible trajectory, triggering a reset of the planner.
+
+3. **Recovery Strategies**: 
+   - **Oscillation Detection**: The planner detected potential oscillation, which could pertain to repeated and ineffective movements. In response, it activated a recovery strategy that favors the current turning direction during optimization to stabilize the robot's movements.
+   - **Clearing Costmaps**: A specific recovery action involved clearing both local and global costmaps within a square around the robot (3.00m side length). This is a common method to remove outdated or incorrect obstacle data.
+
+Despite these response actions, the robot ultimately failed to reach waypoint 2, as it couldn't navigate past the obstacle effectively.

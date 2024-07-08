@@ -1,0 +1,4 @@
+The encountered obstacle was located at position (-4.0, 0.0), as indicated by the log message:
+```plaintext
+New obstacle detected at position (-4.0, 0.0)
+```

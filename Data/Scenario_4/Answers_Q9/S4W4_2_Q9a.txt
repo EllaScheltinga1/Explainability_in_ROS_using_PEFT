@@ -1,0 +1,13 @@
+Yes, obstacles were encountered during the navigation task. Specifically:
+
+1. **While moving to waypoint 2** (x=-4.0, y=1.0):
+   - A new obstacle was detected at position (-4.0, 0.0).
+   - The robot neared the obstacle, and path replanning was initiated.
+   - The `TebLocalPlannerROS` indicated that the trajectory was not feasible and had to reset the planner multiple times.
+   - The planner also detected possible oscillation and activated a recovery strategy.
+   - Despite the recovery efforts and clearing both costmaps, the robot ultimately failed to reach waypoint 2.
+
+2. **While moving to waypoint 3** (x=1.0, y=-4.5):
+   - An obstacle was detected, and path replanning was again initiated.
+   - The `TebLocalPlannerROS`'s oscillation recovery was noted as disabled/expired.
+   - Despite these challenges, the robot successfully navigated to waypoint 3.

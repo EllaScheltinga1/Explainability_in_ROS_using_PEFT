@@ -1,0 +1,14 @@
+No, not all planned paths were feasible during the navigation task. While the robot successfully navigated to waypoint 1, issues arose while attempting to reach waypoint 2. Here is the sequence of relevant events:
+
+1. **Sending goal 2 to move_base: x=1.0, y=-8.5**: The robot started navigating to the second waypoint.
+2. **New obstacle detected at position (1.5, -2.5)**: The robot discovered an obstacle while navigating.
+3. **Robot is nearing the obstacle. Path is being replanned**: The robot attempted to replan its path to avoid the obstacle.
+4. **Failed to get a plan**: The first replanning attempt failed.
+5. **Robot is nearing the obstacle. Path is being replanned**: Another replanning attempt was made.
+6. **Failed to get a plan**: The second replanning attempt also failed.
+7. **TebLocalPlannerROS: trajectory is not feasible. Resetting planner...**: The trajectory was determined to be infeasible, leading to another planner reset.
+8. **Clearing both costmaps outside a square (3.00m) large centered on the robot**: The planner then cleared the costmaps to potentially find a new feasible path.
+9. **TebLocalPlannerROS: oscillation recovery disabled/expired**: The oscillation recovery strategy was either disabled or expired.
+10. **Failed to reach waypoint 2**: Ultimately, the robot failed to reach the second waypoint.
+
+This sequence indicates that while the robot initially managed to navigate to the first waypoint successfully, it encountered significant difficulties and failures in planning a feasible path to the second waypoint due to the detected obstacle.

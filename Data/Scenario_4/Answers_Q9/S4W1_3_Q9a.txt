@@ -1,0 +1,10 @@
+Yes, there were multiple obstacles encountered during the navigation task. The logs indicate several instances where the robot had to replan its path due to nearing obstacles:
+
+1. "Robot is nearing the obstacle. Path is being replanned."
+2. "TebLocalPlannerROS: trajectory is not feasible. Resetting planner..."
+
+Additionally, there was a possible oscillation detected which led to the activation of a recovery strategy:
+
+3. "TebLocalPlannerROS: possible oscillation (of the robot or its local plan) detected. Activating recovery strategy (prefer current turning direction during optimization)."
+
+Despite these attempts to replan and recover, the robot ultimately failed to reach waypoint 1.

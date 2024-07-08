@@ -1,0 +1,23 @@
+The robot's response to the detected obstacle involved several specific actions and strategies aimed at navigating or avoiding the obstacle. Here's a detailed breakdown of the responses:
+
+1. **Obstacle Detection**: 
+   - The obstacle was initially detected at position (3.5, -11.0) when the robot was navigating to waypoint 1 and subsequently while attempting to navigate to waypoints 2 and 3.
+
+2. **Path Replanning**:
+   - Upon detecting the obstacle, the robot attempted to replan its path multiple times to find a feasible route around the obstacle.
+
+3. **Trajectory Feasibility**:
+   - The `TebLocalPlannerROS` (Time-Elastic Band Local Planner for ROS) detected that the planned trajectories were not feasible and thus reset the planner multiple times.
+
+4. **Oscillation Recovery**:
+   - The system identified potential oscillations (repeated minor adjustments or back-and-forth movements) and attempted an oscillation recovery strategy. This involved activating a recovery behavior to prefer the current turning direction during optimization.
+
+5. **Costmap Clearing**:
+   - The robot cleared both the local and global costmaps within a certain radius around itself. This action was performed in an attempt to remove stale, potentially misleading information about obstacles:
+     - Initially, it cleared an area of 3.00 meters centered on the robot.
+     - This was followed by clearing a smaller area of 1.50 meters when trajectory infeasibility persisted.
+
+6. **Recovery and Replanning Attempts**:
+   - The planner was constantly reset and recovery strategies were applied repeatedly as the robot continued to encounter infeasible trajectories. This cycle continued several times in an attempt to find a viable path.
+
+Despite these efforts, the robot ultimately failed to reach waypoint 2 and waypoint 3 due to the persistent obstacle and infeasible trajectories. This indicates that the robot engaged in multiple standard navigation recovery behaviors but was unable to overcome the difficulties presented by the detected obstacle.

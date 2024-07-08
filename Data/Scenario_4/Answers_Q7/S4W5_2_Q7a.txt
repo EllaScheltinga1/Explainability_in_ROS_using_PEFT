@@ -1,0 +1,9 @@
+No, not all of the planned paths were feasible during the navigation task. Specifically, while navigating to waypoint 4 (x=2.0, y=-7.0), the robot encountered multiple planning issues:
+
+1. The log messages indicate that the robot detected a new obstacle multiple times at position (1.5, -3.0).
+2. The messages "Robot is nearing the obstacle. Path is being replanned." were repeated, followed each time by "Failed to get a plan."
+3. The planner had to be reset with "TebLocalPlannerROS: trajectory is not feasible."
+4. There was an attempt to clear the costmaps to generate a new plan: "Clearing both costmaps outside a square (3.00m) large centered on the robot."
+5. Despite these efforts, it finally resulted in "Failed to reach waypoint 4" indicating that the path was ultimately not feasible.
+
+This issue did not occur for other waypoints, as the robot successfully reached waypoints 1, 2, 3, and 5.

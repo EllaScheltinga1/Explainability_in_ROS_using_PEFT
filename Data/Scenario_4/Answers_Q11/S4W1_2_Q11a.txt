@@ -1,0 +1,1 @@
+The encountered obstacle is located at position \((-3.0, -0.5)\) in the robot's coordinate frame.

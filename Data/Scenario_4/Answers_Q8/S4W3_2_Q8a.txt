@@ -1,0 +1,5 @@
+Yes, the robot failed to reach two waypoints during its operation. Specifically:
+
+1. **Waypoint 2** at coordinates \( x=1.0, y=-11.0 \): The attempt to reach this waypoint was hindered by the detection of an obstacle at position \( 3.5, -11.0 \), leading to multiple instances of the planner resetting due to an infeasible trajectory and oscillation recovery attempts.
+
+2. **Waypoint 3** at coordinates \( x=4.0, y=-12.0 \): Similar issues occurred with this waypoint, where the robot encountered an obstacle, resulting in repeated path replanning and planner resets due to infeasible trajectories, ultimately causing the robot to fail to reach this waypoint as well.

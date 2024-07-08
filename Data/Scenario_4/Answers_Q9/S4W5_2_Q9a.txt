@@ -1,0 +1,10 @@
+Yes, obstacles were encountered during the navigation task. Specifically:
+
+1. An obstacle was detected at position (1.5, -3.0) multiple times.
+2. The robot detected a new obstacle at position (1.5, -3.0) while navigating to waypoints 3, 4, and 5.
+
+The robot managed to replan its path successfully around the obstacle for waypoints 3 and 5. However, for waypoint 4, the robot encountered difficulties:
+- The path needed to be replanned several times.
+- It repeatedly failed to generate a viable plan.
+- The planner reset, and costmaps were cleared unsuccessfully.
+Ultimately, the robot failed to reach waypoint 4 due to these obstacles.

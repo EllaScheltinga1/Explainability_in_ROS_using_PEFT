@@ -1,0 +1,9 @@
+The task the robot had to perform was autonomous navigation to specified waypoints. The robot received goals to move to particular coordinates and had to navigate to those locations, avoiding obstacles along the way. Specifically, the robot was set to:
+
+1. Tuck its arm.
+2. Start various controllers needed for its operation.
+3. Connect to the move_base action server.
+4. Navigate to the first waypoint at coordinates (x=1.0, y=-2.0) and successfully reached it.
+5. Navigate to the second waypoint at coordinates (x=3.0, y=-7.0), where it encountered obstacles and, despite attempts to replan its path, ultimately failed to reach this second waypoint.
+
+The autonomous navigation involved using sensors to detect obstacles and adjusting the path accordingly.

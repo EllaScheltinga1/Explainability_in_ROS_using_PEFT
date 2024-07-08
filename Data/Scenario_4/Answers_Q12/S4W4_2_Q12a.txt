@@ -1,0 +1,11 @@
+When the robot detected a new obstacle at position (-4.0, 0.0) while navigating to waypoint 2, it took the following actions:
+
+1. **Replanning Path:** The robot identified that it was nearing the obstacle and initiated path replanning to avoid a collision.
+
+2. **Trajectory Feasibility Check:** The `TebLocalPlannerROS` (an implementation of the Timed Elastic Band planner) determined that the current trajectory was not feasible and reset the planner multiple times.
+
+3. **Oscillation Detection:** The planner detected possible oscillations in the robot's movement or plan, prompting the activation of a recovery strategy that favored the current turning direction during optimization to stabilize the robot's motion.
+
+4. **Costmap Clearing:** The local planner cleared both costmaps within a 3-meter square around the robot to remove any erroneous or outdated information that could be affecting the planner's ability to find a feasible path.
+
+Despite these efforts, the robot ultimately failed to reach waypoint 2 after consecutive planner resets and unsuccessful recovery attempts. The robot then moved on to attempt reaching waypoint 3 with renewed navigation instructions.

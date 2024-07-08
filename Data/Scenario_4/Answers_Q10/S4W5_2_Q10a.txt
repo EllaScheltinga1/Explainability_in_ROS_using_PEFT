@@ -1,0 +1,10 @@
+The task the robot had to perform was autonomous navigation, where it was required to navigate to specific waypoints using the move_base action server. The robot was provided with several goals (waypoints) defined by specific coordinates (x, y), and it navigated to these waypoints sequentially. During the operation, the robot had to handle dynamic obstacles and replan its path as needed.
+
+The waypoints included:
+1. Goal 1: x=-4.0, y=-0.5
+2. Goal 2: x=-2.5, y=0.0
+3. Goal 3: x=-1.0, y=-1.0
+4. Goal 4: x=2.0, y=-7.0 (failed to reach due to obstacles)
+5. Goal 5: x=2.0, y=-0.5
+
+The robot had to handle obstacle detections, replan paths when obstacles were detected or the trajectory was not feasible, and clear costmaps to attempt recalculating viable paths.

@@ -1,0 +1,13 @@
+When the robot detected an obstacle while navigating to waypoint 5, it initiated several responses to manage the situation and attempt to continue its navigation. Here are the specific actions taken by the robot:
+
+1. **Replanning the Path**: Initially, the robot identified the new obstacle and began replanning its path to avoid the detected obstacle ("Path is being replanned").
+
+2. **Trajectory Feasibility Check**: The *TebLocalPlannerROS* component assessed the feasibility of the new trajectory and found it to be infeasible ("trajectory is not feasible. Resetting planner...").
+
+3. **Repeated Replanning Attempts**: The robot again attempted to replan its path ("Path is being replanned") but continued to face difficulties.
+
+4. **Oscillation Detection and Recovery**: The *TebLocalPlannerROS* detected possible oscillations, which might be due to the robot's movements or the local planning adjustments. In response, it activated a recovery strategy to prefer the current turning direction during optimization ("possible oscillation detected...Activating recovery strategy").
+
+5. **Clearing Costmaps**: As a further step to resolve the navigation issues, the robot cleared both local and global costmaps outside a 3-meter square area centered on the robot ("Clearing both costmaps outside a square (3.00m) large...").
+
+Despite these efforts, the combination of replanning, feasibility checks, and recovery strategies were not enough to overcome the obstacle, resulting in the robot's failure to reach waypoint 5 ("Failed to reach waypoint 5").

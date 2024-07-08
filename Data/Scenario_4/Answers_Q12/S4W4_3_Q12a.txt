@@ -1,0 +1,27 @@
+The robot encountered multiple instances of obstacles during its navigation to the waypoints. Here is a detailed breakdown of the robot's responses to these obstacles:
+
+1. **At Waypoint 1 (Position: x=-3.5, y=-0.5):**
+    - **Detection:** A new obstacle was detected at position (1.5, -2.5).
+    - **Response:** The log does not indicate any specific actions taken in response to this obstacle beyond its detection. The robot successfully reached the goal despite the obstacle.
+
+2. **At Waypoint 2 (Position: x=1.0, y=0.0):**
+    - **Detection:** The same obstacle was detected again at position (1.5, -2.5).
+    - **Response:** Similar to Waypoint 1, the log notes the detection but doesn't detail any specific actions beyond successful goal achievement.
+
+3. **At Waypoint 3 (Position: x=3.0, y=-4.5):**
+    - **Detection:** The robot neared an obstacle multiple times, triggering path replanning. 
+    - **Response:**
+        - **Path Replanning:** Replanned the path multiple times to attempt to navigate around the obstacle.
+        - **Oscillation Detection:** The TebLocalPlannerROS detected possible oscillation and activated a recovery strategy, which involved preferring the current turning direction during optimization.
+        - **Costmap Clearing:** Cleared both costmaps outside a square, initially 3.00m and then 1.50m large, centered on the robot to reassess the environment and attempt to find a viable path.
+    - The robot ultimately failed to reach Waypoint 3 due to the obstacle.
+
+4. **At Waypoint 4 (Position: x=3.0, y=0.0):**
+    - **Detection:** The robot neared an obstacle, leading to path replanning.
+    - **Response:**
+        - **Path Replanning:** Multiple instances of path replanning to navigate around the obstacle.
+        - **Costmap Clearing:** Cleared both costmaps outside a 3.00m square centered on the robot.
+        - **Oscillation Recovery Expiration:** The TebLocalPlannerROS indicated that oscillation recovery was disabled/expired.
+    - The robot successfully reached Waypoint 4 despite the presence of obstacles.
+
+Throughout these events, the robot used strategies like path replanning, oscillation recovery, and costmap clearing in its attempts to navigate around obstacles.

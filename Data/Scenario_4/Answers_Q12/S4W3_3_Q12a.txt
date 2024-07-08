@@ -1,0 +1,25 @@
+The robot's response to the detected obstacle can be broken down into several clear actions based on the log messages:
+
+1. **New Obstacle Detection:** 
+   - The robot detected a new obstacle at position (-2.5, -12.0).
+
+2. **Path Replanning:**
+   - As the robot neared the obstacle, it attempted to replan its path multiple times but failed each time ("Failed to get a plan.").
+
+3. **Costmap Clearing:**
+   - The robot attempted to clear both local and global costmaps to remove potential obstacles or dynamic changes.in steps: first, outside a 3.00m square, and later, a 1.50m square centered on the robot.
+
+4. **Recovery Behaviors:**
+   - The robot executed several recovery behaviors to adjust its path:
+       - It started a "Rotate recovery behavior" to try to find a new clear path.
+
+5. **Repeated Failures:**
+   - Despite these attempts, the robot consistently failed to generate a valid plan to navigate around the obstacle.
+
+6. **Abort Mission:**
+   - After exhausting all recovery behaviors and path planning attempts, the robot aborted the mission because it could not establish a valid path to the goal.
+
+7. **Mission State Transitions:**
+   - The robot's mission state transitioned from ACTIVE to DONE via WAITING_FOR_RESULT, indicating the failed attempt to reach the third waypoint.
+
+In summary, upon detecting the obstacle, the robot made several attempts to replan the path and employed recovery behaviors. However, it ultimately aborted the mission due to repeated failures in path planning.

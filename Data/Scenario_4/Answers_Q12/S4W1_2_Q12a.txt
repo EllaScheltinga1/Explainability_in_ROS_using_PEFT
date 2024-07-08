@@ -1,0 +1,26 @@
+The robot took several steps in response to the detected obstacle:
+
+1. **Detection and Initial Replanning**: The robot first detected the new obstacle at position (-3.0, -0.5). Upon detecting the obstacle, the robot's system initiated a path replanning process:
+   - `New obstacle detected at position (-3.0, -0.5)`
+   - `Robot is nearing the obstacle. Path is being replanned.`
+   
+2. **Repeated Planning Attempts**: The robot made multiple attempts to create a valid plan to navigate around the obstacle but failed:
+   - `Failed to get a plan.`
+   - `TebLocalPlannerROS: trajectory is not feasible. Resetting planner...`
+    
+3. **Recovery Behaviors**: To attempt to overcome the planning issues, the robot executed some recovery behaviors which included clearing its costmaps to reset the surroundings, and initiating a recovery behavior:
+   - `Clearing both costmaps outside a square (3.00m) large centered on the robot.`
+   - `Clearing both costmaps outside a square (1.50m) large centered on the robot.`
+   - `Rotate recovery behavior started.`
+   
+4. **Continued Replanning and Final Failure**: Despite the recovery attempts, the robot continued to fail in finding a valid plan:
+   - `Robot is nearing the obstacle. Path is being replanned.`
+   - `Failed to get a plan.`
+    
+5. **Abortion and Goal Abandonment**: After executing all recovery behaviors and still failing to find a valid plan, the robot aborted the mission to reach the waypoint and transitioned through several states to indicate the activity's conclusion:
+   - `Aborting because a valid plan could not be found. Even after executing all recovery behaviors`
+   - `Transitioning to WAITING_FOR_RESULT (from ACTIVE, goal: /tiago_autonomous_navigation-1-15.207)`
+   - `Transitioning to DONE (from WAITING_FOR_RESULT, goal: /tiago_autonomous_navigation-1-15.207)`
+   - `Failed to reach waypoint 1.`
+
+In summary, the robot's response involved detecting the obstacle, attempting to replan its route, executing recovery behaviors to clear the path, and finally aborting the navigation attempt upon repeated failures to generate a viable trajectory.
