@@ -71,16 +71,16 @@ By Ella Scheltinga and Chris Pek
 |----------|----------|----------|----------------|
 | 1        | 1        | 0.6148   | Personalised   |
 |          | 2        | 0.1987   | Personalised   |
-|          | 3        | **0.0215** | Personalised   |
+|          | 3        | **0.0215** | **Personalised**   |
 |          | 4        | 0.6559   | Personalised   |
-|          | 5        | **0.0277** | Personalised   |
+|          | 5        | **0.0277** | **Personalised**   |
 |          | 6        | 0.4537   | Personalised   |
 | 2        | 1        | 0.1573   | Personalised   |
 |          | 2        | 0.5271   | Personalised   |
 |          | 3        | 0.1317   | Personalised   |
-|          | 4        | **0.0017** | Personalised   |
+|          | 4        | **0.0017** | **Personalised**   |
 |          | 5        | 0.0511   | Personalised   |
-|          | 6        | **0.0129** | Personalised   |
+|          | 6        | **0.0129** | **Personalised**   |
 | 3        | 1        | 0.5637   | Original       |
 |          | 2        | 0.3951   | Personalised   |
 |          | 3        | 0.2795   | Personalised   |
@@ -89,16 +89,16 @@ By Ella Scheltinga and Chris Pek
 |          | 6        | 0.5839   | Personalised   |
 | 4        | 1        | 0.7055   | Personalised   |
 |          | 2        | 0.4487   | Original       |
-|          | 3        | **0.0032** | Personalised   |
-|          | 4        | **0.0013** | Personalised   |
+|          | 3        | **0.0032** | **Personalised**   |
+|          | 4        | **0.0013** | **Personalised**   |
 |          | 5        | 0.1552   | Personalised   |
 |          | 6        | 0.5881   | Personalised   |
-| 5        | 1        | **0.0067** | Personalised   |
+| 5        | 1        | **0.0067** | **Personalised**   |
 |          | 2        | 0.4142   | Personalised   |
-|          | 3        | **0.0044** | Personalised   |
-|          | 4        | **0.0009** | Personalised   |
-|          | 5        | **0.0240** | Personalised   |
-|          | 6        | **0.0049** | Personalised   |
+|          | 3        | **0.0044** | **Personalised**   |
+|          | 4        | **0.0009** | **Personalised**   |
+|          | 5        | **0.0240** | **Personalised**   |
+|          | 6        | **0.0049** | **Personalised**   |
 
 
 
