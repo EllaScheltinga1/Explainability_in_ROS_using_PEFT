@@ -100,6 +100,20 @@ By Ella Scheltinga and Chris Pek
 |          | 5        | **0.0240** | **Personalised**   |
 |          | 6        | **0.0049** | **Personalised**   |
 
+### Test 5
+#### Boxplots showing improvement of targetted criteria using feedback loop
+
+<div align="left">
+  <img src="Boxplots/Exp_Long_1.png" width="400"/>
+</div>
+
+<div align="left">
+  <img src="Boxplots/Nexp_Short_15.png" width="400"/>
+</div>
+
+<div align="left">
+  <img src="Boxplots/Nexp_Long_1.png" width="400"/>
+</div>
 
 
 
