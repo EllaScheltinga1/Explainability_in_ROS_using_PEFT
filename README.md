@@ -50,7 +50,7 @@ By Ella Scheltinga and Chris Pek
 ### Test 3
 #### Table 2: Mean Ratings for Personalisation Types Across Evaluation Criteria
 
-| Personalisation Type        | Crit 1: Relevance to Question | Crit 2: Contextual Accuracy | Crit 3: Enhancement of Understanding | Crit 4: Explanation Clarity | Crit 5: Contextual Explanation Quality |
+| Personalisation Type        | Crit 1: Relevance | Crit 2: Accuracy | Crit 3: Understanding | Crit 4: Clarity | Crit 5: Context |
 | --------------------------- | ----------------------------- | --------------------------- | ------------------------------------ | --------------------------- | -------------------------------------- |
 | Original                    | 6.49                          | 6.51                        | 6.62                                 | 6.28                        | 6.48                                   |
 | Expert short                | 6.36                          | 6.55                        | 6.68                                 | **6.47**                    | 6.49                                   |
