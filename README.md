@@ -1,4 +1,4 @@
-# Personalising Explanations for Failures in ROS using PEFT
+# Personalizing Explanations for Failures in ROS using PEFT
 
 ## Overview
 This repository contains supplementary results and additional insights for our paper:
@@ -6,6 +6,9 @@ This repository contains supplementary results and additional insights for our p
 **Personalising Explanations for Failures in Robot Operating System using Parameter-Efficient Fine-Tuning**
 
 By Ella Scheltinga and Chris Pek
+
+## Dataset
+TThis repository also contains the data used for [fine-tuning](/Data/fine_tuning_data.json), which is compiled from .bag files containing the recorded ROS log messages, questions and generated answers that you will find in the directory [Data](/Data). 
 
 ## Additional Results
 ### Test 1 & 2
@@ -65,7 +68,7 @@ By Ella Scheltinga and Chris Pek
 
 
 ### Test 4
-##### Table 3: Wilcoxon Signed Rank Test Results for Original vs Personalised Explanation Ratings
+#### Table 3: Wilcoxon Signed Rank Test Results for Original vs Personalised Explanation Ratings
 
 | Question | Criterion | p-value  | Better Version  |
 |----------|----------|----------|----------------|
